@@ -15,7 +15,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'Bảo Lâm Marketing | Execution Engine',
+  title: 'Bảo Lâm Marketing & Distribution',
   description: 'Đơn vị tư vấn & thực thi toàn quốc: Activation, Event, Sampling. Năng lực triển khai tại 63 tỉnh thành với hệ thống 3000+ nhân sự.',
   openGraph: {
     title: 'Bảo Lâm Marketing & Distribution',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bảo Lâm Marketing | The Execution Powerhouse',
+    title: 'Bảo Lâm Marketing & Distribution',
     description: 'Năng lực bao phủ 63 tỉnh thành. Chuyên môn hóa Execution, Sampling và chuỗi Activation.',
     images: ['https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=1200&h=630&auto=format&fit=crop'],
   },
