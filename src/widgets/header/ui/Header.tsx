@@ -9,7 +9,7 @@ export function Header() {
   return (
     <header className="fixed top-0 w-full z-50 bg-[var(--color-surface-container-low)]/80 backdrop-blur-xl flex justify-between items-center px-6 py-4 shadow-sm">
       <div className="flex items-center gap-3">
-        <Image src="/logo.png" alt="Bao Lam Marketing" width={180} height={48} className="h-8 md:h-10 w-auto object-contain" />
+        <Image src="/logo-dark.png" alt="Bao Lam Marketing" width={240} height={64} className="h-10 md:h-14 w-auto object-contain drop-shadow-md" />
       </div>
 
       <div className="flex items-center gap-6">
@@ -18,7 +18,7 @@ export function Header() {
           <a className="text-[var(--color-cool-gray)] hover:text-[var(--color-crimson)] transition-colors font-medium text-xs tracking-widest uppercase" href="#portfolio">{t('campaigns')}</a>
           <a className="text-[var(--color-cool-gray)] hover:text-[var(--color-crimson)] transition-colors font-medium text-xs tracking-widest uppercase" href="#services">{t('network')}</a>
         </nav>
-        
+
         <LanguageSwitcher />
       </div>
     </header>
