@@ -27,6 +27,7 @@ export function LeadForm() {
     resolver: zodResolver(leadFormSchema),
     defaultValues: {
       industry: 'FMCG',
+      turnstileToken: '',
     },
   });
 
