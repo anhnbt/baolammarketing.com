@@ -61,19 +61,24 @@ export function Footer() {
 
             {/* Contact */}
             <div className="col-span-1">
-              <h3 className="text-sm font-black text-[var(--color-surface-white)] uppercase tracking-widest mb-6">Liên hệ</h3>
-              <ul className="space-y-4">
+              <h3 className="text-sm font-black text-[var(--color-surface-white)] uppercase tracking-widest mb-6 border-b border-white/5 pb-3">Liên hệ</h3>
+              <ul className="space-y-6">
                 <li className="flex gap-3 text-[var(--color-cool-gray)] text-sm items-start">
-                  <MapPin className="w-4 h-4 text-[var(--color-crimson)] shrink-0 mt-0.5" />
-                  <span className="leading-relaxed">Tầng 3, Tòa nhà Văn Phòng, Q. Cầu Giấy, Hà Nội</span>
+                  <MapPin className="w-4 h-4 text-[var(--color-crimson)] shrink-0 mt-1" />
+                  <span className="leading-relaxed">Ô 22 Lô 4, Đền Lừ 2, Phường Hoàng Văn Thụ, Quận Hoàng Mai, TP. Hà Nội.</span>
                 </li>
-                <li className="flex gap-3 text-[var(--color-cool-gray)] text-sm items-center">
-                  <Phone className="w-4 h-4 text-[var(--color-crimson)] shrink-0" />
-                  <span>090 123 4567</span>
+                <li className="flex gap-3 text-[var(--color-cool-gray)] text-sm items-start">
+                  <Phone className="w-4 h-4 text-[var(--color-crimson)] shrink-0 mt-1" />
+                  <div className="flex flex-col gap-1.5">
+                     <span className="text-[10px] text-[var(--color-cool-gray)]/60 uppercase font-black tracking-widest">Hotline Văn Phòng</span>
+                     <span>0436 341 636 - 0462 954 954</span>
+                     <span className="text-[10px] text-[var(--color-cool-gray)]/60 uppercase font-black tracking-widest mt-2">Hợp Tác Chiến Lược</span>
+                     <span className="text-[var(--color-surface-white)] font-bold">0911 63 6666 <span className="font-normal italic text-[var(--color-cool-gray)]">(Mr. Thọ Tạ)</span></span>
+                  </div>
                 </li>
                 <li className="flex gap-3 text-[var(--color-cool-gray)] text-sm items-center">
                   <Mail className="w-4 h-4 text-[var(--color-crimson)] shrink-0" />
-                  <span>contact@baolammarketing.com</span>
+                  <span>tho.tv@baolammarketing.com</span>
                 </li>
               </ul>
             </div>
