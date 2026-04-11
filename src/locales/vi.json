@@ -1,6 +1,6 @@
 {
   "Header": {
-    "lead_gen": "THỰC THI",
+    "lead_gen": "LIÊN HỆ",
     "campaigns": "DỰ ÁN",
     "network": "MẠNG LƯỚI",
     "logo": "BAO LAM"
@@ -19,20 +19,20 @@
     "headline_highlight": "& DISTRIBUTION",
     "collaborators": "Cộng tác viên (CTV)",
     "samples_per_year": "Mẫu Sampling/Năm",
-    "description": "Kiến tạo sức mạnh vận hành vượt trội. Chúng tôi không chỉ lập kế hoạch, chúng tôi trực tiếp giải bài toán thực thi với độ chính xác tuyệt đối trên mọi điểm chạm."
+    "description": "Bảo Lâm cung cấp dịch vụ tổ chức sự kiện và activation toàn diện. Chúng tôi đồng hành cùng khách hàng từ khâu lên kế hoạch cho đến khi trực tiếp triển khai trên toàn quốc."
   },
   "Engine": {
     "subtitle": "CORE CAPABILITIES",
     "title_engine": "BẢO LÂM",
     "title_highlight": "EXECUTION ENGINE",
-    "description": "Cỗ máy vận hành thống nhất kết hợp giữa lực lượng 3000+ nhân sự thực chiến và hệ thống quản trị rủi ro Zero-Mistake.",
+    "description": "Hệ thống vận hành chuyên nghiệp với hơn 3000 nhân sự và quy trình giám sát chặt chẽ, đảm bảo dự án luôn đạt chất lượng.",
     "services": {
       "activation_title": "Activation & Sampling",
       "activation_desc": "Phủ sóng thương hiệu tại chợ truyền thống, siêu thị, trường học, khu công nghiệp và bệnh viện.",
       "activation_kpi1": "2.5 Triệu mẫu/năm",
       "activation_kpi2": "1500+ Điểm phát",
       "event_title": "Event & Roadshow",
-      "event_desc": "Kích hoạt sự chú ý quy mô lớn thông qua chuỗi sự kiện ra mắt, hội nghị khách hàng và roadshow liên tỉnh.",
+      "event_desc": "Tổ chức các sự kiện ra mắt sản phẩm, hội nghị khách hàng và chạy roadshow liên tỉnh.",
       "event_kpi1": "Concept sáng tạo",
       "event_kpi2": "Giấy phép trọn gói",
       "production_title": "Production & POSM",
@@ -43,9 +43,9 @@
     "living_network": {
       "subtitle": "Operational Infrastructure",
       "title": "The Living Network",
-      "metric1_title": "ĐỘI NGŨ PM CHUYÊN TRÁCH",
-      "metric1_desc": "(Quản trị dự án & rủi ro đa tầng)",
-      "metric2_title": "NHÂN SỰ THỰC THI (PG/PB/SUP)",
+      "metric1_title": "QUẢN LÝ DỰ ÁN TRỰC TIẾP",
+      "metric1_desc": "(Kiểm soát tiến độ và rủi ro)",
+      "metric2_title": "NHÂN SỰ TRIỂN KHAI (PG/PB/SUP)",
       "metric2_desc": "(Sẵn sàng tại 63 tỉnh thành)",
       "metric3_title": "TRÊN 5 NĂM KINH NGHIỆM",
       "metric3_desc": "(Cam kết vận hành Zero-mistake)"
@@ -84,9 +84,9 @@
     "title_highlight": "CHUYÊN GIA",
     "title_suffix": "",
     "editorial": "Quy trình chuẩn hóa 2024",
-    "description": "Thoát khỏi lý thuyết viển vông. Chúng tôi là đội quân đánh bộ mang về doanh số trực tiếp tại điểm bán.",
+    "description": "Để lại thông tin để được tư vấn trực tiếp và nhận báo giá chi tiết cho chiến dịch của bạn.",
     "rate": "98.4%",
-    "rate_label": "Tỉ lệ tiếp cận mục tiêu / KPI",
+    "rate_label": "Tỉ lệ hoàn thành KPI",
     "form": {
       "success_title": "TIẾP NHẬN THÀNH CÔNG",
       "success_desc": "Chuyên gia của chúng tôi sẽ liên hệ trong 30 phút nữa.",
@@ -101,8 +101,8 @@
       "phone_placeholder": "VÍ DỤ: 0911 63 6666",
       "email_label": "Email",
       "email_placeholder": "HELLOBRAND@GMAIL.COM",
-      "button_submitting": "ĐANG KÍCH HOẠT...",
-      "button_submit": "KÍCH HOẠT DỰ ÁN",
+      "button_submitting": "ĐANG GỬI...",
+      "button_submit": "GỬI YÊU CẦU",
       "errors": {
         "fullname": "Tên phải có ít nhất 2 ký tự",
         "phone": "Cần 10 số",
@@ -112,29 +112,29 @@
     }
   },
   "NicheMastery": {
-    "title": "CHINH PHỤC MỌI ĐỊA HÌNH",
-    "description": "\"Sự khác biệt của Bảo Lâm nằm ở khả năng xuyên thấu các rào cản phân phối phức tạp nhất trên toàn quốc.\"",
+    "title": "CÁC KÊNH TRIỂN KHAI",
+    "description": "Bảo Lâm có kinh nghiệm tổ chức chương trình tại nhiều địa điểm và kênh phân phối khác nhau trên toàn quốc.",
     "cards": {
       "temple": {
         "title": "Kênh Lễ Hội & Tâm Linh",
-        "highlight": "\"100.000+ lượt tại Đất Thiêng.\"",
-        "desc": "Độc quyền khai thác Sampling tại Chùa Hương, Bái Đính, Phủ Tây Hồ, Đền Hùng."
+        "highlight": "Tiếp cận 100.000+ lượt khách.",
+        "desc": "Tổ chức Sampling tại Chùa Hương, Bái Đính, Phủ Tây Hồ, Đền Hùng."
       },
       "rural": {
         "title": "Vùng Sâu & Nông Thôn",
-        "highlight": "\"Len lỏi đến từng ngõ ngách.\"",
-        "desc": "Giao nhận tận tay đến 12,000 hộ gia đình tại vùng sâu vùng xa."
+        "highlight": "Tiếp cận tận nơi.",
+        "desc": "Tổ chức hoạt động tại các vùng xa trung tâm."
       },
       "industrial": {
         "title": "KCN & Trường Học",
-        "highlight": "\"Mass-Sampling Tốc Độ Cao.\"",
-        "desc": "Giải quyết bài toán khối lượng khổng lồ. Thiết lập hệ thống Youth Touchpoint."
+        "highlight": "Phát mẫu thử số lượng lớn.",
+        "desc": "Thực hiện các chương trình sampling tại trường học và khu công nghiệp."
       }
     }
   },
   "Cta": {
     "subtitle": "Ready to Scale?",
-    "title": "THỰC THI KHÔNG GIỚI HẠN",
+    "title": "ĐỒNG HÀNH CÙNG BẠN",
     "btn_start": "START COLLABORATION",
     "btn_methodology": "OUR METHODOLOGY"
   }
