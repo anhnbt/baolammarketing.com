@@ -57,7 +57,7 @@ export function HeroSection() {
 
           {/* Power Metric Grid */}
           <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
-            <div className="bg-[var(--color-surface-container-low)] p-6 rounded-sm border-l-4 border-[var(--color-crimson)] relative overflow-hidden group">
+            <div className="bg-[var(--color-surface-container-low)] p-6 rounded-lg border-l-4 border-[var(--color-crimson)] relative overflow-hidden group shadow-executive border border-[var(--border-subtle)]">
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[var(--color-crimson)]/5 to-transparent"></div>
               <div className="relative z-10">
                 <div className="text-[2.5rem] font-black text-[var(--color-crimson)] leading-none mb-2">
@@ -67,7 +67,7 @@ export function HeroSection() {
               </div>
             </div>
             
-            <div className="bg-[var(--color-surface-container-low)] p-6 rounded-lg border-l-4 border-[var(--color-crimson)] relative overflow-hidden group">
+            <div className="bg-[var(--color-surface-container-low)] p-6 rounded-lg border-l-4 border-[var(--color-crimson)] relative overflow-hidden group shadow-executive border border-[var(--border-subtle)]">
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[var(--color-crimson)]/5 to-transparent"></div>
               <div className="relative z-10">
                 <div className="text-[2.5rem] font-black text-[var(--color-crimson)] leading-none mb-2">

@@ -51,25 +51,25 @@
   --brand-secondary: #1B7340;
   --brand-accent: #F5A623;
 
-  /* Surfaces: White/Zinc base */
-  --surface: #FFFFFF;
-  --surface-on: #09090b;
+  /* Surfaces: Soft off-white base (Zbox-inspired clean tech) */
+  --surface: #F8FAFC;
+  --surface-on: #080C14;
   --surface-muted: #64748b;
   --surface-navy: #0F172A;
 
-  --surface-container-lowest: #f8fafc;
-  --surface-container-low: #f1f5f9;
-  --surface-container: #e2e8f0;
-  --surface-container-high: #f1f5f9;
-  --surface-container-highest: #e2e8f0;
-  --surface-bright: #cbd5e1;
+  --surface-container-lowest: #FFFFFF;
+  --surface-container-low: #FFFFFF;
+  --surface-container: #F1F5F9;
+  --surface-container-high: #F8FAFC;
+  --surface-container-highest: #FFFFFF;
+  --surface-bright: #E2E8F0;
 
   /* Borders */
-  --border-subtle: rgba(0, 0, 0, 0.06);
+  --border-subtle: rgba(15, 23, 42, 0.08);
 
-  /* Shadows */
-  --shadow-glow-val: 0px 4px 24px rgba(223, 42, 48, 0.12);
-  --shadow-executive-val: 0px 24px 48px rgba(0, 0, 0, 0.08);
+  /* Shadows - softer, more diffused for modern elevated card feel */
+  --shadow-glow-val: 0px 4px 20px rgba(223, 42, 48, 0.1);
+  --shadow-executive-val: 0px 8px 32px rgba(15, 23, 42, 0.06), 0px 2px 8px rgba(15, 23, 42, 0.04);
 
   /* ShadCN defaults */
   --background: oklch(1 0 0);

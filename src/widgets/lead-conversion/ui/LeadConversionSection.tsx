@@ -35,7 +35,7 @@ export function LeadConversionSection() {
         
         {/* Right Side: Lead Form Box */}
         <div className="lg:col-span-7">
-          <div className="bg-[var(--color-surface-container-highest)] p-8 md:p-12 rounded-sm shadow-executive relative">
+          <div className="bg-[var(--color-surface-container-highest)] p-8 md:p-12 rounded-lg shadow-executive relative border border-[var(--border-subtle)]">
             <LeadForm />
           </div>
         </div>

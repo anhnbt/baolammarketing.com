@@ -46,7 +46,7 @@ export function PortfolioSection() {
 
       <div className="columns-1 md:columns-2 gap-6 space-y-6">
         {projects.map((project, idx) => (
-          <div key={idx} className={`relative overflow-hidden group rounded-sm ${project.height} break-inside-avoid bg-[var(--color-surface-container-low)]`}>
+          <div key={idx} className={`relative overflow-hidden group rounded-lg ${project.height} break-inside-avoid bg-[var(--color-surface-container-low)] border border-[var(--border-subtle)]`}>
             {/* Image Placeholder with real API fetch simulated via URL */}
             <div className="absolute inset-0 bg-[var(--color-surface-container)]">
                <img src={project.image} alt={project.title} className="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-500 mix-blend-luminosity" />
@@ -57,14 +57,14 @@ export function PortfolioSection() {
             
             <div className="absolute bottom-0 left-0 p-8 w-full flex flex-col items-start gap-4 transform translate-y-4 group-hover:translate-y-0 transition-transform">
               <div className="flex items-center justify-between w-full">
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[#df2a30] bg-[#131b2e] px-3 py-1 border border-[#df2a30]/30 backdrop-blur-sm">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-crimson)] bg-[var(--color-surface-container-lowest)] px-3 py-1 border border-[var(--color-crimson)]/30 backdrop-blur-sm rounded">
                   {project.client}
                 </span>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-[#a7b6cc]">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-white/70">
                   {project.scale}
                 </span>
               </div>
-              <h3 className="text-xl md:text-2xl font-black uppercase tracking-tighter text-[#fffbff] leading-tight">
+              <h3 className="text-xl md:text-2xl font-black uppercase tracking-tighter text-white leading-tight">
                 {project.title}
               </h3>
             </div>

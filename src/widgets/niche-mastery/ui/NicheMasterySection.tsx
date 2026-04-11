@@ -13,11 +13,10 @@ export function NicheMasterySection() {
         </p>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {/* Card 1 */}
-        <div className="group bg-[var(--color-surface-container-low)] p-8 relative overflow-hidden transition-all duration-500 hover:bg-[var(--color-surface-container)]">
+        <div className="group bg-[var(--color-surface-container-lowest)] p-8 rounded-lg relative overflow-hidden transition-all duration-500 hover:shadow-lg border border-[var(--border-subtle)]">
           <div className="absolute top-0 left-0 w-1 h-0 bg-[var(--color-crimson)] group-hover:h-full transition-all duration-500"></div>
-          {/* Material icon placeholder */}
           <div className="text-[var(--color-crimson)] mb-6 block text-4xl font-bold">⛩️</div>
           <h4 className="text-xl font-bold text-[var(--color-surface-white)] mb-3 uppercase tracking-tight">{t('cards.temple.title')}</h4>
           <p className="text-[var(--color-crimson)] font-black text-sm mb-4">{t('cards.temple.highlight')}</p>
@@ -27,9 +26,8 @@ export function NicheMasterySection() {
         </div>
         
         {/* Card 2 */}
-        <div className="group bg-[var(--color-surface-container)] p-8 relative overflow-hidden transition-all duration-500 hover:bg-[var(--color-surface-container-high)]">
+        <div className="group bg-[var(--color-surface-container-lowest)] p-8 rounded-lg relative overflow-hidden transition-all duration-500 hover:shadow-lg border border-[var(--border-subtle)]">
           <div className="absolute top-0 left-0 w-1 h-0 bg-[var(--color-crimson)] group-hover:h-full transition-all duration-500"></div>
-          {/* Material icon placeholder */}
           <div className="text-[var(--color-crimson)] mb-6 block text-4xl font-bold">🚚</div>
           <h4 className="text-xl font-bold text-[var(--color-surface-white)] mb-3 uppercase tracking-tight">{t('cards.rural.title')}</h4>
           <p className="text-[var(--color-crimson)] font-black text-sm mb-4">{t('cards.rural.highlight')}</p>
@@ -39,9 +37,8 @@ export function NicheMasterySection() {
         </div>
         
         {/* Card 3 */}
-        <div className="group bg-[var(--color-surface-container-low)] p-8 relative overflow-hidden transition-all duration-500 hover:bg-[var(--color-surface-container)]">
+        <div className="group bg-[var(--color-surface-container-lowest)] p-8 rounded-lg relative overflow-hidden transition-all duration-500 hover:shadow-lg border border-[var(--border-subtle)]">
           <div className="absolute top-0 left-0 w-1 h-0 bg-[var(--color-crimson)] group-hover:h-full transition-all duration-500"></div>
-          {/* Material icon placeholder */}
           <div className="text-[var(--color-crimson)] mb-6 block text-4xl font-bold">🎓</div>
           <h4 className="text-xl font-bold text-[var(--color-surface-white)] mb-3 uppercase tracking-tight">{t('cards.industrial.title')}</h4>
           <p className="text-[var(--color-crimson)] font-black text-sm mb-4">{t('cards.industrial.highlight')}</p>

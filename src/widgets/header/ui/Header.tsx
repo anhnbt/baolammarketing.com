@@ -20,7 +20,7 @@ export function Header() {
   const logoSrc = mounted && resolvedTheme === 'light' ? '/logo-dark.png' : '/logo.png';
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-[var(--color-surface-container-low)]/80 backdrop-blur-xl flex justify-between items-center px-6 py-2 shadow-sm border-b border-[var(--border-subtle)]">
+    <header className="fixed top-0 w-full z-50 bg-[var(--color-surface-container-lowest)]/90 backdrop-blur-xl flex justify-between items-center px-6 py-2 shadow-sm border-b border-[var(--border-subtle)]">
       <div className="flex items-center gap-3">
         <Image
           src={logoSrc}
