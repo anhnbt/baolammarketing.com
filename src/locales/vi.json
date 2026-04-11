@@ -14,7 +14,7 @@
     "testing_status": "Hệ thống đang trong quá trình thử nghiệm. Hình ảnh và nội dung đang được cập nhật."
   },
   "Hero": {
-    "title": "Strategic Command",
+    "title": "Kế Hoạch & Phân Phối",
     "headline_top": "BẢO LÂM MARKETING",
     "headline_highlight": "& DISTRIBUTION",
     "collaborators": "Cộng tác viên (CTV)",
@@ -22,37 +22,37 @@
     "description": "Bảo Lâm cung cấp dịch vụ tổ chức sự kiện và activation toàn diện. Chúng tôi đồng hành cùng khách hàng từ khâu lên kế hoạch cho đến khi trực tiếp triển khai trên toàn quốc."
   },
   "Engine": {
-    "subtitle": "CORE CAPABILITIES",
-    "title_engine": "BẢO LÂM",
-    "title_highlight": "EXECUTION ENGINE",
+    "subtitle": "NĂNG LỰC CỐT LÕI",
+    "title_engine": "HỆ THỐNG",
+    "title_highlight": "VẬN HÀNH",
     "description": "Hệ thống vận hành chuyên nghiệp với hơn 3000 nhân sự và quy trình giám sát chặt chẽ, đảm bảo dự án luôn đạt chất lượng.",
     "services": {
-      "activation_title": "Activation & Sampling",
+      "activation_title": "Tổ chức Activation",
       "activation_desc": "Phủ sóng thương hiệu tại chợ truyền thống, siêu thị, trường học, khu công nghiệp và bệnh viện.",
       "activation_kpi1": "2.5 Triệu mẫu/năm",
       "activation_kpi2": "1500+ Điểm phát",
-      "event_title": "Event & Roadshow",
+      "event_title": "Sự kiện & Roadshow",
       "event_desc": "Tổ chức các sự kiện ra mắt sản phẩm, hội nghị khách hàng và chạy roadshow liên tỉnh.",
       "event_kpi1": "Concept sáng tạo",
       "event_kpi2": "Giấy phép trọn gói",
-      "production_title": "Production & POSM",
+      "production_title": "Sản xuất POSM",
       "production_desc": "Sản xuất trực tiếp Booth, Standee, Uniform và các vật phẩm tiếp thị với chi phí tối ưu tại xưởng.",
       "production_kpi1": "QC 3 lớp",
       "production_kpi2": "Logistics 63 tỉnh"
     },
     "living_network": {
-      "subtitle": "Operational Infrastructure",
-      "title": "The Living Network",
+      "subtitle": "Hạ Tầng Triển Khai",
+      "title": "MẠNG LƯỚI NHÂN SỰ",
       "metric1_title": "QUẢN LÝ DỰ ÁN TRỰC TIẾP",
       "metric1_desc": "(Kiểm soát tiến độ và rủi ro)",
       "metric2_title": "NHÂN SỰ TRIỂN KHAI (PG/PB/SUP)",
       "metric2_desc": "(Sẵn sàng tại 63 tỉnh thành)",
       "metric3_title": "TRÊN 5 NĂM KINH NGHIỆM",
-      "metric3_desc": "(Cam kết vận hành Zero-mistake)"
+      "metric3_desc": "(Cam kết chất lượng 100%)"
     }
   },
   "Portfolio": {
-    "subtitle": "Showcasing Operational Excellence",
+    "subtitle": "Năng Lực Triển Khai Thực Tế",
     "title": "DỰ ÁN",
     "title_highlight": "TIÊU BIỂU",
     "projects": {
@@ -79,7 +79,7 @@
     }
   },
   "LeadConversion": {
-    "subtitle": "DIRECT EXECUTION",
+    "subtitle": "TƯ VẤN TRỰC TIẾP",
     "title": "LIÊN HỆ",
     "title_highlight": "CHUYÊN GIA",
     "title_suffix": "",
@@ -133,9 +133,9 @@
     }
   },
   "Cta": {
-    "subtitle": "Ready to Scale?",
+    "subtitle": "Bạn Đã Sẵn Sàng?",
     "title": "ĐỒNG HÀNH CÙNG BẠN",
-    "btn_start": "START COLLABORATION",
-    "btn_methodology": "OUR METHODOLOGY"
+    "btn_start": "BẮT ĐẦU HỢP TÁC",
+    "btn_methodology": "TÌM HIỂU THÊM"
   }
 }
