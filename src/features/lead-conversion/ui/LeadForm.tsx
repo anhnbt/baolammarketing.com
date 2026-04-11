@@ -9,10 +9,12 @@ import { Input } from '@/shared/ui/input';
 import { cn } from '@/shared/lib/utils';
 import { Loader2 } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import { Turnstile } from '@marsidev/react-turnstile';
 
 export function LeadForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
+  const [serverError, setServerError] = useState<string | null>(null);
   const t = useTranslations('LeadConversion.form');
 
   const {
@@ -32,11 +34,27 @@ export function LeadForm() {
 
   const onSubmit = async (data: LeadFormValues) => {
     setIsSubmitting(true);
-    // Simulate API call for Zero-Double-Click UX
-    await new Promise((resolve) => setTimeout(resolve, 1500));
-    console.log('Lead data submitted:', data);
-    setIsSubmitting(false);
-    setIsSuccess(true);
+    setServerError(null);
+    
+    try {
+      const response = await fetch('/api/lead', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      const result = await response.json();
+
+      if (!response.ok) {
+        setServerError(result.error || 'Something went wrong. Please try again.');
+      } else {
+        setIsSuccess(true);
+      }
+    } catch (err) {
+      setServerError('Network error. Please make sure you are connected.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   if (isSuccess) {
@@ -129,6 +147,25 @@ export function LeadForm() {
         />
         {errors.email && (
           <p className="text-red-400 text-xs mt-1">{t(`errors.email`)}</p>
+        )}
+      </div>
+
+      {serverError && (
+         <div className="p-4 bg-red-500/10 border border-red-500/30 text-red-400 text-sm font-bold rounded-sm">
+           {serverError}
+         </div>
+      )}
+
+      {/* Cloudflare Turnstile inside Form */}
+      <div>
+        <Turnstile
+          siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY!}
+          onSuccess={(token) => setValue('turnstileToken', token, { shouldValidate: true })}
+          onError={() => setServerError('Failed to load Turnstile captcha. Please refresh.')}
+          options={{ theme: 'dark' }}
+        />
+        {errors.turnstileToken && (
+           <p className="text-red-400 text-xs mt-1">{errors.turnstileToken.message}</p>
         )}
       </div>
 

@@ -7,6 +7,7 @@ export const leadFormSchema = z.object({
   industry: z.enum(['FMCG', 'Electronics', 'Building Materials', 'Other']),
   budget: z.enum(['Under 500M', '500M - 2B', 'Over 2B']),
   message: z.string().optional(),
+  turnstileToken: z.string().min(1, { message: 'Vui lòng xác nhận bạn không phải là máy' }),
 });
 
 export type LeadFormValues = z.infer<typeof leadFormSchema>;
