@@ -42,7 +42,7 @@ export function HeroSection() {
           </motion.div>
 
           {/* Main Headline */}
-          <motion.h1 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="text-6xl md:text-8xl font-black tracking-tighter text-[var(--color-surface-white)] uppercase leading-none mt-4">
+          <motion.h1 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-[var(--color-surface-white)] uppercase leading-[1.1] md:leading-none mt-4 break-words">
             {t('headline_top')}<br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-crimson)] to-[#ffb3ad]">
               {t('headline_highlight')}
