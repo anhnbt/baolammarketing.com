@@ -10,7 +10,7 @@ export function EngineSection() {
   const t = useTranslations('Engine');
 
   return (
-    <section id="services" className="bg-[var(--color-surface-container-high)] py-24 relative overflow-hidden">
+    <section id="services" className="force-dark bg-[var(--color-surface-container-high)] py-24 relative overflow-hidden text-[var(--color-surface-white)]">
       {/* Decorative Matrix Grid */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
            style={{ backgroundImage: 'radial-gradient(var(--color-cool-gray) 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>

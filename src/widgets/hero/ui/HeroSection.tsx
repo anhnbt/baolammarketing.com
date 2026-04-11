@@ -3,10 +3,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
+import { useTheme } from 'next-themes';
 import { AnimatedCounter } from '@/shared/ui/AnimatedCounter';
 
 export function HeroSection() {
   const t = useTranslations('Hero');
+  const { resolvedTheme } = useTheme();
 
   return (
     <section className="relative min-h-[795px] flex flex-col justify-center overflow-hidden">
@@ -16,7 +18,7 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 1.05 }}
           animate={{ opacity: 0.4, scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="w-full h-full object-cover mix-blend-screen" 
+          className="w-full h-full object-cover dark:mix-blend-screen mix-blend-multiply dark:grayscale-0 grayscale dark:invert-0 invert-0 dark:opacity-100 opacity-60" 
           src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2832&q=80"
           alt="Bao Lam Coverage Map"
         />
@@ -96,7 +98,7 @@ export function HeroSection() {
           -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
         }
       `}} />
-      <div className="absolute bottom-0 w-full bg-[var(--color-surface-container-lowest)]/80 backdrop-blur-xl py-6 md:py-8 border-t border-white/5 overflow-hidden">
+      <div className="absolute bottom-0 w-full bg-[var(--color-surface-container-lowest)]/80 backdrop-blur-xl py-6 md:py-8 border-t border-[var(--border-subtle)] overflow-hidden">
         <div className="max-w-7xl mx-auto fade-edges">
           <div className="animate-scroll-logo items-center gap-16 md:gap-24 pl-16 md:pl-24">
             {/* Set 1 */}
@@ -107,7 +109,7 @@ export function HeroSection() {
               "https://ui-avatars.com/api/?name=S.GOBAIN&background=131b2e&color=fff&size=128&font-size=0.3&bold=true",
               "https://ui-avatars.com/api/?name=MASAN&background=131b2e&color=fff&size=128&font-size=0.3&bold=true"
             ].map((src, idx) => (
-              <img key={`logo-1-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto grayscale opacity-70 hover:opacity-100 hover:grayscale-0 contrast-150 brightness-110 mix-blend-screen transition-all duration-300" />
+              <img key={`logo-1-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto grayscale opacity-70 hover:opacity-100 hover:grayscale-0 contrast-150 brightness-110 dark:mix-blend-screen mix-blend-multiply transition-all duration-300" />
             ))}
             
             {/* Set 2 (Duplicate for infinite matching) */}
@@ -118,7 +120,7 @@ export function HeroSection() {
               "https://ui-avatars.com/api/?name=S.GOBAIN&background=131b2e&color=fff&size=128&font-size=0.3&bold=true",
               "https://ui-avatars.com/api/?name=MASAN&background=131b2e&color=fff&size=128&font-size=0.3&bold=true"
             ].map((src, idx) => (
-              <img key={`logo-2-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto grayscale opacity-70 hover:opacity-100 hover:grayscale-0 contrast-150 brightness-110 mix-blend-screen transition-all duration-300" />
+              <img key={`logo-2-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto grayscale opacity-70 hover:opacity-100 hover:grayscale-0 contrast-150 brightness-110 dark:mix-blend-screen mix-blend-multiply transition-all duration-300" />
             ))}
           </div>
         </div>

@@ -5,6 +5,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
+import { ThemeProvider } from '@/shared/providers/ThemeProvider';
 
 import { Header } from '@/widgets/header/ui/Header';
 import { Footer } from '@/widgets/footer/ui/Footer';
@@ -57,15 +58,17 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} antialiased h-full`}>
+    <html lang={locale} className={`${inter.variable} antialiased h-full`} suppressHydrationWarning>
       <body className="min-h-full flex flex-col bg-[var(--color-surface)] text-[var(--color-surface-white)] overflow-x-hidden">
-        <NextIntlClientProvider messages={messages}>
-          <Header />
-          <main className="flex-1 flex flex-col">
-            {children}
-          </main>
-          <Footer />
-        </NextIntlClientProvider>
+        <ThemeProvider>
+          <NextIntlClientProvider messages={messages}>
+            <Header />
+            <main className="flex-1 flex flex-col">
+              {children}
+            </main>
+            <Footer />
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
