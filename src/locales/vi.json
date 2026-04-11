@@ -1,39 +1,142 @@
 {
-  "Navigation": {
-    "home": "Trang Chủ",
-    "services": "Dịch Vụ",
-    "projects": "Dự Án",
-    "contact": "Liên Hệ"
+  "Header": {
+    "lead_gen": "Lead Gen",
+    "campaigns": "Chiến Dịch",
+    "network": "Mạng Lưới",
+    "logo": "BAO LAM"
+  },
+  "Footer": {
+    "home": "Trang chủ",
+    "data": "Dữ liệu",
+    "messages": "Tin nhắn",
+    "hotline": "Hotline",
+    "call_now": "Gọi ngay: 0911 63 6666 (Mr. Thọ)",
+    "testing_status": "Hệ thống đang trong quá trình thử nghiệm. Hình ảnh và nội dung đang được cập nhật."
   },
   "Hero": {
-    "title": "SỨC MẠNH CỦA SỰ KẾT NỐI",
-    "cta": "NHẬN TƯ VẤN THỰC THI NGAY",
-    "metrics": {
-      "mistake": "Zero-Mistake",
-      "realtime": "Real-time Tracking",
-      "network": "3000+ CTV Toàn Quốc"
+    "title": "Market Expansion 2024",
+    "headline": "NĂNG LỰC THỰC THI KHÔNG GIỚI HẠN - TỪ ĐÔ THỊ ĐẾN VÙNG SÂU VÙNG XA",
+    "collaborators": "Cộng tác viên (CTV)",
+    "samples_per_year": "Mẫu Sampling Phân Phối / Năm"
+  },
+  "Engine": {
+    "subtitle": "CORE CAPABILITIES",
+    "title_engine": "BẢO LÂM",
+    "title_highlight": "EXECUTION ENGINE",
+    "description": "Cỗ máy vận hành thống nhất kết hợp giữa lực lượng 3000+ nhân sự thực chiến và hệ thống quản trị rủi ro Zero-Mistake.",
+    "services": {
+      "activation_title": "Activation & Sampling",
+      "activation_desc": "Phủ sóng thương hiệu tại chợ truyền thống, siêu thị, trường học, khu công nghiệp và bệnh viện.",
+      "activation_kpi1": "2.5 Triệu mẫu/năm",
+      "activation_kpi2": "1500+ Điểm phát",
+      "event_title": "Event & Roadshow",
+      "event_desc": "Kích hoạt sự chú ý quy mô lớn thông qua chuỗi sự kiện ra mắt, hội nghị khách hàng và roadshow liên tỉnh.",
+      "event_kpi1": "Concept sáng tạo",
+      "event_kpi2": "Giấy phép trọn gói",
+      "production_title": "Production & POSM",
+      "production_desc": "Sản xuất trực tiếp Booth, Standee, Uniform và các vật phẩm tiếp thị với chi phí tối ưu tại xưởng.",
+      "production_kpi1": "QC 3 lớp",
+      "production_kpi2": "Logistics 63 tỉnh"
+    },
+    "living_network": {
+      "subtitle": "Operational Infrastructure",
+      "title": "The Living Network",
+      "metric1_val": "26+",
+      "metric1_title": "QUẢN LÝ DỰ ÁN TOÀN THỜI GIAN",
+      "metric1_desc": "(Kiểm soát rủi ro đa tầng)",
+      "metric2_val": "3000+",
+      "metric2_title": "CỘNG TÁC VIÊN HIỆN TRƯỜNG",
+      "metric2_desc": "(Sẵn sàng tại 63 tỉnh thành)",
+      "metric3_val": "80%",
+      "metric3_title": "TRÊN 5 NĂM KINH NGHIỆM",
+      "metric3_desc": "(Cam kết vận hành Zero-mistake)"
     }
   },
-  "ExecutionEngine": {
-    "title": "BẢO LÂM\nEXECUTION ENGINE",
-    "services": {
-      "activation": "Brand Activation",
-      "activation_desc": "OOH quy mô lớn, Booths, Sampling",
-      "activation_clients": "Tin dùng bởi Nestlé, PepsiCo",
-      "event": "Event Management",
-      "event_desc": "Tổ chức Launching & Hội nghị trọn gói",
-      "event_clients": "Tin dùng bởi Panasonic, TH True Food",
-      "direct": "Direct Marketing",
-      "direct_desc": "Điểm chạm chuyên biệt & Phủ sóng nông thôn sâu",
-      "direct_clients": "Tin dùng bởi Vĩnh Tường, Vim"
-    },
-    "structure": {
-      "managers": "26+",
-      "managers_label": "QUẢN LÝ DỰ ÁN TOÀN THỜI GIAN (Kiểm soát rủi ro đa tầng)",
-      "part_timers": "3000+",
-      "part_timers_label": "CỘNG TÁC VIÊN HIỆN TRƯỜNG (Sẵn sàng tại 63 tỉnh thành)",
-      "experience": "80%",
-      "experience_label": "TRÊN 5 NĂM KINH NGHIỆM (Cam kết vận hành Zero-mistake)"
+  "Portfolio": {
+    "subtitle": "DIVERSE PORTFOLIO",
+    "title": "CHUYÊN TRỊ MỌI TÌNH HUỐNG",
+    "title_highlight": "KÊNH NGÁCH",
+    "projects": {
+      "lays": {
+        "client": "Lay's Stax",
+        "title": "Biệt đội Stax phiêu lưu ký",
+        "scale": "185 Điểm trường"
+      },
+      "panasonic": {
+        "client": "Panasonic",
+        "title": "Khí sạch tại trường",
+        "scale": "500 Trường Mầm non"
+      },
+      "vinhtuong": {
+        "client": "Vĩnh Tường",
+        "title": "Chuyến xe siêu bền",
+        "scale": "54 Tỉnh thành"
+      },
+      "vim": {
+        "client": "Vim",
+        "title": "Nhà vệ sinh sạch khuẩn",
+        "scale": "200 Trường Tiểu học"
+      }
     }
+  },
+  "LeadConversion": {
+    "subtitle": "DIRECT EXECUTION",
+    "title": "LIÊN HỆ VỚI",
+    "title_highlight": "CHUYÊN GIA",
+    "title_suffix": "THỰC THI",
+    "editorial": "Quy trình chuẩn hóa 2024",
+    "description": "Kiến tạo sức mạnh thương hiệu thông qua mạng lưới activations và sampling toàn diện. Chúng tôi không chỉ quảng bá, chúng tôi chiếm lĩnh thị trường.",
+    "rate": "98.4%",
+    "rate_label": "Tỉ lệ tiếp cận mục tiêu / KPI",
+    "form": {
+      "success_title": "ĐÃ RECORD YÊU CẦU",
+      "success_desc": "Chuyên gia thực thi của chúng tôi sẽ liên hệ trong 30 phút nữa.",
+      "industry_label": "Ngành hàng của thương hiệu?",
+      "industry_fmcg": "FMCG",
+      "industry_electronics": "Điện tử",
+      "industry_building": "Công nghiệp",
+      "industry_other": "Khác",
+      "fullname_label": "Thông tin liên hệ (Họ và Tên)",
+      "fullname_placeholder": "VÍ DỤ: NGUYỄN VĂN A",
+      "phone_label": "Số điện thoại / Zalo",
+      "phone_placeholder": "VÍ DỤ: 0911 63 6666",
+      "email_label": "Email liên hệ",
+      "email_placeholder": "VÍ DỤ: HELLO@BRAND.COM",
+      "button_submitting": "ĐANG KÍCH HOẠT...",
+      "button_submit": "KÍCH HOẠT BÁO GIÁ",
+      "errors": {
+        "fullname": "Tên phải có ít nhất 2 ký tự",
+        "phone": "Số điện thoại không hợp lệ (cần 10 số)",
+        "email": "Email không hợp lệ",
+        "industry": "Vui lòng chọn ngành hàng"
+      }
+    }
+  },
+  "NicheMastery": {
+    "title": "CHINH PHỤC MỌI ĐỊA HÌNH",
+    "description": "\"Chúng tôi không chỉ mạnh ở kênh siêu thị. Sự khác biệt của Bảo Lâm nằm ở khả năng xuyên thấu các rào cản phân phối phức tạp nhất cường quốc.\"",
+    "cards": {
+      "temple": {
+        "title": "Kênh Lễ Hội & Tâm Linh",
+        "highlight": "\"Tiếp cận 100.000+ lượt tại Đất Thiêng.\"",
+        "desc": "Độc quyền khai thác Sampling tại Chùa Hương, Bái Đính, Phủ Tây Hồ, Đền Hùng. Đảm bảo sự hiện diện thương hiệu trang trọng và hiệu quả."
+      },
+      "rural": {
+        "title": "Vùng Sâu & Nông Thôn",
+        "highlight": "\"Len lỏi đến từng ngõ ngách.\"",
+        "desc": "Giao nhận tận tay đến 12,000 hộ gia đình tại vùng sâu vùng xa. Năng lực hậu cần mạnh mẽ giúp nhãn hàng không bỏ sót bất kỳ tệp khách phổ thông nào."
+      },
+      "industrial": {
+        "title": "Khu Công Nghiệp & Trường Học",
+        "highlight": "\"Mass-Sampling Tốc Độ Cao.\"",
+        "desc": "Giải quyết bài toán khối lượng khổng lồ. Thiết lập hệ thống Youth Touchpoint, đảm bảo dòng chảy 2.5 triệu mẫu phát ra với độ chính xác cao."
+      }
+    }
+  },
+  "Cta": {
+    "subtitle": "Ready to Scale?",
+    "title": "THỰC THI KHÔNG GIỚI HẠN",
+    "btn_start": "START COLLABORATION",
+    "btn_methodology": "OUR METHODOLOGY"
   }
 }

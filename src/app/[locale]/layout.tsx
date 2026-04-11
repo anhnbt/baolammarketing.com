@@ -6,6 +6,9 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 
+import { Header } from '@/widgets/header/ui/Header';
+import { Footer } from '@/widgets/footer/ui/Footer';
+
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin', 'vietnamese'],
@@ -25,7 +28,7 @@ export default async function RootLayout({
 }) {
   const {locale} = await params;
 
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as 'en' | 'vi')) {
     notFound();
   }
 
@@ -35,7 +38,11 @@ export default async function RootLayout({
     <html lang={locale} className={`${inter.variable} antialiased h-full`}>
       <body className="min-h-full flex flex-col bg-[var(--color-surface)] text-[var(--color-surface-white)] overflow-x-hidden">
         <NextIntlClientProvider messages={messages}>
-          {children}
+          <Header />
+          <main className="flex-1 flex flex-col">
+            {children}
+          </main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

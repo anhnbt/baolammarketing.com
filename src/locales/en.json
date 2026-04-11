@@ -1,39 +1,142 @@
 {
-  "Navigation": {
+  "Header": {
+    "lead_gen": "Lead Gen",
+    "campaigns": "Campaigns",
+    "network": "Network",
+    "logo": "BAO LAM"
+  },
+  "Footer": {
     "home": "Home",
-    "services": "Services",
-    "projects": "Projects",
-    "contact": "Contact"
+    "data": "Data",
+    "messages": "Messages",
+    "hotline": "Hotline",
+    "call_now": "Call now: 0911 63 6666 (Mr. Tho)",
+    "testing_status": "The system is currently in testing phase. Images and contents are being updated."
   },
   "Hero": {
-    "title": "THE POWER OF CONNECTION",
-    "cta": "GET EXECUTION CONSULTATION",
-    "metrics": {
-      "mistake": "Zero-Mistake",
-      "realtime": "Real-time Tracking",
-      "network": "3000+ Nationwide Staff"
+    "title": "Market Expansion 2024",
+    "headline": "LIMITLESS EXECUTION CAPABILITY - FROM URBAN ZONES TO RURAL AREAS",
+    "collaborators": "Field Collaborators",
+    "samples_per_year": "Sampling Units / Year"
+  },
+  "Engine": {
+    "subtitle": "CORE CAPABILITIES",
+    "title_engine": "BAO LAM",
+    "title_highlight": "EXECUTION ENGINE",
+    "description": "A unified operational engine combining a force of 3000+ field personnel and a Zero-Mistake risk management system.",
+    "services": {
+      "activation_title": "Activation & Sampling",
+      "activation_desc": "Brand coverage at traditional markets, supermarkets, schools, industrial zones, and hospitals.",
+      "activation_kpi1": "2.5 Million samples/year",
+      "activation_kpi2": "1500+ Locations",
+      "event_title": "Event & Roadshow",
+      "event_desc": "Large-scale attention activation through launch events, customer conferences, and inter-provincial roadshows.",
+      "event_kpi1": "Creative Concepts",
+      "event_kpi2": "Full Licensing",
+      "production_title": "Production & POSM",
+      "production_desc": "Direct production of Booths, Standees, Uniforms, and marketing materials with optimal factory costs.",
+      "production_kpi1": "3-layer QC",
+      "production_kpi2": "63-Province Logistics"
+    },
+    "living_network": {
+      "subtitle": "Operational Infrastructure",
+      "title": "The Living Network",
+      "metric1_val": "26+",
+      "metric1_title": "FULL-TIME PROJECT MANAGERS",
+      "metric1_desc": "(Multi-layer risk control)",
+      "metric2_val": "3000+",
+      "metric2_title": "FIELD COLLABORATORS",
+      "metric2_desc": "(Ready across 63 provinces)",
+      "metric3_val": "80%",
+      "metric3_title": "OVER 5 YEARS EXPERIENCE",
+      "metric3_desc": "(Zero-mistake execution commitment)"
     }
   },
-  "ExecutionEngine": {
-    "title": "BAO LAM\nEXECUTION ENGINE",
-    "services": {
-      "activation": "Brand Activation",
-      "activation_desc": "Large scale OOH, Booths, Sampling",
-      "activation_clients": "Trusted by Nestlé, PepsiCo",
-      "event": "Event Management",
-      "event_desc": "Turnkey Launching & Conventions",
-      "event_clients": "Trusted by Panasonic, TH True Food",
-      "direct": "Direct Marketing",
-      "direct_desc": "Specialized Touchpoints & Deep Rural reach",
-      "direct_clients": "Trusted by Vĩnh Tường, Vim"
-    },
-    "structure": {
-      "managers": "26+",
-      "managers_label": "FULL-TIME OPERATION MANAGERS (Multi-tier risk control)",
-      "part_timers": "3000+",
-      "part_timers_label": "ACTIVE PART-TIMERS (Ready in 63 provinces)",
-      "experience": "80%",
-      "experience_label": "OVER 5 YEARS EXPERIENCE (Zero-mistake operation guarantee)"
+  "Portfolio": {
+    "subtitle": "DIVERSE PORTFOLIO",
+    "title": "MASTERING EVERY",
+    "title_highlight": "NICHE MARKET",
+    "projects": {
+      "lays": {
+        "client": "Lay's Stax",
+        "title": "Stax Adventure Squad",
+        "scale": "185 Schools"
+      },
+      "panasonic": {
+        "client": "Panasonic",
+        "title": "Clean Air at School",
+        "scale": "500 Kindergartens"
+      },
+      "vinhtuong": {
+        "client": "Vinh Tuong",
+        "title": "Super Durable Truck",
+        "scale": "54 Provinces"
+      },
+      "vim": {
+        "client": "Vim",
+        "title": "Hygienic Restrooms",
+        "scale": "200 Primary Schools"
+      }
     }
+  },
+  "LeadConversion": {
+    "subtitle": "DIRECT EXECUTION",
+    "title": "CONTACT OUR",
+    "title_highlight": "EXECUTION",
+    "title_suffix": "EXPERTS",
+    "editorial": "Standardized Process 2024",
+    "description": "Building brand power through a comprehensive network of activations and sampling. We don't just promote, we dominate the market.",
+    "rate": "98.4%",
+    "rate_label": "Target Reach / KPI Rate",
+    "form": {
+      "success_title": "REQUEST RECORDED",
+      "success_desc": "Our execution expert will contact you within 30 minutes.",
+      "industry_label": "Brand Industry?",
+      "industry_fmcg": "FMCG",
+      "industry_electronics": "Electronics",
+      "industry_building": "Industrial",
+      "industry_other": "Other",
+      "fullname_label": "Contact Information (Full Name)",
+      "fullname_placeholder": "EXAMPLE: JOHN DOE",
+      "phone_label": "Phone Number / Zalo",
+      "phone_placeholder": "EXAMPLE: 0911 63 6666",
+      "email_label": "Contact Email",
+      "email_placeholder": "EXAMPLE: HELLO@BRAND.COM",
+      "button_submitting": "ACTIVATING...",
+      "button_submit": "ACTIVATE QUOTATION",
+      "errors": {
+        "fullname": "Name must be at least 2 characters",
+        "phone": "Invalid phone number (requires 10 digits)",
+        "email": "Invalid email",
+        "industry": "Please select an industry"
+      }
+    }
+  },
+  "NicheMastery": {
+    "title": "CONQUER ALL TERRAINS",
+    "description": "\"We are not just strong in the supermarket channel. Bao Lam's difference lies in its ability to penetrate the most complex distribution barriers nationwide.\"",
+    "cards": {
+      "temple": {
+        "title": "Festival & Spiritual Channels",
+        "highlight": "\"Reaching 100,000+ visits at Sacred Lands.\"",
+        "desc": "Exclusive Sampling operations at major pagodas and temples. Ensuring dignified and effective brand presence."
+      },
+      "rural": {
+        "title": "Remote & Rural Areas",
+        "highlight": "\"Navigating every alley.\"",
+        "desc": "Direct delivery to 12,000 households in remote areas. Strong logistics capability helps brands capture the mass market."
+      },
+      "industrial": {
+        "title": "Industrial Zones & Schools",
+        "highlight": "\"High-Speed Mass Sampling.\"",
+        "desc": "Solving the massive volume challenge. Establishing Youth Touchpoint systems, ensuring the flow of 2.5 million samples with high precision."
+      }
+    }
+  },
+  "Cta": {
+    "subtitle": "Ready to Scale?",
+    "title": "LIMITLESS EXECUTION",
+    "btn_start": "START COLLABORATION",
+    "btn_methodology": "OUR METHODOLOGY"
   }
 }
