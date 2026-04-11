@@ -19,7 +19,7 @@
     "headline_highlight": "& DISTRIBUTION",
     "collaborators": "Cộng tác viên (CTV)",
     "samples_per_year": "Mẫu Sampling/Năm",
-    "description": "Kiến tạo sức mạnh vận hành vượt trội. Chúng tôi không chỉ lập kế hoạch, chúng tôi thực thi với độ chính xác tuyệt đối trên mọi địa hình phân phối."
+    "description": "Kiến tạo sức mạnh vận hành vượt trội. Chúng tôi không chỉ lập kế hoạch, chúng tôi trực tiếp giải bài toán thực thi với độ chính xác tuyệt đối trên mọi điểm chạm."
   },
   "Engine": {
     "subtitle": "CORE CAPABILITIES",
@@ -43,9 +43,9 @@
     "living_network": {
       "subtitle": "Operational Infrastructure",
       "title": "The Living Network",
-      "metric1_title": "QUẢN LÝ DỰ ÁN TOÀN THỜI GIAN",
-      "metric1_desc": "(Kiểm soát rủi ro đa tầng)",
-      "metric2_title": "CỘNG TÁC VIÊN HIỆN TRƯỜNG",
+      "metric1_title": "ĐỘI NGŨ PM CHUYÊN TRÁCH",
+      "metric1_desc": "(Quản trị dự án & rủi ro đa tầng)",
+      "metric2_title": "NHÂN SỰ THỰC THI (PG/PB/SUP)",
       "metric2_desc": "(Sẵn sàng tại 63 tỉnh thành)",
       "metric3_title": "TRÊN 5 NĂM KINH NGHIỆM",
       "metric3_desc": "(Cam kết vận hành Zero-mistake)"
@@ -84,11 +84,11 @@
     "title_highlight": "CHUYÊN GIA",
     "title_suffix": "",
     "editorial": "Quy trình chuẩn hóa 2024",
-    "description": "Chúng tôi không chỉ quảng bá, chúng tôi chiếm lĩnh thị trường thông qua mạng lưới rộng khắp.",
+    "description": "Thoát khỏi lý thuyết viển vông. Chúng tôi là đội quân đánh bộ mang về doanh số trực tiếp tại điểm bán.",
     "rate": "98.4%",
     "rate_label": "Tỉ lệ tiếp cận mục tiêu / KPI",
     "form": {
-      "success_title": "ĐÃ RECORD YÊU CẦU",
+      "success_title": "TIẾP NHẬN THÀNH CÔNG",
       "success_desc": "Chuyên gia của chúng tôi sẽ liên hệ trong 30 phút nữa.",
       "industry_label": "Ngành hàng của thương hiệu?",
       "industry_fmcg": "FMCG",
@@ -113,7 +113,7 @@
   },
   "NicheMastery": {
     "title": "CHINH PHỤC MỌI ĐỊA HÌNH",
-    "description": "\"Sự khác biệt của Bảo Lâm nằm ở khả năng xuyên thấu các rào cản phân phối phức tạp nhất cường quốc.\"",
+    "description": "\"Sự khác biệt của Bảo Lâm nằm ở khả năng xuyên thấu các rào cản phân phối phức tạp nhất trên toàn quốc.\"",
     "cards": {
       "temple": {
         "title": "Kênh Lễ Hội & Tâm Linh",
