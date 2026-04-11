@@ -54,7 +54,7 @@
   /* Surfaces: Soft off-white base (Zbox-inspired clean tech) */
   --surface: #F8FAFC;
   --surface-on: #080C14;
-  --surface-muted: #64748b;
+  --surface-muted: #475569; /* Slate 600 for better WCAG contrast */
   --surface-navy: #0F172A;
 
   --surface-container-lowest: #FFFFFF;
@@ -65,11 +65,11 @@
   --surface-bright: #E2E8F0;
 
   /* Borders */
-  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-subtle: rgba(15, 23, 42, 0.1); /* Slightly stronger */
 
   /* Shadows - softer, more diffused for modern elevated card feel */
   --shadow-glow-val: 0px 4px 20px rgba(223, 42, 48, 0.1);
-  --shadow-executive-val: 0px 8px 32px rgba(15, 23, 42, 0.06), 0px 2px 8px rgba(15, 23, 42, 0.04);
+  --shadow-executive-val: 0px 8px 32px rgba(15, 23, 42, 0.08), 0px 2px 8px rgba(15, 23, 42, 0.04);
 
   /* ShadCN defaults */
   --background: oklch(1 0 0);
