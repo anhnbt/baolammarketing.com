@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-dim": "#0b1326",
+                        "primary": "#ffb3ad",
+                        "surface-container-highest": "#2d3449",
+                        "on-secondary-fixed-variant": "#39485a",
+                        "inverse-primary": "#be081d",
+                        "background": "#0b1326",
+                        "on-secondary-fixed": "#0d1c2d",
+                        "on-tertiary-fixed": "#001f29",
+                        "tertiary-fixed": "#bce9ff",
+                        "surface": "#0b1326",
+                        "outline": "#ac8885",
+                        "on-primary-fixed": "#410004",
+                        "error-container": "#93000a",
+                        "surface-variant": "#2d3449",
+                        "on-secondary-container": "#a7b6cc",
+                        "on-surface-variant": "#e5bdb9",
+                        "on-primary": "#68000a",
+                        "on-error": "#690005",
+                        "primary-fixed-dim": "#ffb3ad",
+                        "secondary-container": "#39485a",
+                        "on-background": "#dae2fd",
+                        "on-tertiary-container": "#f9fcff",
+                        "surface-tint": "#ffb3ad",
+                        "surface-container-low": "#131b2e",
+                        "on-primary-fixed-variant": "#930012",
+                        "inverse-surface": "#dae2fd",
+                        "on-surface": "#dae2fd",
+                        "on-primary-container": "#fffbff",
+                        "surface-container": "#171f33",
+                        "surface-bright": "#31394d",
+                        "inverse-on-surface": "#283044",
+                        "secondary-fixed": "#d4e4fa",
+                        "secondary": "#b9c8de",
+                        "surface-container-high": "#222a3d",
+                        "tertiary-container": "#007ea0",
+                        "error": "#ffb4ab",
+                        "on-tertiary": "#003545",
+                        "on-error-container": "#ffdad6",
+                        "primary-container": "#df2a30",
+                        "primary-fixed": "#ffdad7",
+                        "on-secondary": "#233143",
+                        "tertiary": "#78d2f7",
+                        "surface-container-lowest": "#060e20",
+                        "secondary-fixed-dim": "#b9c8de",
+                        "outline-variant": "#5c403d",
+                        "tertiary-fixed-dim": "#78d2f7",
+                        "on-tertiary-fixed-variant": "#004d63"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .crimson-glass {
+            background: rgba(223, 42, 48, 0.85);
+            backdrop-filter: blur(24px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="bg-[#0b1326] sticky top-0 w-full z-50 rounded-none flex justify-between items-center px-8 py-4 max-w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#df2a30]">api</span>
+<span class="text-xl font-black text-[#fffbff] tracking-[-0.04em] font-['Inter'] uppercase">BAO LAM</span>
+</div>
+<button class="bg-[#df2a30] text-[#fffbff] text-[10px] tracking-widest font-bold px-4 py-2 rounded-lg hover:bg-opacity-90 transition-all duration-150 active:scale-95">
+            GET STARTED
+        </button>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[795px] flex flex-col justify-center overflow-hidden">
+<!-- Background Image -->
+<div class="absolute inset-0 z-0">
+<img class="w-full h-full object-cover opacity-40 mix-blend-screen" data-alt="abstract stylized high-tech map of vietnam with glowing interconnected data nodes and luminous red light streams on deep slate navy background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2qiU2I1kNvdmph9RUTPJ-sn3TzNk0r_TO_zFFqXBcrRbVR8i5BIt-sUlHtabplH0jeKXlHL-e14-4vpCMQE-tmxYlF3G0YczzByhWFVzqU4p9oeg-wBkIwr9S2hRXYYHMsJRXscO37vR8Ii-d3SBR8zqJHsSjO3V6g6w3weewR_cFPXZiv2DFZ4Kr6h6WIHyq2r4aroPq6us3CcNq5-4k0GYqHxTIvzh81cOqIKAch1ZR6NaLWGyH7pA4ym9nro3_ighXKNKk8QQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background/80"></div>
+</div>
+<!-- Content Canvas -->
+<div class="relative z-10 px-8 pt-12 pb-24 max-w-7xl mx-auto w-full">
+<div class="flex flex-col gap-8">
+<!-- Editorial Metadata -->
+<div class="flex items-center gap-4">
+<div class="h-[1px] w-12 bg-primary-container"></div>
+<span class="text-[10px] uppercase tracking-[0.2em] font-bold text-secondary">The Power of Connection</span>
+</div>
+<!-- Main Headline -->
+<h1 class="text-[2.5rem] md:text-[3.5rem] leading-[1.1] font-black tracking-[-0.04em] text-on-primary-container max-w-3xl">
+                        Năng lực thực thi không giới hạn - Từ đô thị đến vùng sâu vùng xa
+                    </h1>
+<!-- Power Metric Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+<div class="bg-surface-container-low p-6 rounded-lg border-l-4 border-primary-container relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-primary-container/5 to-transparent"></div>
+<div class="relative z-10">
+<div class="text-[2.5rem] font-black text-primary-container leading-none mb-2">3,000+</div>
+<div class="text-[10px] uppercase tracking-widest font-bold text-secondary">Cộng tác viên (CTV)</div>
+</div>
+</div>
+<div class="bg-surface-container-low p-6 rounded-lg border-l-4 border-primary-container relative overflow-hidden group">
+<div class="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-primary-container/5 to-transparent"></div>
+<div class="relative z-10">
+<div class="text-[2.5rem] font-black text-primary-container leading-none mb-2">2,500,000+</div>
+<div class="text-[10px] uppercase tracking-widest font-bold text-secondary">Mẫu Sampling Phân Phối</div>
+</div>
+</div>
+</div>
+<!-- Primary Action -->
+<div class="flex flex-col sm:flex-row gap-4 mt-6">
+<button class="bg-primary-container text-on-primary-container px-8 py-4 rounded-lg font-black tracking-tighter uppercase text-sm flex items-center justify-center gap-3 transition-transform duration-150 active:scale-95 shadow-[0_24px_48px_rgba(223,42,48,0.2)]">
+                            Nhận tư vấn thực thi ngay
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Monochrome Logo Bar -->
+<div class="absolute bottom-0 w-full bg-surface-container-lowest/80 backdrop-blur-md py-8 border-t border-outline-variant/15">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-wrap justify-between items-center gap-8 grayscale opacity-50 contrast-125">
+<img alt="Unilever" class="h-8 w-auto" data-alt="unilever logo in monochrome grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDO3ZFZkwYwIOE3etCBarI5lNEd-_9jh7uaTOTyeyN7hEM3ZX3FCleTjKu5LNQvLegKNIZbBHDlF3tB0SsPCeae2zVLbW2c2jUOaEagzswFjpnRxglB20G-OyRMZyJMz1xfyhIbbBOZiNOSb9dxNhgPm7XWLTTX8zFKLGaMwMnx1O2yYU9CRyuVctYqonA5pBkR99mG2TKqoG3Q-_vTQqgrPjWQw60QpPu9Meh6-1q8Xhc-CtnIhafIt2VmcSus_pyl3dgao0H6CP4"/>
+<img alt="Pepsico" class="h-8 w-auto" data-alt="pepsico logo in monochrome grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2LUWKjA922Ebpar1DiqagRtsvQcgEp-OjA9IpCOwI-aPyKu9rMSYFTRP6iBtgl62p2xLFNCYloP_wIezX50zWgPNPcxabJJs8O_n7tzN0RhW-i60ZIpPXE3v6-N9s3bM1xQGT095rY_abnYw6AnCoQf-x0WVLZOYKB_ff-lbl9qBq737H-uDYpmTuJffEIBEAB10-IrkgoHltcUAMsZsdGkIwCPw-zI36R5D-vF_qZn5bsJfmTskWhvAiPXw7FsFsSRcXWFRbtlM"/>
+<img alt="Nestlé" class="h-8 w-auto" data-alt="nestle logo in monochrome grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfE73iKHfBqmAyHWtcmA81njuCUsgWTikP1Ggc1Tzql7sBuSaktAipbwD9phahFmoIpGsXLu9oBm2vjZpozPe5RatKVeQ239jXkZTn2OEDhcADzOQu5-bkdKHSDJ2NZFz7ijhUZ93cMFoIIxh1x58sybuU_TDdrhRbXGJoI2MshrLS2l7rKzt5NMK4ZOBx7ztaCWHBhNXBYk5JBWBMlhBQI8ja7TSAR1PGNo4zroAUl4B0RVUMjITuaYPZQ45OJYZfNWksV99Gvm8"/>
+<img alt="Panasonic" class="h-8 w-auto" data-alt="panasonic logo in monochrome grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg1ee9lvGmsGeX6jatVr97cEhjMtWdtaNjqsuBu0x1jTM36nvranpvA6rIxBoE58zJcdh3vUG4WgkZW8ugAJvqNs2qynqCy5qxyJAdGWtv1Ht7CEInKFDyfUvVhuV5CJ01EG2ilAKqYwfCPcyQD2ZUNr1YXt-2LII84OaJwnSyFryybZ3UZa8vJkeD-Aq4Dsq5Spat3NWIEb-WOp22BB9nGdeSHERJk6bZG4igw0U4J095Abknag0pUrM_wcKrtCuqcocdvxghABk"/>
+<img alt="Saint-Gobain" class="h-8 w-auto" data-alt="saint-gobain logo in monochrome grey" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAkkjTs09AZ_8L6lw0Ig5v_sHBZ4mcNWOJUfmsCLZTu8B_PPHA9Bsy0cZSY-eS9TpryKh1Z8hIQw37ouUlL7dWizFEUEP-WFN7I_zpif3MYE1j2GOyQ6dYG4tIzZACfjM9wUhd-P9wamlWFa33IRSVW0tHK9RVLaiu6D2_ljGW51hKRpvaQap4oQsibq1T98B6XHd5zN3n3bAzhZDDi47EFF9LXLQHoFRU2YE54tAgN24a9V4Z2AUSzU0f2G9Qy8rRkSadfP0B23iU"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Operational Guarantee Block -->
+<section class="bg-surface py-20 px-8">
+<div class="max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-0">
+<!-- Item 1 -->
+<div class="p-8 border-b md:border-b-0 md:border-r border-outline-variant/15 flex flex-col gap-4 bg-surface-container-low/30">
+<span class="material-symbols-outlined text-primary-container text-3xl" style="font-variation-settings: 'FILL' 1;">verified_user</span>
+<div>
+<h3 class="text-on-surface font-black text-lg tracking-tight mb-1">Zero-Mistake</h3>
+<p class="text-secondary text-sm leading-relaxed">Hệ thống quản lý chất lượng (QC) đa tầng đảm bảo độ chính xác tuyệt đối.</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-8 border-b md:border-b-0 md:border-r border-outline-variant/15 flex flex-col gap-4 bg-surface-container-low/30">
+<span class="material-symbols-outlined text-primary-container text-3xl" style="font-variation-settings: 'FILL' 1;">monitoring</span>
+<div>
+<h3 class="text-on-surface font-black text-lg tracking-tight mb-1">Real-time Tracking</h3>
+<p class="text-secondary text-sm leading-relaxed">Báo cáo dữ liệu thực trường tức thì qua nền tảng kỹ thuật số 24/7.</p>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="p-8 flex flex-col gap-4 bg-surface-container-low/30">
+<span class="material-symbols-outlined text-primary-container text-3xl" style="font-variation-settings: 'FILL' 1;">language</span>
+<div>
+<h3 class="text-on-surface font-black text-lg tracking-tight mb-1">3000+ CTV</h3>
+<p class="text-secondary text-sm leading-relaxed">Mạng lưới nhân sự thực thi phủ sóng toàn diện 63 tỉnh thành Việt Nam.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#060e20] w-full rounded-none border-t border-[#31394d]/15 flex flex-col md:flex-row justify-between items-center px-12 py-16 gap-8">
+<div class="flex flex-col gap-4">
+<div class="text-lg font-black text-[#fffbff] uppercase">BAO LAM MARKETING</div>
+<p class="text-[#b9c8de] text-[10px] uppercase tracking-widest font-bold">© 2024 BAO LAM MARKETING &amp; DISTRIBUTION. ALL RIGHTS RESERVED.</p>
+</div>
+<nav class="flex gap-8">
+<a class="text-[#b9c8de] text-[10px] uppercase tracking-widest font-bold hover:underline decoration-[#df2a30] decoration-2 underline-offset-4 transition-all duration-200" href="#">Services</a>
+<a class="text-[#b9c8de] text-[10px] uppercase tracking-widest font-bold hover:underline decoration-[#df2a30] decoration-2 underline-offset-4 transition-all duration-200" href="#">Portfolio</a>
+<a class="text-[#b9c8de] text-[10px] uppercase tracking-widest font-bold hover:underline decoration-[#df2a30] decoration-2 underline-offset-4 transition-all duration-200" href="#">Insights</a>
+<a class="text-[#b9c8de] text-[10px] uppercase tracking-widest font-bold hover:underline decoration-[#df2a30] decoration-2 underline-offset-4 transition-all duration-200" href="#">Contact</a>
+</nav>
+</footer>
+</body></html>

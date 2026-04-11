@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>BAO LAM | Execution Powerhouse</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b1326;
+            color: #dae2fd;
+        }
+        .glass-crimson {
+            background: rgba(223, 42, 48, 0.8);
+            backdrop-filter: blur(24px);
+        }
+        .text-shadow-hero {
+            text-shadow: 0px 4px 24px rgba(223, 42, 48, 0.3);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-secondary-container": "#a7b6cc",
+                        "on-secondary-fixed-variant": "#39485a",
+                        "surface-container-high": "#222a3d",
+                        "surface-container": "#171f33",
+                        "inverse-on-surface": "#283044",
+                        "secondary": "#b9c8de",
+                        "surface-variant": "#2d3449",
+                        "on-surface": "#dae2fd",
+                        "on-primary": "#68000a",
+                        "surface-container-lowest": "#060e20",
+                        "tertiary-container": "#007ea0",
+                        "on-background": "#dae2fd",
+                        "inverse-surface": "#dae2fd",
+                        "primary": "#ffb3ad",
+                        "on-primary-fixed": "#410004",
+                        "error": "#ffb4ab",
+                        "secondary-fixed-dim": "#b9c8de",
+                        "secondary-fixed": "#d4e4fa",
+                        "primary-fixed": "#ffdad7",
+                        "on-tertiary-container": "#f9fcff",
+                        "on-error": "#690005",
+                        "error-container": "#93000a",
+                        "surface-container-highest": "#2d3449",
+                        "background": "#0b1326",
+                        "surface-tint": "#ffb3ad",
+                        "surface-dim": "#0b1326",
+                        "on-primary-container": "#fffbff",
+                        "tertiary-fixed": "#bce9ff",
+                        "on-tertiary-fixed-variant": "#004d63",
+                        "outline": "#ac8885",
+                        "on-tertiary-fixed": "#001f29",
+                        "on-tertiary": "#003545",
+                        "secondary-container": "#39485a",
+                        "outline-variant": "#5c403d",
+                        "surface-bright": "#31394d",
+                        "surface": "#0b1326",
+                        "on-secondary": "#233143",
+                        "tertiary-fixed-dim": "#78d2f7",
+                        "tertiary": "#78d2f7",
+                        "on-error-container": "#ffdad6",
+                        "primary-fixed-dim": "#ffb3ad",
+                        "on-secondary-fixed": "#0d1c2d",
+                        "inverse-primary": "#be081d",
+                        "primary-container": "#df2a30",
+                        "on-surface-variant": "#e5bdb9",
+                        "on-primary-fixed-variant": "#930012",
+                        "surface-container-low": "#131b2e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "fontFamily": {
+                        "headline": ["Inter"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased selection:bg-primary-container selection:text-white">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-6 py-4 fixed top-0 z-50 bg-[#0b1326]/80 backdrop-blur-xl">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-on-surface cursor-pointer" data-icon="menu">menu</span>
+<h1 class="text-2xl font-black text-[#df2a30] tracking-tighter uppercase font-['Inter']">BAO LAM</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[#df2a30] font-black underline decoration-2 underline-offset-4 uppercase tracking-widest text-xs" href="#">EXECUTION</a>
+<a class="text-[#b9c8de] font-medium hover:text-[#df2a30] transition-colors duration-300 uppercase tracking-widest text-xs" href="#">MASTERY</a>
+<a class="text-[#b9c8de] font-medium hover:text-[#df2a30] transition-colors duration-300 uppercase tracking-widest text-xs" href="#">PORTFOLIO</a>
+<a class="text-[#b9c8de] font-medium hover:text-[#df2a30] transition-colors duration-300 uppercase tracking-widest text-xs" href="#">METRICS</a>
+</nav>
+<div class="flex items-center">
+<div class="w-10 h-10 bg-surface-container-highest rounded-sm flex items-center justify-center overflow-hidden border border-outline-variant/20 active:scale-95 transition-transform">
+<img alt="Executive Profile" class="w-full h-full object-cover" data-alt="Close-up professional portrait of a confident executive in a dark tailored suit against a muted corporate background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD38FWisyBYOK5OzbTXWPZJBLcuQhM_SgulrhSmPsnZsjF44vNg_3JS4hZgf1gKFvzG8LMpBMD1cxOzskkUIy4naVUFB4i8u8KTlZ6HDH77pxHz4brJ1kyc8BIhOBXXS1fRRB2KFZwurb48-gQ5kUDbs0PXgFdxnQ0cfQofOfZlQbmgFzhXkuYYrjI8Ys8eoExC0j8uvcJJ2_N5Mqw5xbf_tI8x7Pewpo7OjAeG1q2wWFaYJBuUNdDGv-Niym-djEl90SdUPPskQ5I"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-20 md:pb-8 px-4 md:px-12 max-w-7xl mx-auto">
+<!-- Hero Section -->
+<section class="mb-24 mt-12 relative">
+<div class="absolute -top-24 -left-12 w-96 h-96 bg-primary-container/10 blur-[120px] rounded-full -z-10"></div>
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<span class="h-[2px] w-12 bg-primary-container"></span>
+<span class="uppercase tracking-[0.3em] text-xs font-black text-primary-container">Strategic Command</span>
+</div>
+<h2 class="text-6xl md:text-8xl font-black tracking-tighter text-on-surface uppercase leading-none">
+                    EXECUTION<br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-[#ffb3ad]">POWERHOUSE</span>
+</h2>
+<p class="text-secondary max-w-2xl text-lg mt-6 leading-relaxed">
+                    Kiến tạo sức mạnh vận hành vượt trội. Chúng tôi không chỉ lập kế hoạch, chúng tôi thực thi với độ chính xác tuyệt đối trên mọi địa hình phân phối.
+                </p>
+</div>
+</section>
+<!-- Section 1: Niche Mastery -->
+<section class="mb-32">
+<div class="mb-12">
+<h3 class="text-4xl font-black tracking-tighter text-on-surface uppercase mb-4">CHINH PHỤC MỌI ĐỊA HÌNH</h3>
+<p class="text-on-secondary-container max-w-3xl border-l-4 border-primary-container pl-6 py-2">
+                    "Chúng tôi không chỉ mạnh ở kênh siêu thị. Sự khác biệt của Bảo Lâm nằm ở khả năng xuyên thấu các rào cản phân phối phức tạp nhất cường quốc."
+                </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-1">
+<!-- Card 1 -->
+<div class="group bg-surface-container-low p-8 relative overflow-hidden transition-all duration-500 hover:bg-surface-container">
+<div class="absolute top-0 left-0 w-1 h-0 bg-primary-container group-hover:h-full transition-all duration-500"></div>
+<span class="material-symbols-outlined text-primary-container mb-6 block text-4xl" data-icon="temple_hindu">temple_hindu</span>
+<h4 class="text-xl font-bold text-on-surface mb-3 uppercase tracking-tight">Kênh Lễ Hội &amp; Tâm Linh</h4>
+<p class="text-primary-container font-black text-sm mb-4">"Tiếp cận 100.000+ lượt tại Đất Thiêng."</p>
+<p class="text-secondary text-sm leading-relaxed">
+                        Độc quyền khai thác Sampling tại Chùa Hương, Bái Đính, Phủ Tây Hồ, Đền Hùng. Đảm bảo sự hiện diện thương hiệu trang trọng và hiệu quả.
+                    </p>
+</div>
+<!-- Card 2 -->
+<div class="group bg-surface-container p-8 relative overflow-hidden transition-all duration-500 hover:bg-surface-container-high">
+<div class="absolute top-0 left-0 w-1 h-0 bg-primary-container group-hover:h-full transition-all duration-500"></div>
+<span class="material-symbols-outlined text-primary-container mb-6 block text-4xl" data-icon="local_shipping">local_shipping</span>
+<h4 class="text-xl font-bold text-on-surface mb-3 uppercase tracking-tight">Vùng Sâu &amp; Nông Thôn</h4>
+<p class="text-primary-container font-black text-sm mb-4">"Len lỏi đến từng ngõ ngách."</p>
+<p class="text-secondary text-sm leading-relaxed">
+                        Giao nhận tận tay đến 12,000 hộ gia đình tại vùng sâu vùng xa. Năng lực hậu cần mạnh mẽ giúp nhãn hàng không bỏ sót bất kỳ tệp khách phổ thông nào.
+                    </p>
+</div>
+<!-- Card 3 -->
+<div class="group bg-surface-container-low p-8 relative overflow-hidden transition-all duration-500 hover:bg-surface-container">
+<div class="absolute top-0 left-0 w-1 h-0 bg-primary-container group-hover:h-full transition-all duration-500"></div>
+<span class="material-symbols-outlined text-primary-container mb-6 block text-4xl" data-icon="rocket_launch">rocket_launch</span>
+<h4 class="text-xl font-bold text-on-surface mb-3 uppercase tracking-tight">Khu Công Nghiệp &amp; Trường Học</h4>
+<p class="text-primary-container font-black text-sm mb-4">"Mass-Sampling Tốc Độ Cao."</p>
+<p class="text-secondary text-sm leading-relaxed">
+                        Giải quyết bài toán khối lượng khổng lồ. Thiết lập hệ thống Youth Touchpoint, đảm bảo dòng chảy 2.5 triệu mẫu phát ra với độ chính xác cao.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Section 2: Diverse Portfolio -->
+<section class="mb-32">
+<div class="flex justify-between items-end mb-12">
+<div>
+<h3 class="text-4xl font-black tracking-tighter text-on-surface uppercase mb-2">DỰ ÁN TIÊU BIỂU</h3>
+<p class="text-secondary uppercase tracking-widest text-[10px] font-bold">Showcasing Operational Excellence</p>
+</div>
+<div class="hidden md:block">
+<button class="bg-primary-container text-white px-8 py-3 rounded-sm font-black text-xs tracking-widest uppercase hover:opacity-90 active:scale-95 transition-all">VIEW ALL CASES</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<!-- Case 1: Nescafe (Large Horizontal) -->
+<div class="md:col-span-8 bg-surface-container-high rounded-sm overflow-hidden group flex flex-col md:flex-row">
+<div class="md:w-1/2 h-64 md:h-auto overflow-hidden">
+<img alt="Nescafe Project" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" data-alt="Dynamic shot of a busy urban youth hub with branded coffee sampling booths and energetic staff interacting with students" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_Bm02Wr3Q0nF6TqwAcHExzZFLh8RHUUf3HrpPdWObC51DTeNxdH5D172JUxXTZn5peFqe9xdz3n5G0-_ZtZacfgcDtosBNV7cOYjX6vLrmLWmx_QCFrUEqoz2_rcpBxGP1Ujob9FvIH1R0UaDufqiv3ZMbionJit05oB0ZlthQYY1xocv4tnDF3ZbR1kRynCYuXCAtxJNApAigRwlly7qmFlAwKmKR6G5lERlYg9rZFI7INdI5ZsKzFIh49AqqVagUv_iX4nNxDI"/>
+</div>
+<div class="md:w-1/2 p-8 flex flex-col">
+<div class="flex justify-between items-start mb-6">
+<span class="bg-primary-container/10 text-primary-container text-[10px] px-2 py-1 font-black rounded-sm">NESTLÉ</span>
+<span class="material-symbols-outlined text-secondary text-xl" data-icon="north_east">north_east</span>
+</div>
+<h4 class="text-2xl font-black text-on-surface uppercase mb-4 leading-tight">Nescafe - Thống trị điểm chạm giới trẻ</h4>
+<div class="mt-auto space-y-4">
+<div class="flex justify-between items-center border-b border-outline-variant/10 pb-2">
+<span class="text-[10px] text-on-secondary-container font-black uppercase">Result</span>
+<span class="text-primary-container font-black">2,500,000+ MẪU/NĂM</span>
+</div>
+<p class="text-xs text-secondary leading-relaxed">Solution: Xây dựng hệ thống Fix-team chuyên biệt tại các điểm chạm trọng yếu.</p>
+</div>
+</div>
+</div>
+<!-- Case 2: Clear (Vertical) -->
+<div class="md:col-span-4 bg-surface-container-low rounded-sm overflow-hidden group flex flex-col">
+<div class="h-64 overflow-hidden">
+<img alt="Clear Project" class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="High-impact event photography showing a massive crowd at a modern transportation hub with bright blue branding elements" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJu7m0P6PR_r6GTovG0ZZ6vDuN2Yka8B9M8TJmAHU3EMFD90eZ8S7LBwMTmSIx0pdZC5MBjvD1xV5fg1EW2rcuIaTWABnNAE2WPYMdPag9uILa62G92_Nt_lHmNycIXfrtAv9X2zRUt5DrkOtFnX4NnuUmsw54hLjbKS-T9Ld3txa5EVkFjWYdjeDuW-IKh9y4PDBRbd4nDgp-X21D3V5RMEnsO3zIku7Zy7j_bt5Ma6P8j6KCiRY3ZTMxoNKhuls0_mZYzm2JHzU"/>
+</div>
+<div class="p-8 flex-1 flex flex-col">
+<span class="text-[10px] text-primary-container font-black mb-4 tracking-widest uppercase">UNILEVER</span>
+<h4 class="text-xl font-black text-on-surface uppercase mb-4">Đội Mũ Chuẩn Clear</h4>
+<p class="text-xs text-secondary mb-6 leading-relaxed">Thách thức: Thu hồi mũ bảo hiểm kém chất lượng tại 4 bến xe lớn với luồng vận hành 5000 người.</p>
+<div class="mt-auto pt-4 flex items-center gap-3">
+<div class="w-10 h-[2px] bg-primary-container"></div>
+<span class="text-[10px] font-black uppercase text-on-surface">Viral Recognition</span>
+</div>
+</div>
+</div>
+<!-- Case 3: Lay's Stax (Squareish) -->
+<div class="md:col-span-6 bg-surface-container-lowest rounded-sm overflow-hidden group flex flex-col border border-outline-variant/5">
+<div class="p-8">
+<div class="flex justify-between items-center mb-8">
+<span class="text-primary-container font-black tracking-widest text-[10px] uppercase">PEPSICO</span>
+<div class="flex gap-1">
+<span class="w-2 h-2 bg-primary-container rounded-full"></span>
+<span class="w-2 h-2 bg-primary-container/20 rounded-full"></span>
+</div>
+</div>
+<h4 class="text-2xl font-black text-on-surface uppercase mb-4">Chuyến Tàu Lay's Stax</h4>
+<p class="text-sm text-secondary mb-8 leading-relaxed">
+                            Thiết kế gian hàng 'Chuyến tàu 15s' tương tác cao tích hợp Gamification, tạo làn sóng viral mạnh mẽ dịp Giáng sinh dọc Bắc-Nam.
+                        </p>
+<div class="grid grid-cols-2 gap-4">
+<div class="bg-surface-container p-4">
+<div class="text-primary-container font-black text-lg">3 DAYS</div>
+<div class="text-[10px] text-on-secondary-container uppercase">Execution Time</div>
+</div>
+<div class="bg-surface-container p-4">
+<div class="text-primary-container font-black text-lg">1000s</div>
+<div class="text-[10px] text-on-secondary-container uppercase">Viral Moments</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Case 4: Vĩnh Tường (Long Vertical/Square) -->
+<div class="md:col-span-6 bg-primary-container p-8 group relative overflow-hidden">
+<div class="relative z-10 flex flex-col h-full">
+<span class="text-white/60 font-black tracking-widest text-[10px] uppercase mb-4">SAINT-GOBAIN</span>
+<h4 class="text-3xl font-black text-white uppercase mb-6 leading-none">Hội Nghị Đại Lý<br/>Vĩnh Tường</h4>
+<p class="text-white/80 text-sm mb-8 max-w-sm">
+                            Xây dựng luồng trưng bày Product Tour trực quan phục vụ hàng ngàn thầu thợ, giúp 100% đối tác nắm vững kiến thức sản phẩm.
+                        </p>
+<div class="mt-auto flex items-center justify-between">
+<span class="text-4xl font-black text-white/20">100%</span>
+<button class="bg-white text-primary-container px-6 py-2 rounded-sm font-black text-[10px] uppercase tracking-widest">VIEW DETAILS</button>
+</div>
+</div>
+<div class="absolute -bottom-10 -right-10 opacity-10 transform rotate-12 group-hover:scale-110 transition-transform duration-700">
+<span class="material-symbols-outlined text-[200px]" data-icon="architecture">architecture</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA / Power Metric Section -->
+<section class="py-20 bg-surface-container-lowest relative overflow-hidden mb-24">
+<div class="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none" style="background-image: radial-gradient(#df2a30 1px, transparent 1px); background-size: 24px 24px;"></div>
+<div class="relative z-10 text-center max-w-4xl mx-auto px-6">
+<h3 class="text-sm font-black text-primary-container tracking-[0.4em] uppercase mb-8">Ready to Scale?</h3>
+<h2 class="text-5xl md:text-7xl font-black text-on-surface uppercase mb-12 tracking-tighter leading-none">THỰC THI KHÔNG GIỚI HẠN</h2>
+<div class="flex flex-col md:flex-row gap-4 justify-center">
+<button class="bg-primary-container text-white px-12 py-5 rounded-sm font-black tracking-widest text-sm hover:scale-105 transition-transform active:scale-95 shadow-[0px_24px_48px_rgba(223,42,48,0.2)]">START COLLABORATION</button>
+<button class="border border-outline-variant/30 text-on-surface px-12 py-5 rounded-sm font-black tracking-widest text-sm hover:bg-surface-container-highest transition-colors">OUR METHODOLOGY</button>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 bg-[#0b1326]/90 backdrop-blur-2xl border-t border-[#df2a30]/15 shadow-[0px_-24px_48px_rgba(0,0,0,0.4)]">
+<a class="flex flex-col items-center justify-center bg-[#df2a30] text-white px-6 py-2 rounded-sm active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="bolt">bolt</span>
+<span class="font-['Inter'] text-[10px] font-black tracking-widest uppercase mt-1">EXECUTION</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#b9c8de] px-6 py-2 hover:bg-[#131b2e] transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="psychology">psychology</span>
+<span class="font-['Inter'] text-[10px] font-black tracking-widest uppercase mt-1">MASTERY</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#b9c8de] px-6 py-2 hover:bg-[#131b2e] transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="grid_view">grid_view</span>
+<span class="font-['Inter'] text-[10px] font-black tracking-widest uppercase mt-1">PORTFOLIO</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#b9c8de] px-6 py-2 hover:bg-[#131b2e] transition-all active:scale-90" href="#">
+<span class="material-symbols-outlined text-xl" data-icon="analytics">analytics</span>
+<span class="font-['Inter'] text-[10px] font-black tracking-widest uppercase mt-1">METRICS</span>
+</a>
+</nav>
+<!-- FAB: Contextual Action (Book a Walk / Consult) -->
+<button class="fixed bottom-24 right-6 md:bottom-12 md:right-12 w-16 h-16 glass-crimson rounded-sm shadow-2xl flex items-center justify-center text-white group active:scale-90 transition-all z-40">
+<span class="material-symbols-outlined text-3xl group-hover:rotate-12 transition-transform" data-icon="chat_bubble_outline">chat_bubble_outline</span>
+</button>
+</body></html>

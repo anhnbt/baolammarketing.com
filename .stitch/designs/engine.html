@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-bright": "#31394d",
+                    "error": "#ffb4ab",
+                    "secondary-fixed-dim": "#b9c8de",
+                    "on-primary-fixed-variant": "#930012",
+                    "outline-variant": "#5c403d",
+                    "on-primary-fixed": "#410004",
+                    "surface-container": "#171f33",
+                    "outline": "#ac8885",
+                    "on-error-container": "#ffdad6",
+                    "on-error": "#690005",
+                    "error-container": "#93000a",
+                    "surface-container-lowest": "#060e20",
+                    "on-tertiary-fixed": "#001f29",
+                    "on-secondary-fixed": "#0d1c2d",
+                    "tertiary-fixed-dim": "#78d2f7",
+                    "secondary": "#b9c8de",
+                    "primary-container": "#df2a30",
+                    "on-tertiary": "#003545",
+                    "on-surface-variant": "#e5bdb9",
+                    "surface-tint": "#ffb3ad",
+                    "on-tertiary-container": "#f9fcff",
+                    "on-surface": "#dae2fd",
+                    "primary-fixed-dim": "#ffb3ad",
+                    "primary-fixed": "#ffdad7",
+                    "on-background": "#dae2fd",
+                    "surface-dim": "#0b1326",
+                    "on-primary": "#68000a",
+                    "on-secondary-container": "#a7b6cc",
+                    "secondary-fixed": "#d4e4fa",
+                    "tertiary": "#78d2f7",
+                    "primary": "#ffb3ad",
+                    "surface-container-highest": "#2d3449",
+                    "surface-container-high": "#222a3d",
+                    "on-primary-container": "#fffbff",
+                    "surface-variant": "#2d3449",
+                    "on-tertiary-fixed-variant": "#004d63",
+                    "tertiary-fixed": "#bce9ff",
+                    "background": "#0b1326",
+                    "inverse-primary": "#be081d",
+                    "inverse-surface": "#dae2fd",
+                    "surface": "#0b1326",
+                    "surface-container-low": "#131b2e",
+                    "inverse-on-surface": "#283044",
+                    "secondary-container": "#39485a",
+                    "on-secondary": "#233143",
+                    "on-secondary-fixed-variant": "#39485a",
+                    "tertiary-container": "#007ea0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+        .dotted-map-overlay {
+            background-image: radial-gradient(#31394d 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface min-h-screen">
+<!-- TopAppBar -->
+<nav class="bg-[#0b1326] flex justify-between items-center w-full px-8 py-4 max-w-none sticky top-0 z-50">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#df2a30] text-2xl">architecture</span>
+<span class="font-['Inter'] font-black uppercase tracking-tighter text-2xl text-[#fffbff]">BAO LAM</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-[#df2a30] font-bold border-b-2 border-[#df2a30] font-['Inter'] text-[10px] uppercase tracking-widest transition-all" href="#">EXECUTION</a>
+<a class="text-[#b9c8de] hover:text-[#fffbff] font-['Inter'] text-[10px] uppercase tracking-widest transition-all" href="#">STRATEGY</a>
+<a class="text-[#b9c8de] hover:text-[#fffbff] font-['Inter'] text-[10px] uppercase tracking-widest transition-all" href="#">PORTFOLIO</a>
+<button class="bg-[#df2a30] text-[#fffbff] px-6 py-2 text-[10px] font-bold uppercase tracking-widest rounded-sm active:scale-95 transition-transform">
+                CONSULT
+            </button>
+</div>
+</nav>
+<main class="max-w-[1440px] mx-auto px-8 md:px-12 py-16 md:py-24">
+<!-- Main Headline -->
+<header class="mb-20">
+<h1 class="text-[clamp(2.5rem,8vw,5.5rem)] font-black leading-[0.9] tracking-tighter uppercase mb-4">
+                BẢO LÂM <br/>
+<span class="text-primary-container">EXECUTION ENGINE</span>
+</h1>
+<div class="h-1 w-24 bg-primary-container"></div>
+</header>
+<!-- Top Half: The Triad of Execution -->
+<section class="mb-32">
+<div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-4">
+<h2 class="text-xs font-bold uppercase tracking-[0.2em] text-secondary">The Triad of Execution</h2>
+<div class="hidden md:block h-[1px] flex-grow mx-8 bg-surface-bright/20"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1: Focused State -->
+<div class="group relative bg-surface-container-low p-10 border border-primary-container shadow-[0_0_40px_-10px_rgba(223,42,48,0.3)] transition-all duration-300">
+<div class="flex flex-col h-full justify-between gap-16">
+<div>
+<span class="material-symbols-outlined text-primary-container mb-6 text-3xl" data-weight="fill" style="font-variation-settings: 'FILL' 1;">campaign</span>
+<h3 class="text-2xl font-black uppercase tracking-tight mb-4">Brand Activation</h3>
+<p class="text-secondary body-md leading-relaxed">Large scale OOH, Booths, Sampling. High-impact visibility engineered for immediate market capture.</p>
+</div>
+<div class="pt-8 border-t border-primary-container/20">
+<p class="text-[10px] font-bold uppercase tracking-widest text-primary-container">Tin dùng bởi Nestlé, PepsiCo</p>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative bg-surface-container-low p-10 hover:bg-surface-container transition-all duration-300">
+<div class="flex flex-col h-full justify-between gap-16">
+<div>
+<span class="material-symbols-outlined text-secondary group-hover:text-primary-container mb-6 text-3xl transition-colors">event_available</span>
+<h3 class="text-2xl font-black uppercase tracking-tight mb-4">Event Management</h3>
+<p class="text-secondary body-md leading-relaxed">Turnkey Launching &amp; Conventions. Precision logistics and immersive experiences that define brand authority.</p>
+</div>
+<div class="pt-8 border-t border-surface-bright/20">
+<p class="text-[10px] font-bold uppercase tracking-widest text-secondary">Tin dùng bởi Panasonic, a2 Platinum</p>
+</div>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative bg-surface-container-low p-10 hover:bg-surface-container transition-all duration-300">
+<div class="flex flex-col h-full justify-between gap-16">
+<div>
+<span class="material-symbols-outlined text-secondary group-hover:text-primary-container mb-6 text-3xl transition-colors">location_on</span>
+<h3 class="text-2xl font-black uppercase tracking-tight mb-4">Direct Marketing</h3>
+<p class="text-secondary body-md leading-relaxed">Specialized Touchpoints &amp; Deep Rural reach. Penetrating difficult markets with laser-focused accuracy.</p>
+</div>
+<div class="pt-8 border-t border-surface-bright/20">
+<p class="text-[10px] font-bold uppercase tracking-widest text-secondary">Tin dùng bởi Vĩnh Tường, Vim</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bottom Half: The Living Network -->
+<section class="relative bg-surface-container-lowest overflow-hidden">
+<div class="dotted-map-overlay absolute inset-0 opacity-20 pointer-events-none"></div>
+<div class="relative z-10 p-12 md:p-20 border-l-4 border-primary-container">
+<div class="mb-16">
+<h2 class="text-xs font-bold uppercase tracking-[0.2em] text-primary-container mb-2">Operational Infrastructure</h2>
+<h3 class="text-3xl font-black uppercase tracking-tight">The Living Network</h3>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16">
+<!-- Metric 1 -->
+<div class="flex flex-col">
+<div class="text-[clamp(4rem,10vw,6rem)] font-black leading-none text-primary-container mb-4 tracking-tighter">
+                            26+
+                        </div>
+<div class="h-px w-12 bg-primary-container/40 mb-6"></div>
+<p class="text-[11px] font-bold uppercase tracking-[0.1em] text-on-surface leading-snug">
+                            QUẢN LÝ DỰ ÁN TOÀN THỜI GIAN <br/>
+<span class="text-secondary font-normal">(Kiểm soát rủi ro đa tầng)</span>
+</p>
+</div>
+<!-- Metric 2 -->
+<div class="flex flex-col">
+<div class="text-[clamp(4rem,10vw,6rem)] font-black leading-none text-primary-container mb-4 tracking-tighter">
+                            3000+
+                        </div>
+<div class="h-px w-12 bg-primary-container/40 mb-6"></div>
+<p class="text-[11px] font-bold uppercase tracking-[0.1em] text-on-surface leading-snug">
+                            CỘNG TÁC VIÊN HIỆN TRƯỜG <br/>
+<span class="text-secondary font-normal">(Sẵn sàng tại 63 tỉnh thành)</span>
+</p>
+</div>
+<!-- Metric 3 -->
+<div class="flex flex-col">
+<div class="text-[clamp(4rem,10vw,6rem)] font-black leading-none text-primary-container mb-4 tracking-tighter">
+                            80%
+                        </div>
+<div class="h-px w-12 bg-primary-container/40 mb-6"></div>
+<p class="text-[11px] font-bold uppercase tracking-[0.1em] text-on-surface leading-snug">
+                            TRÊN 5 NĂM KINH NGHIỆM <br/>
+<span class="text-secondary font-normal">(Cam kết vận hành Zero-mistake)</span>
+</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Final Image Anchor -->
+<section class="mt-32">
+<div class="relative w-full aspect-[21/9] overflow-hidden grayscale contrast-125 brightness-75">
+<img alt="Production control room" class="w-full h-full object-cover" data-alt="cinematic shot of a high-tech dark control room with glowing red accents, professional equipment, and architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCiz0woJWmNAb3xZW0nmM4mTWMbHweJcgHEUwHqUmoOvXJex1RIU9LHBhGKiyEDMKwhUxMIKQo2VVQ5KpjgRS4zMbPtL_jUW3TcbEY1llovBaq-0GFevkaRhPoPGuhN7fgNxXjbvZAYniCjT9aNP6C4dlbkVyaHFxR_3SjbIp0qK6AnpQ698G0zCUQG5KhqTyRde2jw7j9EYNh049rfYANE-ZR0pCBQNSrKxgs6_2EMclQvJ0SB652PQelh_oyWtMuCcLFF8V6k_j0"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface via-transparent to-transparent"></div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#060e20] flex flex-col md:flex-row justify-between items-center w-full px-12 py-16 gap-8 border-t border-[#31394d]/15">
+<div class="flex flex-col items-center md:items-start gap-2">
+<span class="text-lg font-black text-[#fffbff] tracking-tighter uppercase">BAO LAM</span>
+<p class="font-['Inter'] text-[10px] font-bold uppercase tracking-widest text-secondary/50">© 2024 BAO LAM ARCHITECTURAL AUTHORITY. ALL RIGHTS RESERVED.</p>
+</div>
+<div class="flex gap-10">
+<a class="font-['Inter'] text-[10px] font-bold uppercase tracking-widest text-[#b9c8de] hover:text-[#df2a30] hover:underline underline-offset-4 transition-all duration-200" href="#">STRATEGY</a>
+<a class="font-['Inter'] text-[10px] font-bold uppercase tracking-widest text-[#df2a30]" href="#">EXECUTION</a>
+<a class="font-['Inter'] text-[10px] font-bold uppercase tracking-widest text-[#b9c8de] hover:text-[#df2a30] hover:underline underline-offset-4 transition-all duration-200" href="#">PORTFOLIO</a>
+<a class="font-['Inter'] text-[10px] font-bold uppercase tracking-widest text-[#b9c8de] hover:text-[#df2a30] hover:underline underline-offset-4 transition-all duration-200" href="#">LEGAL</a>
+</div>
+</footer>
+</body></html>

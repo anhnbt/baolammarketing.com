@@ -1,0 +1,39 @@
+{
+  "Navigation": {
+    "home": "Trang Chủ",
+    "services": "Dịch Vụ",
+    "projects": "Dự Án",
+    "contact": "Liên Hệ"
+  },
+  "Hero": {
+    "title": "SỨC MẠNH CỦA SỰ KẾT NỐI",
+    "cta": "NHẬN TƯ VẤN THỰC THI NGAY",
+    "metrics": {
+      "mistake": "Zero-Mistake",
+      "realtime": "Real-time Tracking",
+      "network": "3000+ CTV Toàn Quốc"
+    }
+  },
+  "ExecutionEngine": {
+    "title": "BẢO LÂM\nEXECUTION ENGINE",
+    "services": {
+      "activation": "Brand Activation",
+      "activation_desc": "OOH quy mô lớn, Booths, Sampling",
+      "activation_clients": "Tin dùng bởi Nestlé, PepsiCo",
+      "event": "Event Management",
+      "event_desc": "Tổ chức Launching & Hội nghị trọn gói",
+      "event_clients": "Tin dùng bởi Panasonic, TH True Food",
+      "direct": "Direct Marketing",
+      "direct_desc": "Điểm chạm chuyên biệt & Phủ sóng nông thôn sâu",
+      "direct_clients": "Tin dùng bởi Vĩnh Tường, Vim"
+    },
+    "structure": {
+      "managers": "26+",
+      "managers_label": "QUẢN LÝ DỰ ÁN TOÀN THỜI GIAN (Kiểm soát rủi ro đa tầng)",
+      "part_timers": "3000+",
+      "part_timers_label": "CỘNG TÁC VIÊN HIỆN TRƯỜNG (Sẵn sàng tại 63 tỉnh thành)",
+      "experience": "80%",
+      "experience_label": "TRÊN 5 NĂM KINH NGHIỆM (Cam kết vận hành Zero-mistake)"
+    }
+  }
+}

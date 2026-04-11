@@ -1,0 +1,39 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "Hero": {
+    "title": "THE POWER OF CONNECTION",
+    "cta": "GET EXECUTION CONSULTATION",
+    "metrics": {
+      "mistake": "Zero-Mistake",
+      "realtime": "Real-time Tracking",
+      "network": "3000+ Nationwide Staff"
+    }
+  },
+  "ExecutionEngine": {
+    "title": "BAO LAM\nEXECUTION ENGINE",
+    "services": {
+      "activation": "Brand Activation",
+      "activation_desc": "Large scale OOH, Booths, Sampling",
+      "activation_clients": "Trusted by Nestlé, PepsiCo",
+      "event": "Event Management",
+      "event_desc": "Turnkey Launching & Conventions",
+      "event_clients": "Trusted by Panasonic, TH True Food",
+      "direct": "Direct Marketing",
+      "direct_desc": "Specialized Touchpoints & Deep Rural reach",
+      "direct_clients": "Trusted by Vĩnh Tường, Vim"
+    },
+    "structure": {
+      "managers": "26+",
+      "managers_label": "FULL-TIME OPERATION MANAGERS (Multi-tier risk control)",
+      "part_timers": "3000+",
+      "part_timers_label": "ACTIVE PART-TIMERS (Ready in 63 provinces)",
+      "experience": "80%",
+      "experience_label": "OVER 5 YEARS EXPERIENCE (Zero-mistake operation guarantee)"
+    }
+  }
+}

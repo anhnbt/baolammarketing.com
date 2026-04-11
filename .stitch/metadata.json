@@ -1,0 +1,40 @@
+{
+  "name": "projects/7143905766777716985",
+  "projectId": "7143905766777716985",
+  "title": "Bao Lam Marketing",
+  "visibility": "PRIVATE",
+  "projectType": "PROJECT_DESIGN",
+  "origin": "STITCH",
+  "screens": {
+    "hero": {
+      "id": "e103b82faae742c596a38521fe52d5fe",
+      "sourceScreen": "projects/7143905766777716985/screens/e103b82faae742c596a38521fe52d5fe",
+      "width": 780,
+      "height": 3722
+    },
+    "powerhouse": {
+      "id": "a49ab4fe185c4176bd4ea042592338f9",
+      "sourceScreen": "projects/7143905766777716985/screens/a49ab4fe185c4176bd4ea042592338f9",
+      "width": 888,
+      "height": 9174
+    },
+    "conversion": {
+      "id": "c1cf2a2125ab4bd6ad1c5608fec23106",
+      "sourceScreen": "projects/7143905766777716985/screens/c1cf2a2125ab4bd6ad1c5608fec23106",
+      "width": 780,
+      "height": 4912
+    },
+    "footer": {
+      "id": "1826a9c33a3746a1bbe4b979e9ee383f",
+      "sourceScreen": "projects/7143905766777716985/screens/1826a9c33a3746a1bbe4b979e9ee383f",
+      "width": 780,
+      "height": 3012
+    },
+    "engine": {
+      "id": "4c68b06db8664450bf3798ab874f7db5",
+      "sourceScreen": "projects/7143905766777716985/screens/4c68b06db8664450bf3798ab874f7db5",
+      "width": 780,
+      "height": 6434
+    }
+  }
+}
