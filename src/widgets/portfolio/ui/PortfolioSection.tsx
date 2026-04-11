@@ -23,14 +23,14 @@ export function PortfolioSection() {
       client: t('projects.vinhtuong.client'),
       title: t('projects.vinhtuong.title'),
       scale: t('projects.vinhtuong.scale'),
-      image: 'https://images.unsplash.com/photo-1572044162444-ad60f128bdea?auto=format&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?auto=format&fit=crop&q=80',
       height: 'h-80'
     },
     {
       client: t('projects.vim.client'),
       title: t('projects.vim.title'),
       scale: t('projects.vim.scale'),
-      image: 'https://images.unsplash.com/photo-1584697964190-7f858bed298c?auto=format&fit=crop&q=80',
+      image: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?auto=format&fit=crop&q=80',
       height: 'h-64'
     }
   ];
