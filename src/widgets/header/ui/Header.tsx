@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { LanguageSwitcher } from '@/features/language-switcher/ui/LanguageSwitcher';
 
@@ -8,7 +9,7 @@ export function Header() {
   return (
     <header className="fixed top-0 w-full z-50 bg-[var(--color-surface-container-low)]/80 backdrop-blur-xl flex justify-between items-center px-6 py-4 shadow-sm">
       <div className="flex items-center gap-3">
-        <span className="text-2xl font-black tracking-tighter text-[var(--color-crimson)] uppercase">{t('logo')}</span>
+        <Image src="/logo.png" alt="Bao Lam Marketing" width={180} height={48} className="h-8 md:h-10 w-auto object-contain" />
       </div>
 
       <div className="flex items-center gap-6">
