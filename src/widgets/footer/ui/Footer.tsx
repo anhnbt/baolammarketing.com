@@ -27,14 +27,10 @@ export function Footer() {
         </a>
       </nav>
 
-      {/* FAB: Contextual Action (Book a Walk / Consult) */}
-      <a href="#contact" className="fixed bottom-24 right-6 md:bottom-12 md:right-12 w-16 h-16 bg-[var(--color-crimson)]/90 backdrop-blur-[24px] rounded-sm shadow-2xl flex items-center justify-center text-white group active:scale-90 transition-all z-50">
-        <MessageSquare className="w-8 h-8 group-hover:rotate-12 transition-transform" />
-
-        {/* Testing Status Indicator moving to FAB */}
-        <span className="absolute -top-10 whitespace-nowrap text-[10px] text-[var(--color-surface-white)]/50 italic tracking-wider px-3 py-1 bg-black/40 rounded-full backdrop-blur-md opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none hidden md:block">
-          {t('testing_status')}
-        </span>
+      {/* FAB: Hotline */}
+      <a href="tel:0911636666" className="fixed bottom-24 right-6 md:bottom-12 md:right-12 w-14 h-14 bg-[var(--color-iron-blue)]/90 backdrop-blur-[24px] rounded-full shadow-2xl flex items-center justify-center text-white group active:scale-90 transition-all z-100 border border-white/20">
+        <div className="absolute inset-0 rounded-full bg-[var(--color-iron-blue)] animate-ping opacity-30"></div>
+        <Phone className="w-6 h-6 group-hover:scale-110 transition-transform" />
       </a>
 
       {/* Static Footer Block */}

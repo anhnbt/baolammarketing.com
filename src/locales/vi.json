@@ -1,8 +1,8 @@
 {
   "Header": {
-    "lead_gen": "Lead Gen",
-    "campaigns": "Chiến Dịch",
-    "network": "Mạng Lưới",
+    "lead_gen": "EXECUTION",
+    "campaigns": "PORTFOLIO",
+    "network": "METRICS",
     "logo": "BAO LAM"
   },
   "Footer": {
@@ -14,10 +14,12 @@
     "testing_status": "Hệ thống đang trong quá trình thử nghiệm. Hình ảnh và nội dung đang được cập nhật."
   },
   "Hero": {
-    "title": "Market Expansion 2024",
-    "headline": "NĂNG LỰC THỰC THI KHÔNG GIỚI HẠN - TỪ ĐÔ THỊ ĐẾN VÙNG SÂU VÙNG XA",
+    "title": "Strategic Command",
+    "headline_top": "EXECUTION",
+    "headline_highlight": "POWERHOUSE",
     "collaborators": "Cộng tác viên (CTV)",
-    "samples_per_year": "Mẫu Sampling Phân Phối / Năm"
+    "samples_per_year": "Mẫu Sampling/Năm",
+    "description": "Kiến tạo sức mạnh vận hành vượt trội. Chúng tôi không chỉ lập kế hoạch, chúng tôi thực thi với độ chính xác tuyệt đối trên mọi địa hình phân phối."
   },
   "Engine": {
     "subtitle": "CORE CAPABILITIES",
@@ -41,95 +43,92 @@
     "living_network": {
       "subtitle": "Operational Infrastructure",
       "title": "The Living Network",
-      "metric1_val": "26+",
       "metric1_title": "QUẢN LÝ DỰ ÁN TOÀN THỜI GIAN",
       "metric1_desc": "(Kiểm soát rủi ro đa tầng)",
-      "metric2_val": "3000+",
       "metric2_title": "CỘNG TÁC VIÊN HIỆN TRƯỜNG",
       "metric2_desc": "(Sẵn sàng tại 63 tỉnh thành)",
-      "metric3_val": "80%",
       "metric3_title": "TRÊN 5 NĂM KINH NGHIỆM",
       "metric3_desc": "(Cam kết vận hành Zero-mistake)"
     }
   },
   "Portfolio": {
-    "subtitle": "DIVERSE PORTFOLIO",
-    "title": "CHUYÊN TRỊ MỌI TÌNH HUỐNG",
-    "title_highlight": "KÊNH NGÁCH",
+    "subtitle": "Showcasing Operational Excellence",
+    "title": "DỰ ÁN",
+    "title_highlight": "TIÊU BIỂU",
     "projects": {
       "lays": {
-        "client": "Lay's Stax",
-        "title": "Biệt đội Stax phiêu lưu ký",
-        "scale": "185 Điểm trường"
+        "client": "PEPSICO",
+        "title": "Chuyến Tàu Lay's Stax",
+        "scale": "Dọc Bắc-Nam"
       },
       "panasonic": {
-        "client": "Panasonic",
-        "title": "Khí sạch tại trường",
-        "scale": "500 Trường Mầm non"
+        "client": "UNILEVER",
+        "title": "Đội Mũ Chuẩn Clear",
+        "scale": "4 Bến xe lớn"
       },
       "vinhtuong": {
-        "client": "Vĩnh Tường",
-        "title": "Chuyến xe siêu bền",
-        "scale": "54 Tỉnh thành"
+        "client": "SAINT-GOBAIN",
+        "title": "Hội Nghị Vĩnh Tường",
+        "scale": "Toàn quốc"
       },
       "vim": {
-        "client": "Vim",
-        "title": "Nhà vệ sinh sạch khuẩn",
-        "scale": "200 Trường Tiểu học"
+        "client": "NESTLÉ",
+        "title": "Thống Trị Điểm Chạm Nescafe",
+        "scale": "2,500,000+ Mẫu/năm"
       }
     }
   },
   "LeadConversion": {
     "subtitle": "DIRECT EXECUTION",
-    "title": "LIÊN HỆ VỚI",
+    "title": "LIÊN HỆ",
     "title_highlight": "CHUYÊN GIA",
     "title_suffix": "THỰC THI",
     "editorial": "Quy trình chuẩn hóa 2024",
-    "description": "Kiến tạo sức mạnh thương hiệu thông qua mạng lưới activations và sampling toàn diện. Chúng tôi không chỉ quảng bá, chúng tôi chiếm lĩnh thị trường.",
+    "description": "Chúng tôi không chỉ quảng bá, chúng tôi chiếm lĩnh thị trường thông qua mạng lưới rộng khắp.",
     "rate": "98.4%",
     "rate_label": "Tỉ lệ tiếp cận mục tiêu / KPI",
     "form": {
       "success_title": "ĐÃ RECORD YÊU CẦU",
-      "success_desc": "Chuyên gia thực thi của chúng tôi sẽ liên hệ trong 30 phút nữa.",
+      "success_desc": "Chuyên gia của chúng tôi sẽ liên hệ trong 30 phút nữa.",
       "industry_label": "Ngành hàng của thương hiệu?",
       "industry_fmcg": "FMCG",
       "industry_electronics": "Điện tử",
       "industry_building": "Công nghiệp",
       "industry_other": "Khác",
-      "fullname_label": "Thông tin liên hệ (Họ và Tên)",
+      "fullname_label": "Họ và Tên",
       "fullname_placeholder": "VÍ DỤ: NGUYỄN VĂN A",
       "phone_label": "Số điện thoại / Zalo",
       "phone_placeholder": "VÍ DỤ: 0911 63 6666",
-      "email_label": "Email liên hệ",
-      "email_placeholder": "VÍ DỤ: HELLO@BRAND.COM",
+      "email_label": "Email",
+      "email_placeholder": "HELLOBRAND@GMAIL.COM",
       "button_submitting": "ĐANG KÍCH HOẠT...",
-      "button_submit": "KÍCH HOẠT BÁO GIÁ",
+      "button_submit": "KÍCH HOẠT DỰ ÁN",
       "errors": {
         "fullname": "Tên phải có ít nhất 2 ký tự",
-        "phone": "Số điện thoại không hợp lệ (cần 10 số)",
+        "phone": "Cần 10 số",
         "email": "Email không hợp lệ",
-        "industry": "Vui lòng chọn ngành hàng"
+        "industry": "Chọn ngành hàng"
       }
     }
   },
   "NicheMastery": {
     "title": "CHINH PHỤC MỌI ĐỊA HÌNH",
-    "description": "\"Chúng tôi không chỉ mạnh ở kênh siêu thị. Sự khác biệt của Bảo Lâm nằm ở khả năng xuyên thấu các rào cản phân phối phức tạp nhất cường quốc.\"",
+    "description": "\"Sự khác biệt của Bảo Lâm nằm ở khả năng xuyên thấu các rào cản phân phối phức tạp nhất cường quốc.\"",
     "cards": {
       "temple": {
         "title": "Kênh Lễ Hội & Tâm Linh",
-        "highlight": "\"Tiếp cận 100.000+ lượt tại Đất Thiêng.\"",
-        "desc": "Độc quyền khai thác Sampling tại Chùa Hương, Bái Đính, Phủ Tây Hồ, Đền Hùng. Đảm bảo sự hiện diện thương hiệu trang trọng và hiệu quả."
+        "highlight": "\"100.000+ lượt tại Đất Thiêng.\"",
+        "desc": "Độc quyền khai thác Sampling tại Chùa Hương, Bái Đính, Phủ Tây Hồ, Đền Hùng."
       },
       "rural": {
         "title": "Vùng Sâu & Nông Thôn",
         "highlight": "\"Len lỏi đến từng ngõ ngách.\"",
-        "desc": "Giao nhận tận tay đến 12,000 hộ gia đình tại vùng sâu vùng xa. Năng lực hậu cần mạnh mẽ giúp nhãn hàng không bỏ sót bất kỳ tệp khách phổ thông nào."
+        "desc": "Giao nhận tận tay đến 12,000 hộ gia đình tại vùng sâu vùng xa."
       },
       "industrial": {
-        "title": "Khu Công Nghiệp & Trường Học",
+        "title": "KCN & Trường Học",
         "highlight": "\"Mass-Sampling Tốc Độ Cao.\"",
-        "desc": "Giải quyết bài toán khối lượng khổng lồ. Thiết lập hệ thống Youth Touchpoint, đảm bảo dòng chảy 2.5 triệu mẫu phát ra với độ chính xác cao."
+        "desc": "Giải quyết bài toán khối lượng khổng lồ. Thiết lập hệ thống Youth Touchpoint."
       }
     }
   },

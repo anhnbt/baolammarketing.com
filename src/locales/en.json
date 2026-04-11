@@ -1,8 +1,8 @@
 {
   "Header": {
-    "lead_gen": "Lead Gen",
-    "campaigns": "Campaigns",
-    "network": "Network",
+    "lead_gen": "EXECUTION",
+    "campaigns": "PORTFOLIO",
+    "network": "METRICS",
     "logo": "BAO LAM"
   },
   "Footer": {
@@ -14,10 +14,12 @@
     "testing_status": "The system is currently in testing phase. Images and contents are being updated."
   },
   "Hero": {
-    "title": "Market Expansion 2024",
-    "headline": "LIMITLESS EXECUTION CAPABILITY - FROM URBAN ZONES TO RURAL AREAS",
+    "title": "Strategic Command",
+    "headline_top": "EXECUTION",
+    "headline_highlight": "POWERHOUSE",
     "collaborators": "Field Collaborators",
-    "samples_per_year": "Sampling Units / Year"
+    "samples_per_year": "Samples/Year",
+    "description": "Architects of exceptional operational power. We don't just plan, we execute with absolute precision across all distribution terrains."
   },
   "Engine": {
     "subtitle": "CORE CAPABILITIES",
@@ -41,72 +43,69 @@
     "living_network": {
       "subtitle": "Operational Infrastructure",
       "title": "The Living Network",
-      "metric1_val": "26+",
       "metric1_title": "FULL-TIME PROJECT MANAGERS",
       "metric1_desc": "(Multi-layer risk control)",
-      "metric2_val": "3000+",
       "metric2_title": "FIELD COLLABORATORS",
       "metric2_desc": "(Ready across 63 provinces)",
-      "metric3_val": "80%",
       "metric3_title": "OVER 5 YEARS EXPERIENCE",
       "metric3_desc": "(Zero-mistake execution commitment)"
     }
   },
   "Portfolio": {
-    "subtitle": "DIVERSE PORTFOLIO",
-    "title": "MASTERING EVERY",
-    "title_highlight": "NICHE MARKET",
+    "subtitle": "Showcasing Operational Excellence",
+    "title": "OUTSTANDING",
+    "title_highlight": "PROJECTS",
     "projects": {
       "lays": {
-        "client": "Lay's Stax",
-        "title": "Stax Adventure Squad",
-        "scale": "185 Schools"
+        "client": "PEPSICO",
+        "title": "Lay's Stax Train",
+        "scale": "North-South"
       },
       "panasonic": {
-        "client": "Panasonic",
-        "title": "Clean Air at School",
-        "scale": "500 Kindergartens"
+        "client": "UNILEVER",
+        "title": "Clear Helmet Standard",
+        "scale": "4 Major Terminals"
       },
       "vinhtuong": {
-        "client": "Vinh Tuong",
-        "title": "Super Durable Truck",
-        "scale": "54 Provinces"
+        "client": "SAINT-GOBAIN",
+        "title": "Vinh Tuong Conference",
+        "scale": "Nationwide"
       },
       "vim": {
-        "client": "Vim",
-        "title": "Hygienic Restrooms",
-        "scale": "200 Primary Schools"
+        "client": "NESTLÉ",
+        "title": "Nescafe Touchpoint Dominance",
+        "scale": "2,500,000+ Samples/year"
       }
     }
   },
   "LeadConversion": {
     "subtitle": "DIRECT EXECUTION",
-    "title": "CONTACT OUR",
+    "title": "CONTACT",
     "title_highlight": "EXECUTION",
     "title_suffix": "EXPERTS",
     "editorial": "Standardized Process 2024",
-    "description": "Building brand power through a comprehensive network of activations and sampling. We don't just promote, we dominate the market.",
+    "description": "We don't just promote, we dominate the market through a comprehensive nationwide network.",
     "rate": "98.4%",
     "rate_label": "Target Reach / KPI Rate",
     "form": {
       "success_title": "REQUEST RECORDED",
-      "success_desc": "Our execution expert will contact you within 30 minutes.",
+      "success_desc": "Our expert will contact you within 30 minutes.",
       "industry_label": "Brand Industry?",
       "industry_fmcg": "FMCG",
       "industry_electronics": "Electronics",
       "industry_building": "Industrial",
       "industry_other": "Other",
-      "fullname_label": "Contact Information (Full Name)",
+      "fullname_label": "Full Name",
       "fullname_placeholder": "EXAMPLE: JOHN DOE",
       "phone_label": "Phone Number / Zalo",
       "phone_placeholder": "EXAMPLE: 0911 63 6666",
-      "email_label": "Contact Email",
+      "email_label": "Email",
       "email_placeholder": "EXAMPLE: HELLO@BRAND.COM",
       "button_submitting": "ACTIVATING...",
-      "button_submit": "ACTIVATE QUOTATION",
+      "button_submit": "ACTIVATE PROJECT",
       "errors": {
         "fullname": "Name must be at least 2 characters",
-        "phone": "Invalid phone number (requires 10 digits)",
+        "phone": "Requires 10 digits",
         "email": "Invalid email",
         "industry": "Please select an industry"
       }
@@ -114,22 +113,22 @@
   },
   "NicheMastery": {
     "title": "CONQUER ALL TERRAINS",
-    "description": "\"We are not just strong in the supermarket channel. Bao Lam's difference lies in its ability to penetrate the most complex distribution barriers nationwide.\"",
+    "description": "\"Bao Lam's difference lies in its ability to penetrate the most complex distribution barriers nationwide.\"",
     "cards": {
       "temple": {
         "title": "Festival & Spiritual Channels",
         "highlight": "\"Reaching 100,000+ visits at Sacred Lands.\"",
-        "desc": "Exclusive Sampling operations at major pagodas and temples. Ensuring dignified and effective brand presence."
+        "desc": "Exclusive Sampling operations at major pagodas and temples."
       },
       "rural": {
         "title": "Remote & Rural Areas",
         "highlight": "\"Navigating every alley.\"",
-        "desc": "Direct delivery to 12,000 households in remote areas. Strong logistics capability helps brands capture the mass market."
+        "desc": "Direct delivery to 12,000 households in remote areas."
       },
       "industrial": {
         "title": "Industrial Zones & Schools",
         "highlight": "\"High-Speed Mass Sampling.\"",
-        "desc": "Solving the massive volume challenge. Establishing Youth Touchpoint systems, ensuring the flow of 2.5 million samples with high precision."
+        "desc": "Solving the massive volume challenge. Establishing Youth Touchpoint systems."
       }
     }
   },

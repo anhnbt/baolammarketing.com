@@ -36,25 +36,32 @@ export function HeroSection() {
           }}
         >
           {/* Editorial Metadata */}
-          <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="flex items-center gap-4">
-            <div className="h-[1px] w-12 bg-[var(--color-crimson)]"></div>
-            <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-[var(--color-cool-gray)]">{t('title')}</span>
+          <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="flex items-center gap-3">
+            <span className="h-[2px] w-12 bg-primary-container"></span>
+            <span className="uppercase tracking-[0.3em] text-xs font-black text-primary-container">{t('title')}</span>
           </motion.div>
 
           {/* Main Headline */}
-          <motion.h1 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="text-[2.5rem] md:text-[3.5rem] leading-[1.1] font-black tracking-[-0.04em] text-white max-w-3xl">
-            {t('headline')}
+          <motion.h1 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="text-6xl md:text-8xl font-black tracking-tighter text-on-surface uppercase leading-none mt-4">
+            {t('headline_top')}<br/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-container to-[var(--color-primary)]">
+              {t('headline_highlight')}
+            </span>
           </motion.h1>
+          
+          <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="text-secondary max-w-2xl text-lg mt-6 leading-relaxed">
+            {t('description')}
+          </motion.p>
 
           {/* Power Metric Grid */}
-          <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-            <div className="bg-[var(--color-surface-container-low)] p-6 rounded-lg border-l-4 border-[var(--color-crimson)] relative overflow-hidden group">
-              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[var(--color-crimson)]/5 to-transparent"></div>
+          <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-12">
+            <div className="bg-surface-container-low p-6 rounded-sm border-l-4 border-primary-container relative overflow-hidden group">
+              <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-primary-container/5 to-transparent"></div>
               <div className="relative z-10">
-                <div className="text-[2.5rem] font-black text-[var(--color-crimson)] leading-none mb-2">
+                <div className="text-[2.5rem] font-black text-primary-container leading-none mb-2">
                   <AnimatedCounter from={0} to={3000} duration={2} />+
                 </div>
-                <div className="text-[10px] uppercase tracking-widest font-bold text-[var(--color-cool-gray)]">{t('collaborators')}</div>
+                <div className="text-[10px] uppercase tracking-widest font-bold text-on-secondary-container">{t('collaborators')}</div>
               </div>
             </div>
             

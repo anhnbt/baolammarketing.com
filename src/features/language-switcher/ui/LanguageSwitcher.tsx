@@ -2,8 +2,6 @@
 
 import { useLocale } from 'next-intl';
 import { usePathname, useRouter } from '@/i18n/routing';
-import { Globe } from 'lucide-react';
-import { Button } from '@/shared/ui/button';
 
 export function LanguageSwitcher() {
   const locale = useLocale();
@@ -16,16 +14,17 @@ export function LanguageSwitcher() {
   };
 
   return (
-    <Button 
-      variant="outline" 
-      size="sm" 
+    <button 
       onClick={toggleLocale}
-      className="flex items-center gap-2 bg-[var(--color-surface-container-highest)] border-white/10 hover:bg-[var(--color-crimson)] hover:text-white hover:border-[var(--color-crimson)] transition-all h-10 px-3 rounded-sm"
+      className="flex items-center gap-2 bg-[var(--color-surface-container-highest)] border border-white/10 hover:bg-[var(--color-surface-container)] transition-all h-9 px-3 rounded-full cursor-pointer hover:scale-105 active:scale-95 shadow-sm"
+      aria-label="Toggle language"
     >
-      <Globe className="w-4 h-4" />
-      <span className="text-[10px] tracking-widest font-black uppercase mt-0.5">
-        {locale === 'vi' ? 'EN' : 'VN'}
+      <span className="text-base select-none">
+        {locale === 'vi' ? '🇻🇳' : '🇬🇧'}
       </span>
-    </Button>
+      <span className="text-[10px] tracking-widest font-black uppercase text-[var(--color-surface-white)] mt-px">
+        {locale === 'vi' ? 'VN' : 'EN'}
+      </span>
+    </button>
   );
 }
