@@ -7,7 +7,7 @@ export function Header() {
   const t = useTranslations('Header');
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-[var(--color-surface-container-low)]/80 backdrop-blur-xl flex justify-between items-center px-6 py-4 shadow-sm">
+    <header className="fixed top-0 w-full z-50 bg-[var(--color-surface-container-low)]/80 backdrop-blur-xl flex justify-between items-center px-6 py-2 shadow-sm">
       <div className="flex items-center gap-3">
         <Image src="/logo-dark.png" alt="Bao Lam Marketing" width={240} height={64} className="h-10 md:h-14 w-auto object-contain drop-shadow-md" />
       </div>
