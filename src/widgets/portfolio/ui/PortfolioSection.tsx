@@ -9,7 +9,7 @@ export function PortfolioSection() {
       client: t('projects.lays.client'),
       title: t('projects.lays.title'),
       scale: t('projects.lays.scale'),
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD_11ruIUbPLnRmy6575Wwo5igu3WTOLEl0y1USlasM61XRTXyXF5nhhZXTI1Gg3nUxxuYQsufFoW27HV-UYr2Zhowf-7QuMys6NziLPg3jutsd8CIIzRlL0cn1uGAkfj-az95-R7NaX7burn2wJv70RTEgggkAt1yo1dCyAqsec5vsFFqdoc5qkCm1osZYo1zaxHx9IuGPGu_iLcsV5iEsdvBbykfaYbIxPEQ4LxohGyg5imCDmQWhpVfwpH130YbLy3nlPXNnciU',
+      image: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&q=80',
       height: 'h-64'
     },
     {

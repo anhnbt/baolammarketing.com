@@ -88,6 +88,9 @@ export function Footer() {
               <a href="#" className="text-[var(--color-cool-gray)]/60 hover:text-white text-xs transition-colors">Điều khoản thanh toán</a>
             </div>
           </div>
+          <div className="mt-8 text-center bg-black/20 border border-[var(--color-crimson)]/20 rounded-sm py-3 px-4">
+             <p className="text-[var(--color-surface-white)]/60 text-[11px] italic tracking-widest uppercase">{t('testing_status')}</p>
+          </div>
         </div>
       </footer>
     </>

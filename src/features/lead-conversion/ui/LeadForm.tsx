@@ -55,7 +55,7 @@ export function LeadForm() {
         <label className="block text-[10px] font-bold uppercase tracking-widest text-[var(--color-cool-gray)]">
           {t('industry_label')}
         </label>
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-2">
           {['FMCG', 'Electronics', 'Building Materials', 'Other'].map((ind) => {
             const industryMap: Record<string, string> = {
               'FMCG': t('industry_fmcg'),
