@@ -5,8 +5,8 @@ export function NicheMasterySection() {
   const t = useTranslations('NicheMastery');
 
   return (
-    <section id="niche" className="mb-32 max-w-7xl mx-auto px-8 w-full mt-24">
-      <div className="mb-12">
+    <section id="niche" className="mb-16 md:mb-32 max-w-7xl mx-auto px-8 w-full mt-12 md:mt-24 scroll-mt-20">
+      <div className="mb-8 md:mb-12">
         <h3 className="text-4xl font-black tracking-tighter text-[var(--color-surface-white)] uppercase mb-4">{t('title')}</h3>
         <p className="text-[var(--color-cool-gray)] max-w-3xl border-l-[4px] border-[var(--color-crimson)] pl-6 py-2">
           {t('description')}

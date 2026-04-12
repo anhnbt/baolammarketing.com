@@ -5,7 +5,7 @@ export function CtaSection() {
   const t = useTranslations('Cta');
 
   return (
-    <section className="force-dark py-20 bg-[var(--color-surface-container-lowest)] relative overflow-hidden mb-24 w-full text-[var(--color-surface-white)]">
+    <section className="force-dark py-12 md:py-20 bg-[var(--color-surface-container-lowest)] relative overflow-hidden mb-16 md:mb-24 w-full text-[var(--color-surface-white)]">
       <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(var(--color-crimson) 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
       <div className="relative z-10 text-center max-w-4xl mx-auto px-6">
         <h3 className="text-sm font-black text-[var(--color-crimson)] tracking-[0.4em] uppercase mb-8">{t('subtitle')}</h3>

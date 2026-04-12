@@ -11,7 +11,7 @@ export function HeroSection() {
   const { resolvedTheme } = useTheme();
 
   return (
-    <section className="relative min-h-[795px] flex flex-col justify-center overflow-hidden">
+    <section className="relative min-h-[750px] md:min-h-[795px] flex flex-col justify-center overflow-hidden">
       {/* Background Image / Glowing Map */}
       <div className="absolute inset-0 z-0">
         <motion.img 
@@ -26,7 +26,7 @@ export function HeroSection() {
       </div>
 
       {/* Content Canvas */}
-      <div className="relative z-10 px-8 pt-12 pb-24 max-w-7xl mx-auto w-full">
+      <div className="relative z-10 px-8 pt-24 pb-36 md:pt-32 md:pb-24 max-w-7xl mx-auto w-full">
         <motion.div 
           className="flex flex-col gap-8"
           initial="hidden"
@@ -44,14 +44,17 @@ export function HeroSection() {
           </motion.div>
 
           {/* Main Headline */}
-          <motion.h1 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-[var(--color-surface-white)] uppercase leading-[1.1] md:leading-none mt-4 break-words">
+          <motion.h1 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-[var(--color-surface-white)] uppercase leading-tight md:leading-none mt-4 break-words">
             {t('headline_top')}<br/>
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-crimson)] to-[#ffb3ad]">
               {t('headline_highlight')}
             </span>
           </motion.h1>
           
-          <motion.p variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="text-[var(--color-cool-gray)] max-w-2xl text-lg mt-6 leading-relaxed">
+          <motion.p 
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} 
+            className="text-[var(--color-cool-gray)] mt-8 max-w-2xl text-base md:text-lg leading-relaxed font-medium"
+          >
             {t('description')}
           </motion.p>
 

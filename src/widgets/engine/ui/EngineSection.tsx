@@ -10,15 +10,15 @@ export function EngineSection() {
   const t = useTranslations('Engine');
 
   return (
-    <section id="services" className="force-dark bg-[var(--color-surface-container-high)] py-24 relative overflow-hidden text-[var(--color-surface-white)]">
+    <section id="services" className="force-dark bg-[var(--color-surface-container-high)] py-16 md:py-24 relative overflow-hidden text-[var(--color-surface-white)] scroll-mt-20">
       {/* Decorative Matrix Grid */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" 
            style={{ backgroundImage: 'radial-gradient(var(--color-cool-gray) 1px, transparent 1px)', backgroundSize: '32px 32px' }}></div>
            
       <div className="max-w-7xl mx-auto px-8 relative z-10">
-        <div className="mb-20 md:text-center">
+        <div className="mb-12 md:mb-20 md:text-center">
           <span className="text-[10px] tracking-[0.2em] font-bold text-[var(--color-crimson)] uppercase block mb-4">{t('subtitle')}</span>
-          <h2 className="text-4xl md:text-6xl font-black tracking-tighter uppercase leading-none">
+          <h2 className="text-4xl md:text-6xl font-black tracking-tighter uppercase leading-tight">
             {t('title_engine')} <br className="md:hidden"/> <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-crimson)] to-[#ff7b72]">{t('title_highlight')}</span>
           </h2>
           <p className="text-[var(--color-cool-gray)] mt-6 max-w-2xl mx-auto text-sm md:text-base">
@@ -75,7 +75,7 @@ export function EngineSection() {
         </div>
 
         {/* Bottom Half: The Living Network */}
-        <div className="relative bg-[var(--color-surface-container-lowest)] overflow-hidden mt-12 rounded-sm border border-[var(--color-crimson)]/20 shadow-2xl">
+        <div className="relative bg-[var(--color-surface-container-lowest)] overflow-hidden mt-8 md:mt-12 rounded-sm border border-[var(--color-crimson)]/20 shadow-2xl">
           {/* Light Map Background */}
           <div className="absolute inset-0 z-0">
             <img 

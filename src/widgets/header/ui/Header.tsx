@@ -11,13 +11,42 @@ export function Header() {
   const t = useTranslations('Header');
   const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>('');
 
   useEffect(() => {
     setMounted(true);
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -70% 0px',
+      threshold: 0
+    };
+
+    const handleIntersect = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          setActiveSection(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersect, observerOptions);
+    ['portfolio', 'services', 'contact'].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
   }, []);
 
   // Use dark logo (black text) for light mode, white logo for dark mode
-  const logoSrc = mounted && resolvedTheme === 'light' ? '/logo-dark.png' : '/logo.png';
+  const logoSrc = mounted && resolvedTheme === 'light' ? '/logo.png' : '/logo-dark.png';
+
+  const navLinks = [
+    { href: '#contact', label: t('lead_gen'), id: 'contact' },
+    { href: '#portfolio', label: t('campaigns'), id: 'portfolio' },
+    { href: '#services', label: t('network'), id: 'services' },
+  ];
 
   return (
     <header className="fixed top-0 w-full z-50 bg-[var(--color-surface-container-lowest)]/90 backdrop-blur-xl flex justify-between items-center px-6 py-2 shadow-sm border-b border-[var(--border-subtle)]">
@@ -34,9 +63,19 @@ export function Header() {
 
       <div className="flex items-center gap-4 md:gap-6">
         <nav className="hidden md:flex gap-8">
-          <a className="text-[var(--color-crimson)] font-black text-xs underline decoration-2 underline-offset-4 tracking-widest uppercase hover:opacity-80 transition-opacity" href="#contact">{t('lead_gen')}</a>
-          <a className="text-[var(--color-cool-gray)] hover:text-[var(--color-crimson)] transition-colors font-medium text-xs tracking-widest uppercase" href="#portfolio">{t('campaigns')}</a>
-          <a className="text-[var(--color-cool-gray)] hover:text-[var(--color-crimson)] transition-colors font-medium text-xs tracking-widest uppercase" href="#services">{t('network')}</a>
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className={`text-xs tracking-widest uppercase transition-all duration-300 ${
+                activeSection === link.id
+                  ? 'text-[var(--color-crimson)] font-black underline decoration-2 underline-offset-8'
+                  : 'text-[var(--color-cool-gray)] hover:text-[var(--color-crimson)] font-medium'
+              }`}
+            >
+              {link.label}
+            </a>
+          ))}
         </nav>
 
         <ThemeToggle />

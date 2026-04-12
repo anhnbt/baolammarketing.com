@@ -6,8 +6,8 @@ export function LeadConversionSection() {
   const t = useTranslations('LeadConversion');
 
   return (
-    <section id="contact" className="max-w-7xl mx-auto px-8 py-24 w-full">
-      <div className="mb-16">
+    <section id="contact" className="max-w-7xl mx-auto px-8 py-16 md:py-24 w-full scroll-mt-20">
+      <div className="mb-10 md:mb-16">
         <span className="text-[10px] tracking-[0.2em] font-bold text-[var(--color-crimson)] uppercase block mb-4">{t('subtitle')}</span>
         <h2 className="text-5xl md:text-7xl font-black tracking-tighter uppercase leading-none max-w-4xl">
           {t('title')} <span className="text-[var(--color-crimson)]">{t('title_highlight')}</span> {t('title_suffix')}

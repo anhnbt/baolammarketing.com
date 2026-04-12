@@ -92,7 +92,7 @@ export function LeadForm() {
                   "px-6 py-3 text-xs font-black uppercase tracking-widest rounded-sm transition-all border",
                   selectedIndustry === ind
                     ? "bg-[var(--color-crimson)] border-[var(--color-crimson)] text-white"
-                    : "bg-[var(--color-surface-container)] text-[var(--color-cool-gray)] border-white/20 hover:bg-[var(--color-surface-bright)]"
+                    : "bg-[var(--color-surface-container)] text-[var(--color-cool-gray)] border-[var(--border-subtle)] hover:bg-[var(--color-surface-bright)]"
                 )}
               >
                 {industryMap[ind]}
@@ -113,7 +113,7 @@ export function LeadForm() {
         <Input
           {...register('fullName')}
           placeholder={t('fullname_placeholder')}
-          className="w-full bg-[var(--color-surface-container-low)] border-none focus-visible:ring-2 focus-visible:ring-[var(--color-crimson)] p-4 h-14 text-sm font-bold tracking-widest uppercase placeholder:text-[var(--color-cool-gray)]/50 rounded-sm"
+          className="w-full bg-[var(--color-surface-container-low)] border border-[var(--border-subtle)] focus-visible:ring-2 focus-visible:ring-[var(--color-crimson)] p-4 h-14 text-sm font-bold tracking-widest uppercase placeholder:text-[var(--color-cool-gray)]/50 rounded-sm"
         />
         {errors.fullName && (
           <p className="text-red-400 text-xs mt-1">{t(`errors.fullname`)}</p>
@@ -128,7 +128,7 @@ export function LeadForm() {
         <Input
           {...register('phone')}
           placeholder={t('phone_placeholder')}
-          className="w-full bg-[var(--color-surface-container-low)] border-none focus-visible:ring-2 focus-visible:ring-[var(--color-crimson)] p-4 h-14 text-sm font-bold tracking-widest uppercase placeholder:text-[var(--color-cool-gray)]/50 rounded-sm"
+          className="w-full bg-[var(--color-surface-container-low)] border border-[var(--border-subtle)] focus-visible:ring-2 focus-visible:ring-[var(--color-crimson)] p-4 h-14 text-sm font-bold tracking-widest uppercase placeholder:text-[var(--color-cool-gray)]/50 rounded-sm"
         />
         {errors.phone && (
           <p className="text-red-400 text-xs mt-1">{t(`errors.phone`)}</p>

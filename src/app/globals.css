@@ -54,7 +54,7 @@
   /* Surfaces: Soft off-white base (Zbox-inspired clean tech) */
   --surface: #F8FAFC;
   --surface-on: #080C14;
-  --surface-muted: #475569; /* Slate 600 for better WCAG contrast */
+  --surface-muted: #334155; /* Slate 700 for high visibility and WCAG compliance */
   --surface-navy: #0F172A;
 
   --surface-container-lowest: #FFFFFF;
@@ -250,6 +250,7 @@ body {
 @layer base {
   * {
     @apply border-border outline-ring/50;
+    scroll-margin-top: 5rem;
   }
   body {
     @apply bg-background text-foreground;

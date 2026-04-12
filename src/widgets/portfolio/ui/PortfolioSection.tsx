@@ -36,8 +36,8 @@ export function PortfolioSection() {
   ];
 
   return (
-    <section id="portfolio" className="max-w-7xl mx-auto px-8 py-24">
-      <div className="mb-16">
+    <section id="portfolio" className="max-w-7xl mx-auto px-8 py-16 md:py-24 scroll-mt-20">
+      <div className="mb-10 md:mb-16">
         <span className="text-[10px] tracking-[0.2em] font-bold text-[var(--color-crimson)] uppercase block mb-4">{t('subtitle')}</span>
         <h2 className="text-4xl md:text-6xl font-black tracking-tighter uppercase leading-none max-w-2xl">
           {t('title')} <span className="text-[var(--color-crimson)]">{t('title_highlight')}</span>
@@ -52,10 +52,10 @@ export function PortfolioSection() {
                <img src={project.image} alt={project.title} className="w-full h-full object-cover opacity-50 group-hover:opacity-70 transition-opacity duration-500 mix-blend-luminosity" />
             </div>
             
-            {/* Overlay Gradient */}
-            <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-surface-container-lowest)] via-transparent to-transparent opacity-90"></div>
+            {/* Overlay Gradient - Dark for text readability */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent opacity-90"></div>
             
-            <div className="absolute bottom-0 left-0 p-8 w-full flex flex-col items-start gap-4 transform translate-y-4 group-hover:translate-y-0 transition-transform">
+            <div className="absolute bottom-0 left-0 p-8 w-full flex flex-col items-start gap-4 transform transition-all duration-300">
               <div className="flex items-center justify-between w-full">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-[var(--color-crimson)] bg-[var(--color-surface-container-lowest)] px-3 py-1 border border-[var(--color-crimson)]/30 backdrop-blur-sm rounded">
                   {project.client}
