@@ -11,7 +11,7 @@ export function HeroSection() {
   const { resolvedTheme } = useTheme();
 
   return (
-    <section className="relative min-h-[750px] md:min-h-[795px] flex flex-col justify-center overflow-hidden">
+    <section className="relative min-h-[750px] md:min-h-[1000px] flex flex-col justify-center overflow-hidden">
       {/* Background Image / Glowing Map */}
       <div className="absolute inset-0 z-0">
         <motion.img 
@@ -26,7 +26,7 @@ export function HeroSection() {
       </div>
 
       {/* Content Canvas */}
-      <div className="relative z-10 px-8 pt-24 pb-36 md:pt-32 md:pb-24 max-w-7xl mx-auto w-full">
+      <div className="relative z-10 px-8 pt-24 pb-36 md:pt-32 md:pb-64 max-w-7xl mx-auto w-full">
         <motion.div 
           className="flex flex-col gap-8"
           initial="hidden"

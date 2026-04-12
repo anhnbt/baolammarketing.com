@@ -144,7 +144,7 @@ export function LeadForm() {
           {...register('email')}
           placeholder={t('email_placeholder')}
           type="email"
-          className="w-full bg-[var(--color-surface-container-low)] border-none focus-visible:ring-2 focus-visible:ring-[var(--color-crimson)] p-4 h-14 text-sm font-bold tracking-widest uppercase placeholder:text-[var(--color-cool-gray)]/50 rounded-sm"
+          className="w-full bg-[var(--color-surface-container-low)] border border-[var(--border-subtle)] focus-visible:ring-2 focus-visible:ring-[var(--color-crimson)] p-4 h-14 text-sm font-bold tracking-widest uppercase placeholder:text-[var(--color-cool-gray)]/50 rounded-sm"
         />
         {errors.email && (
           <p className="text-red-400 text-xs mt-1">{t(`errors.email`)}</p>
