@@ -119,7 +119,7 @@ export function HeroSection() {
                 "/assets/logos/masan.png",
                 "/assets/logos/panasonic.svg"
               ].map((src, idx) => (
-                <img key={`logo-1-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto object-contain opacity-60 hover:opacity-100 hover:scale-150 hover:brightness-125 hover:z-[60] contrast-125 dark:mix-blend-screen mix-blend-multiply hover:mix-blend-normal transition-all duration-300 cursor-pointer relative z-50" />
+                <img key={`logo-1-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto object-contain opacity-60 hover:opacity-100 hover:scale-125 hover:brightness-125 hover:z-[60] contrast-125 dark:mix-blend-screen mix-blend-multiply hover:mix-blend-normal transition-all duration-300 cursor-pointer relative z-50" />
               ))}
               
               {/* Set 2 (Duplicate for infinite matching) */}
@@ -131,7 +131,7 @@ export function HeroSection() {
                 "/assets/logos/masan.png",
                 "/assets/logos/panasonic.svg"
               ].map((src, idx) => (
-                <img key={`logo-2-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto object-contain opacity-60 hover:opacity-100 hover:scale-150 hover:brightness-125 hover:z-[60] contrast-125 dark:mix-blend-screen mix-blend-multiply hover:mix-blend-normal transition-all duration-300 cursor-pointer relative z-50" />
+                <img key={`logo-2-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto object-contain opacity-60 hover:opacity-100 hover:scale-125 hover:brightness-125 hover:z-[60] contrast-125 dark:mix-blend-screen mix-blend-multiply hover:mix-blend-normal transition-all duration-300 cursor-pointer relative z-50" />
               ))}
             </div>
           </div>
