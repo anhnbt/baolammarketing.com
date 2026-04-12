@@ -108,11 +108,10 @@ export function HeroSection() {
             {[
               "/assets/logos/pepsico.svg",
               "/assets/logos/unilever.svg",
-              "/assets/logos/nestle.png",
+              "/assets/logos/nestle.svg",
               "/assets/logos/saint-gobain.svg",
               "/assets/logos/masan.png",
-              "/assets/logos/panasonic.png",
-              "/assets/logos/total.png"
+              "/assets/logos/panasonic.svg"
             ].map((src, idx) => (
               <img key={`logo-1-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto grayscale opacity-70 hover:opacity-100 hover:grayscale-0 contrast-150 brightness-110 dark:mix-blend-screen mix-blend-multiply transition-all duration-300" />
             ))}
@@ -121,11 +120,10 @@ export function HeroSection() {
             {[
               "/assets/logos/pepsico.svg",
               "/assets/logos/unilever.svg",
-              "/assets/logos/nestle.png",
+              "/assets/logos/nestle.svg",
               "/assets/logos/saint-gobain.svg",
               "/assets/logos/masan.png",
-              "/assets/logos/panasonic.png",
-              "/assets/logos/total.png"
+              "/assets/logos/panasonic.svg"
             ].map((src, idx) => (
               <img key={`logo-2-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto grayscale opacity-70 hover:opacity-100 hover:grayscale-0 contrast-150 brightness-110 dark:mix-blend-screen mix-blend-multiply transition-all duration-300" />
             ))}
