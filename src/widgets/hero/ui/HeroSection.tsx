@@ -95,38 +95,45 @@ export function HeroSection() {
           display: flex;
           width: max-content;
         }
-        /* Gradient mask for smooth fade in/out at edges */
-        .fade-edges {
-          mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-          -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-        }
       `}} />
-      <div className="absolute bottom-0 w-full bg-[var(--color-surface-container-lowest)]/80 backdrop-blur-xl py-6 md:py-8 border-t border-[var(--border-subtle)] overflow-hidden">
-        <div className="max-w-7xl mx-auto fade-edges">
-          <div className="animate-scroll-logo items-center gap-16 md:gap-24 pl-16 md:pl-24">
-            {/* Set 1 */}
-            {[
-              "/assets/logos/pepsico.svg",
-              "/assets/logos/unilever.svg",
-              "/assets/logos/nestle.svg",
-              "/assets/logos/saint-gobain.svg",
-              "/assets/logos/masan.png",
-              "/assets/logos/panasonic.svg"
-            ].map((src, idx) => (
-              <img key={`logo-1-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto grayscale opacity-70 hover:opacity-100 hover:grayscale-0 contrast-150 brightness-110 dark:mix-blend-screen mix-blend-multiply transition-all duration-300" />
-            ))}
-            
-            {/* Set 2 (Duplicate for infinite matching) */}
-            {[
-              "/assets/logos/pepsico.svg",
-              "/assets/logos/unilever.svg",
-              "/assets/logos/nestle.svg",
-              "/assets/logos/saint-gobain.svg",
-              "/assets/logos/masan.png",
-              "/assets/logos/panasonic.svg"
-            ].map((src, idx) => (
-              <img key={`logo-2-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto grayscale opacity-70 hover:opacity-100 hover:grayscale-0 contrast-150 brightness-110 dark:mix-blend-screen mix-blend-multiply transition-all duration-300" />
-            ))}
+      <div className="absolute bottom-0 z-40 w-full py-12 md:py-16 overflow-x-clip overflow-y-visible pointer-events-auto">
+        {/* Visual Background Bar - Solid and full-width to the screen edges */}
+        <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-[80px] md:h-[100px] bg-[var(--color-surface-container-lowest)]/80 backdrop-blur-xl border-y border-[var(--border-subtle)] z-0" />
+        
+        {/* Logos container with edge mask applied ONLY to moving content */}
+        <div 
+          className="relative z-10 overflow-visible"
+          style={{
+            maskImage: 'linear-gradient(to right, transparent, black 150px, black calc(100% - 150px), transparent)',
+            WebkitMaskImage: 'linear-gradient(to right, transparent, black 150px, black calc(100% - 150px), transparent)'
+          }}
+        >
+          <div className="max-w-7xl mx-auto relative overflow-visible">
+            <div className="animate-scroll-logo items-center gap-16 md:gap-24 pl-16 md:pl-24 overflow-visible">
+              {/* Set 1 */}
+              {[
+                "/assets/logos/pepsico.svg",
+                "/assets/logos/unilever.svg",
+                "/assets/logos/nestle.svg",
+                "/assets/logos/saint-gobain.svg",
+                "/assets/logos/masan.png",
+                "/assets/logos/panasonic.svg"
+              ].map((src, idx) => (
+                <img key={`logo-1-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto object-contain opacity-60 hover:opacity-100 hover:scale-150 hover:brightness-125 hover:z-[60] contrast-125 dark:mix-blend-screen mix-blend-multiply hover:mix-blend-normal transition-all duration-300 cursor-pointer relative z-50" />
+              ))}
+              
+              {/* Set 2 (Duplicate for infinite matching) */}
+              {[
+                "/assets/logos/pepsico.svg",
+                "/assets/logos/unilever.svg",
+                "/assets/logos/nestle.svg",
+                "/assets/logos/saint-gobain.svg",
+                "/assets/logos/masan.png",
+                "/assets/logos/panasonic.svg"
+              ].map((src, idx) => (
+                <img key={`logo-2-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto object-contain opacity-60 hover:opacity-100 hover:scale-150 hover:brightness-125 hover:z-[60] contrast-125 dark:mix-blend-screen mix-blend-multiply hover:mix-blend-normal transition-all duration-300 cursor-pointer relative z-50" />
+              ))}
+            </div>
           </div>
         </div>
       </div>
