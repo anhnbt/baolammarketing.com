@@ -49,6 +49,10 @@ File này điều khiển hành vi của AI Agent (Gemini) để hỗ trợ vậ
    - Phải có phần giới thiệu về quy trình kiểm soát chất lượng (Quality Control) và bộ máy quản lý (CEO, Account, Operation).
 4. **CTA (Call to Action)**:
    - Các nút hành động phải mang tính cam kết: "Nhận tư vấn thực thi ngay", "Xem báo giá chi tiết".
+5. **Modern UI Interaction (Knowledge Tích lũy)**:
+   - **Scroll-spy**: Header phải tự động highlight các mục Navigation tương ứng với vị trí cuộn trang hiện tại.
+   - **Theme Consistency**: Logic đảo màu Logo (Inversion) phải được tối ưu để đảm bảo tính thẩm mỹ trên cả nền Sáng và Tối.
+   - **Contrast Optimization**: Các trường Input và Button trong Lead Form ở chế độ Light Mode phải có border rõ nét để đảm bảo tính dễ đọc và khả năng tiếp cận (Accessibility).
 
 ## 🏗️ Kiến trúc Nội dung (Content Framework)
 
@@ -79,3 +83,4 @@ File này điều khiển hành vi của AI Agent (Gemini) để hỗ trợ vậ
 
 ---
 *Cấu hình cho Trợ lý PM Bảo Lâm Marketing. Cập nhật ngay khi có dự án mới hoặc phản hồi từ Khách hàng.*
+*Lộ trình phát triển tiếp theo được lưu trữ tại: [STRATEGY-PHASE-2.md](file:///Users/wanbi/Code/freelance/baolammarketing.com/docs/STRATEGY-PHASE-2.md)*

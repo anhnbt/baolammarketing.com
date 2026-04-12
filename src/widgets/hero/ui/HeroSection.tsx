@@ -106,22 +106,26 @@ export function HeroSection() {
           <div className="animate-scroll-logo items-center gap-16 md:gap-24 pl-16 md:pl-24">
             {/* Set 1 */}
             {[
-              "https://ui-avatars.com/api/?name=PEPSICO&background=131b2e&color=fff&size=128&font-size=0.3&bold=true",
-              "https://ui-avatars.com/api/?name=UNILEVER&background=131b2e&color=fff&size=128&font-size=0.3&bold=true",
-              "https://ui-avatars.com/api/?name=NESTLE&background=131b2e&color=fff&size=128&font-size=0.3&bold=true",
-              "https://ui-avatars.com/api/?name=S.GOBAIN&background=131b2e&color=fff&size=128&font-size=0.3&bold=true",
-              "https://ui-avatars.com/api/?name=MASAN&background=131b2e&color=fff&size=128&font-size=0.3&bold=true"
+              "/assets/logos/pepsico.svg",
+              "/assets/logos/unilever.svg",
+              "/assets/logos/nestle.png",
+              "/assets/logos/saint-gobain.svg",
+              "/assets/logos/masan.png",
+              "/assets/logos/panasonic.png",
+              "/assets/logos/total.png"
             ].map((src, idx) => (
               <img key={`logo-1-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto grayscale opacity-70 hover:opacity-100 hover:grayscale-0 contrast-150 brightness-110 dark:mix-blend-screen mix-blend-multiply transition-all duration-300" />
             ))}
             
             {/* Set 2 (Duplicate for infinite matching) */}
             {[
-              "https://ui-avatars.com/api/?name=PEPSICO&background=131b2e&color=fff&size=128&font-size=0.3&bold=true",
-              "https://ui-avatars.com/api/?name=UNILEVER&background=131b2e&color=fff&size=128&font-size=0.3&bold=true",
-              "https://ui-avatars.com/api/?name=NESTLE&background=131b2e&color=fff&size=128&font-size=0.3&bold=true",
-              "https://ui-avatars.com/api/?name=S.GOBAIN&background=131b2e&color=fff&size=128&font-size=0.3&bold=true",
-              "https://ui-avatars.com/api/?name=MASAN&background=131b2e&color=fff&size=128&font-size=0.3&bold=true"
+              "/assets/logos/pepsico.svg",
+              "/assets/logos/unilever.svg",
+              "/assets/logos/nestle.png",
+              "/assets/logos/saint-gobain.svg",
+              "/assets/logos/masan.png",
+              "/assets/logos/panasonic.png",
+              "/assets/logos/total.png"
             ].map((src, idx) => (
               <img key={`logo-2-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto grayscale opacity-70 hover:opacity-100 hover:grayscale-0 contrast-150 brightness-110 dark:mix-blend-screen mix-blend-multiply transition-all duration-300" />
             ))}
