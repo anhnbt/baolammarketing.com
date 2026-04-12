@@ -14,11 +14,11 @@ export function HeroSection() {
     <section className="relative min-h-[750px] md:min-h-[1000px] flex flex-col justify-center overflow-hidden">
       {/* Background Image / Glowing Map */}
       <div className="absolute inset-0 z-0">
-        <motion.img 
+        <motion.img
           initial={{ opacity: 0, scale: 1.05 }}
           animate={{ opacity: 0.4, scale: 1 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="w-full h-full object-cover dark:mix-blend-screen mix-blend-multiply dark:grayscale-0 grayscale dark:invert-0 invert-0 dark:opacity-100 opacity-60" 
+          className="w-full h-full object-cover dark:mix-blend-screen mix-blend-multiply dark:grayscale-0 grayscale dark:invert-0 invert-0 dark:opacity-100 opacity-60"
           src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=2832&q=80"
           alt="Bao Lam Coverage Map"
         />
@@ -27,7 +27,7 @@ export function HeroSection() {
 
       {/* Content Canvas */}
       <div className="relative z-10 px-8 pt-24 pb-36 md:pt-32 md:pb-64 max-w-7xl mx-auto w-full">
-        <motion.div 
+        <motion.div
           className="flex flex-col gap-8"
           initial="hidden"
           whileInView="visible"
@@ -45,14 +45,14 @@ export function HeroSection() {
 
           {/* Main Headline */}
           <motion.h1 variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-black tracking-tighter text-[var(--color-surface-white)] uppercase leading-tight md:leading-none mt-4 break-words">
-            {t('headline_top')}<br/>
+            {t('headline_top')}<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--color-crimson)] to-[#ffb3ad]">
               {t('headline_highlight')}
             </span>
           </motion.h1>
-          
-          <motion.p 
-            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} 
+
+          <motion.p
+            variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }}
             className="text-[var(--color-cool-gray)] mt-8 max-w-2xl text-base md:text-lg leading-relaxed font-medium"
           >
             {t('description')}
@@ -69,7 +69,7 @@ export function HeroSection() {
                 <div className="text-[10px] uppercase tracking-widest font-bold text-[var(--color-cool-gray)]">{t('collaborators')}</div>
               </div>
             </div>
-            
+
             <div className="bg-[var(--color-surface-container-low)] p-6 rounded-lg border-l-4 border-[var(--color-crimson)] relative overflow-hidden group shadow-executive border border-[var(--border-subtle)]">
               <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[var(--color-crimson)]/5 to-transparent"></div>
               <div className="relative z-10">
@@ -85,7 +85,8 @@ export function HeroSection() {
       </div>
 
       {/* Monochrome Logo Bar */}
-      <style dangerouslySetInnerHTML={{__html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         @keyframes scroll-logos {
           0% { transform: translateX(0); }
           100% { transform: translateX(-50%); }
@@ -99,9 +100,9 @@ export function HeroSection() {
       <div className="absolute bottom-0 z-40 w-full py-12 md:py-16 overflow-x-clip overflow-y-visible pointer-events-auto">
         {/* Visual Background Bar - Solid and full-width to the screen edges */}
         <div className="absolute inset-x-0 top-1/2 -translate-y-1/2 h-[80px] md:h-[100px] bg-[var(--color-surface-container-lowest)]/80 backdrop-blur-xl border-y border-[var(--border-subtle)] z-0" />
-        
+
         {/* Logos container with edge mask applied ONLY to moving content */}
-        <div 
+        <div
           className="relative z-10 overflow-visible"
           style={{
             maskImage: 'linear-gradient(to right, transparent, black 150px, black calc(100% - 150px), transparent)',
@@ -119,9 +120,9 @@ export function HeroSection() {
                 "/assets/logos/masan.png",
                 "/assets/logos/panasonic.svg"
               ].map((src, idx) => (
-                <img key={`logo-1-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto object-contain opacity-60 hover:opacity-100 hover:scale-125 hover:brightness-125 hover:z-[60] contrast-125 dark:mix-blend-screen mix-blend-multiply hover:mix-blend-normal transition-all duration-300 cursor-pointer relative z-50" />
+                <img key={`logo-1-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto object-contain opacity-60 hover:opacity-100 hover:brightness-125 hover:z-[60] contrast-125 dark:mix-blend-screen mix-blend-multiply hover:mix-blend-normal transition-all duration-300 cursor-pointer relative z-50" />
               ))}
-              
+
               {/* Set 2 (Duplicate for infinite matching) */}
               {[
                 "/assets/logos/pepsico.svg",
@@ -131,7 +132,7 @@ export function HeroSection() {
                 "/assets/logos/masan.png",
                 "/assets/logos/panasonic.svg"
               ].map((src, idx) => (
-                <img key={`logo-2-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto object-contain opacity-60 hover:opacity-100 hover:scale-125 hover:brightness-125 hover:z-[60] contrast-125 dark:mix-blend-screen mix-blend-multiply hover:mix-blend-normal transition-all duration-300 cursor-pointer relative z-50" />
+                <img key={`logo-2-${idx}`} src={src} alt="Client Logo" className="h-10 md:h-14 w-auto object-contain opacity-60 hover:opacity-100 hover:brightness-125 hover:z-[60] contrast-125 dark:mix-blend-screen mix-blend-multiply hover:mix-blend-normal transition-all duration-300 cursor-pointer relative z-50" />
               ))}
             </div>
           </div>
