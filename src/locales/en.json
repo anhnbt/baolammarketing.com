@@ -1,141 +1,229 @@
 {
   "Header": {
-    "lead_gen": "EXECUTION",
+    "lead_gen": "CONTACT",
     "campaigns": "PORTFOLIO",
-    "network": "METRICS",
+    "network": "NETWORK",
+    "services": "SERVICES",
     "logo": "BAO LAM"
   },
   "Footer": {
+    "company_name": "BAO LAM MARKETING & DISTRIBUTION",
+    "company_name_intl": "CÔNG TY TNHH TIẾP THỊ BẢO LÂM",
+    "address": "Room 2-9, 2nd Floor, CT1 Building, Gelexia 885 Tam Trinh, Hoang Mai Ward, Hanoi, Vietnam",
     "home": "Home",
     "data": "Data",
     "messages": "Messages",
-    "hotline": "Hotline",
-    "call_now": "Call now: 0911 63 6666 (Mr. Tho)",
-    "testing_status": "The system is currently in testing phase. Images and contents are being updated."
+    "hotline": "Operations Hotline",
+    "call_now": "Call now: 0911 63 6666 (Mr. Tho Ta)",
+    "testing_status": "Copyright belongs to Bao Lam Marketing & Distribution."
   },
   "Hero": {
-    "title": "BTL EXECUTION PARTNER",
+    "badge": "BAO LAM MARKETING & DISTRIBUTION",
     "headline_top": "BAO LAM MARKETING",
     "headline_highlight": "& DISTRIBUTION",
-    "collaborators": "Field Collaborators",
-    "samples_per_year": "Samples/Year",
-    "description": "Architects of exceptional operational power. We don't just plan, we execute with absolute precision across all distribution terrains."
+    "tagline": "Nationwide Brand Activation, Event & Direct Marketing Execution Partner in 63 Provinces",
+    "description": "Empowering brand campaigns with over 3,000 local part-time field staff, 26 full-time project managers, and 80% of personnel possessing over 5 years of on-the-ground experience.",
+    "cta_primary": "Request Proposal & Estimate",
+    "cta_secondary": "View Key Case Studies",
+    "collaborators": "Part-time Field Staff",
+    "collaborators_sub": "Local network across 63 provinces",
+    "samples_per_year": "Samples Distributed / Year",
+    "samples_sub": "2.5M (2025) & 3.0M (2026) for Nescafe"
   },
   "Engine": {
-    "subtitle": "CORE CAPABILITIES",
-    "title_engine": "BAO LAM",
-    "title_highlight": "EXECUTION ENGINE",
-    "description": "A unified operational engine combining a force of 3000+ field personnel and a Zero-Mistake risk management system.",
+    "subtitle": "COMPANY'S SERVICES & STRUCTURE",
+    "title_engine": "OPERATIONAL POWER",
+    "title_highlight": "& EXECUTION STRUCTURE",
+    "description": "Strict corporate governance from CEO to independent Quality Control, seamlessly orchestrating Account, Creative Design, and Field Operations.",
     "services": {
-      "activation_title": "Activation & Sampling",
-      "activation_desc": "Brand coverage at traditional markets, supermarkets, schools, industrial zones, and hospitals.",
-      "activation_kpi1": "2.5 Million samples/year",
-      "activation_kpi2": "1500+ Locations",
-      "event_title": "Event & Roadshow",
-      "event_desc": "Large-scale attention activation through launch events, customer conferences, and inter-provincial roadshows.",
-      "event_kpi1": "Creative Concepts",
-      "event_kpi2": "Full Licensing",
-      "production_title": "Production & POSM",
-      "production_desc": "Direct production of Booths, Standees, Uniforms, and marketing materials with optimal factory costs.",
-      "production_kpi1": "3-layer QC",
-      "production_kpi2": "63-Province Logistics"
+      "activation_title": "Brand Activation",
+      "activation_desc": "Omnichannel brand activation: Wet Sampling, Interactive Experience Booths, and Mobile Roadshows across Supermarkets, Wet Markets, Universities, and Industrial Zones.",
+      "activation_kpi1": "Professional Wet/Dry Sampling",
+      "activation_kpi2": "Nationwide 63-Province Reach",
+      "event_title": "Event & Convention",
+      "event_desc": "Turnkey management for Product Launches, Dealer Conventions, Industry Conferences, and Press Briefings at 5-star venues (JW Marriott, Lotte Hotel).",
+      "event_kpi1": "5-Star Venues (JW Marriott, Lotte...)",
+      "event_kpi2": "VIP Guest & Protocol Management",
+      "production_title": "Direct Marketing & POSM",
+      "production_desc": "Fabrication of exhibition booths, mobile sampling carts, backdrop frames, and direct nationwide gift logistics.",
+      "production_kpi1": "Direct Quality Control (QC)",
+      "production_kpi2": "Nationwide Production & Logistics"
+    },
+    "qc": {
+      "badge": "COMPANY'S STRUCTURE",
+      "title": "GOVERNANCE & QUALITY CONTROL",
+      "desc": "Specialized division architecture guaranteeing timeline compliance, script adherence, and brand excellence.",
+      "step1_title": "1. Account & Creative Design",
+      "step1_desc": "Receiving client briefs, conducting site audits, rendering 3D booth/stage designs, and detailing event rundown.",
+      "step2_title": "2. Operation & Field Force",
+      "step2_desc": "Over 3,000 trained part-time field staff managed by dedicated regional supervisors (Sup).",
+      "step3_title": "3. Quality Control (QC)",
+      "step3_desc": "Independent QC department reporting directly to CEO for spot-audits, staff quality verification, and transparent reporting."
     },
     "living_network": {
-      "subtitle": "Operational Infrastructure",
-      "title": "The Living Network",
-      "metric1_title": "FULL-TIME PROJECT MANAGERS",
-      "metric1_desc": "(Multi-layer risk control)",
-      "metric2_title": "FIELD COLLABORATORS",
-      "metric2_desc": "(Ready across 63 provinces)",
-      "metric3_title": "OVER 5 YEARS EXPERIENCE",
-      "metric3_desc": "(Zero-mistake execution commitment)"
+      "subtitle": "COMPANY'S STAFF",
+      "title": "BAO LAM WORKFORCE SCALE",
+      "metric1_title": "26 FULL-TIME",
+      "metric1_desc": "(Project Managers, Account, Creative & Ops)",
+      "metric2_title": "OVER 3000 PART-TIME",
+      "metric2_desc": "(Network of PG, PB, Sup across 63 provinces)",
+      "metric3_title": "80% OVER 5-YEAR EXP",
+      "metric3_desc": "(Seasoned core team with proven field expertise)"
     }
   },
   "Portfolio": {
-    "subtitle": "Showcasing Operational Excellence",
-    "title": "OUTSTANDING",
-    "title_highlight": "PROJECTS",
+    "subtitle": "COMPANY'S CREDENTIALS",
+    "title": "EXECUTED",
+    "title_highlight": "FEATURED CAMPAIGNS",
+    "filter_all": "All Projects",
+    "filter_fmcg": "FMCG & Beverages",
+    "filter_tech": "Electronics & Industrial",
+    "filter_csr": "CSR & Community",
+    "challenge_label": "Challenge",
+    "solution_label": "Bao Lam Solution",
+    "result_label": "Delivered Result & Metrics",
     "projects": {
+      "nescafe": {
+        "client": "NESTLÉ",
+        "title": "Nescafe Consumer Sampling Operations",
+        "category": "FMCG & Beverages",
+        "scale": "Office Buildings, Apartments, Universities, KCN, Walking Streets",
+        "challenge": "Preserving consistent brewing taste and executing massive sampling volume year-round across thousands of touchpoints.",
+        "solution": "Deployed dedicated PG/PB units with standardized SOP brewing processes and versatile mobile sampling pushcarts.",
+        "result": "Delivered 2.5 million samples/year (2025) with planned expansion to 3.0 million samples (2026)."
+      },
+      "olong": {
+        "client": "SUNTORY PEPSICO",
+        "title": "O Long Tea Plus Sampling at 4 Sacred Festivals",
+        "category": "FMCG & Beverages",
+        "scale": "Tay Ho Temple, Huong Pagoda, Bai Dinh Pagoda, Hung Kings Temple",
+        "challenge": "Extreme visitor foot traffic during lunar new year festivals; strict spiritual etiquette and temple management rules.",
+        "solution": "Stationed dedicated Fix Teams conducting direct Wet Sampling stations at primary visitor welcome hubs.",
+        "result": "Reached 96,600 consumers (Reach: 96,600) across the 4 largest spiritual venues in Northern Vietnam."
+      },
+      "clear": {
+        "client": "UNILEVER",
+        "title": "'Confident in Standard Helmets – Home Safe' Campaign",
+        "category": "CSR & Community",
+        "scale": "Hanoi & HCMC (4 Major Bus Terminals)",
+        "challenge": "Engaging motorbike taxi drivers at high-density terminals and staging a massive nationwide media rally.",
+        "solution": "Phase 1: Helmet recall and replacement at 4 key terminals; Phase 2: Press conference & grand parade with Ambassador Thanh Hang.",
+        "result": "Replaced 1,000 standard helmets (250 per terminal); 5,000 participants (Youth Union, Nat'l Traffic Safety Committee)."
+      },
       "lays": {
         "client": "PEPSICO",
-        "title": "Lay's Stax Train",
-        "scale": "North-South"
+        "title": "Lay's Stax North-South Christmas Tour",
+        "category": "FMCG & Beverages",
+        "scale": "Dinh Tien Hoang Walking Street (HN) & AEON MALL Tan Phu (HCMC)",
+        "challenge": "Creating high-impact consumer buzz during Christmas holidays (Dec 23-25) simultaneously in both Hanoi and HCMC.",
+        "solution": "Fabricated the 15-second Lay's Stax Express Train, interactive mini-games, and themed photo-opportunity booths.",
+        "result": "Tens of thousands of youth engaged in the 15s check-in tour and product sampling."
       },
       "panasonic": {
-        "client": "UNILEVER",
-        "title": "Clear Helmet Standard",
-        "scale": "4 Major Terminals"
+        "client": "PANASONIC",
+        "title": "Panasonic DMX Dealer Convention",
+        "category": "Electronics & Industrial",
+        "scale": "Lotte Hotel Hanoi (Ballroom Charlotte & Crystal)",
+        "challenge": "Executing a dual-phase program: daytime tech Product Tour and evening VIP Dealer Appreciation Gala in a single day.",
+        "solution": "Orchestrated Product Tour (14:00-17:30) at Ballroom Charlotte/Foyer Crystal and Gala Dinner (18:15-21:30) at Ballroom Crystal.",
+        "result": "Flawless luxury execution, perfect timing schedule, strengthening partner ties across the DMX dealer network."
+      },
+      "a2": {
+        "client": "a2 MILK",
+        "title": "a2 Platinum Launching & Vietbaby Fair Activation",
+        "category": "FMCG & Beverages",
+        "scale": "JW Marriott Hanoi & I.C.E Hoan Kiem",
+        "challenge": "Unveiling premium milk formulation to 200 VIP retailers while engaging mass consumer trials at maternity expo.",
+        "solution": "Organized luxury Launching Event at JW Marriott (Sep 24, 2024) and interactive brand booth at Vietbaby Fair.",
+        "result": "Concurrence of 200 top retailers and direct engagement with thousands of parents and toddlers."
       },
       "vinhtuong": {
         "client": "SAINT-GOBAIN",
-        "title": "Vinh Tuong Conference",
-        "scale": "Nationwide"
+        "title": "Vinh Tuong Contractor & Dealer Solution Event 2023",
+        "category": "Electronics & Industrial",
+        "scale": "Northern & Central Vietnam",
+        "challenge": "Demonstrating technical solutions: Gyproc plasterboard, DURAflex cement board, DURAwood, and Anh Kim panels for contractors.",
+        "solution": "Constructed load-testing demonstration rigs, technical display booths, and organized professional contractor seminars.",
+        "result": "Strengthened brand engagement with hundreds of professional installers and building material dealers."
       },
-      "vim": {
-        "client": "NESTLÉ",
-        "title": "Nescafe Touchpoint Dominance",
-        "scale": "2,500,000+ Samples/year"
-      }
-    }
-  },
-  "LeadConversion": {
-    "subtitle": "DIRECT EXECUTION",
-    "title": "CONTACT",
-    "title_highlight": "EXPERTS",
-    "title_suffix": "",
-    "editorial": "Standardized Process 2024",
-    "description": "We don't just promote, we dominate the market through a comprehensive nationwide network.",
-    "rate": "98.4%",
-    "rate_label": "Target Reach / KPI Rate",
-    "form": {
-      "success_title": "REQUEST RECORDED",
-      "success_desc": "Our expert will contact you within 30 minutes.",
-      "industry_label": "Brand Industry?",
-      "industry_fmcg": "FMCG",
-      "industry_electronics": "Electronics",
-      "industry_building": "Industrial",
-      "industry_other": "Other",
-      "fullname_label": "Full Name",
-      "fullname_placeholder": "EXAMPLE: JOHN DOE",
-      "phone_label": "Phone Number / Zalo",
-      "phone_placeholder": "EXAMPLE: 0911 63 6666",
-      "email_label": "Email",
-      "email_placeholder": "EXAMPLE: HELLO@BRAND.COM",
-      "button_submitting": "ACTIVATING...",
-      "button_submit": "ACTIVATE PROJECT",
-      "errors": {
-        "fullname": "Name must be at least 2 characters",
-        "phone": "Requires 10 digits",
-        "email": "Invalid email",
-        "industry": "Please select an industry"
+      "pepsi_tet": {
+        "client": "PEPSI",
+        "title": "Brand Activation 'Pepsi Tet – Nourish The Spirit of Tet'",
+        "category": "CSR & Community",
+        "scale": "Deep Rural nationwide & Hanoi Gala",
+        "challenge": "Transporting Tet gift hampers and running community operations across remote, geographically isolated mountainous hamlets.",
+        "solution": "Collaborated with local authorities for direct door-to-door distribution (Phase 1) and staged Hanoi Wrap-up Event (Phase 2).",
+        "result": "Directly delivered holiday cheer and gift hampers to 12,000 needy families across Vietnam."
       }
     }
   },
   "NicheMastery": {
-    "title": "CONQUER ALL TERRAINS",
-    "description": "\"Bao Lam's difference lies in its ability to penetrate the most complex distribution barriers nationwide.\"",
+    "subtitle": "SPECIALIZED EXECUTION TERRAINS",
+    "title": "PROVEN DOMINANCE IN COMPLEX CHANNELS",
+    "description": "Bao Lam's field competence is demonstrated across large-scale campaigns requiring deep venue familiarity, permits, and protocol mastery:",
     "cards": {
       "temple": {
-        "title": "Festival & Spiritual Channels",
-        "highlight": "\"Reaching 100,000+ visits at Sacred Lands.\"",
-        "desc": "Exclusive Sampling operations at major pagodas and temples."
-      },
-      "rural": {
-        "title": "Remote & Rural Areas",
-        "highlight": "\"Navigating every alley.\"",
-        "desc": "Direct delivery to 12,000 households in remote areas."
+        "badge": "4 Major Pagodas & Festivals",
+        "title": "Spiritual & Major Cultural Festivals",
+        "highlight": "96,600 verified Wet Sampling consumer contacts",
+        "desc": "O Long Tea Plus campaign at Tay Ho Temple, Huong Pagoda, Bai Dinh Pagoda, Hung Kings Temple... Full protocol & permit compliance."
       },
       "industrial": {
-        "title": "Industrial Zones & Schools",
-        "highlight": "\"High-Speed Mass Sampling.\"",
-        "desc": "Solving the massive volume challenge. Establishing Youth Touchpoint systems."
+        "badge": "Offices & Universities",
+        "title": "Office Towers, Universities & Industrial Parks",
+        "highlight": "2.5M - 3.0M Nescafe samples/year",
+        "desc": "Targeting concentrated consumer traffic at major Office Buildings, Apartments, University Campuses, and Industrial Parks nationwide."
+      },
+      "rural": {
+        "badge": "Deep Rural",
+        "title": "Rural & Deep-Remote Markets",
+        "highlight": "12,000 families directly engaged",
+        "desc": "Pepsi Tet campaign delivering aid directly to isolated villages, breaking geographical barriers through our local on-the-ground network."
+      }
+    }
+  },
+  "LeadConversion": {
+    "subtitle": "DIRECT CONSULTATION",
+    "title": "REQUEST PROPOSAL",
+    "title_highlight": "& CAMPAIGN ESTIMATE",
+    "title_suffix": "",
+    "editorial": "Bao Lam Marketing & Distribution",
+    "description": "Submit your campaign requirements. Our senior Project Managers and Operations team will consult on the execution strategy and deliver a transparent cost breakdown.",
+    "sla_title": "DIRECT CONTACT INFORMATION",
+    "sla_1": "Operations Hotline: 0911 63 6666 (Mr. Tho Ta)",
+    "sla_2": "Email: tho.tv@baolammarketing.com",
+    "sla_3": "Office: Room 2-9, 2nd Floor, CT1 Building, Gelexia 885 Tam Trinh, Hoang Mai Ward, Hanoi, Vietnam",
+    "rate": "98.4%",
+    "rate_label": "KPI Achievement & Overdelivery Rate",
+    "form": {
+      "success_title": "INQUIRY RECEIVED SUCCESSFULLY",
+      "success_desc": "Mr. Tho Ta or our Project Management team will reach out directly via Phone / Zalo in a few minutes.",
+      "industry_label": "Brand Industry",
+      "industry_fmcg": "FMCG & Beverages",
+      "industry_electronics": "Consumer Electronics",
+      "industry_building": "Building Materials & Industrial",
+      "industry_other": "Other Sectors",
+      "fullname_label": "Contact Person Name",
+      "fullname_placeholder": "EXAMPLE: JOHN DOE",
+      "phone_label": "Phone Number / Zalo",
+      "phone_placeholder": "EXAMPLE: 0911 63 6666",
+      "email_label": "Work Email",
+      "email_placeholder": "BRAND@COMPANY.COM",
+      "button_submitting": "SUBMITTING...",
+      "button_submit": "REQUEST PROPOSAL & ESTIMATE",
+      "errors": {
+        "fullname": "Name must be at least 2 characters",
+        "phone": "Please enter a valid phone number (10 digits)",
+        "email": "Invalid email address format",
+        "industry": "Please select an industry"
       }
     }
   },
   "Cta": {
-    "subtitle": "Ready to Scale?",
-    "title": "LIMITLESS EXECUTION",
-    "btn_start": "START COLLABORATION",
-    "btn_methodology": "OUR METHODOLOGY"
+    "subtitle": "BAO LAM MARKETING & DISTRIBUTION",
+    "title": "CONNECT WITH BAO LAM EXECUTION TEAM",
+    "description": "Contact us today for a tailored staff allocation plan across 63 provinces and cost-optimized estimate for your brand campaign.",
+    "btn_start": "SUBMIT PROJECT INQUIRY",
+    "btn_methodology": "HOTLINE: 0911 63 6666"
   }
 }

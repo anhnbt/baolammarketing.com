@@ -3,139 +3,227 @@
     "lead_gen": "LIÊN HỆ",
     "campaigns": "DỰ ÁN",
     "network": "MẠNG LƯỚI",
+    "services": "DỊCH VỤ",
     "logo": "BAO LAM"
   },
   "Footer": {
+    "company_name": "CÔNG TY TNHH TIẾP THỊ BẢO LÂM",
+    "company_name_intl": "BAO LAM MARKETING & DISTRIBUTION",
+    "address": "Phòng 2-9, tầng 2, toà CT1 KĐT Gelexia 885 Tam Trinh, Phường Hoàng Mai, TP Hà Nội, Việt Nam",
     "home": "Trang chủ",
     "data": "Dữ liệu",
     "messages": "Tin nhắn",
-    "hotline": "Hotline",
-    "call_now": "Gọi ngay: 0911 63 6666 (Mr. Thọ)",
-    "testing_status": "Hệ thống đang trong quá trình thử nghiệm. Hình ảnh và nội dung đang được cập nhật."
+    "hotline": "Hotline điều hành",
+    "call_now": "Gọi ngay: 0911 63 6666 (Mr. Thọ Tạ)",
+    "testing_status": "Bản quyền thuộc về Công ty TNHH Tiếp Thị Bảo Lâm (Bao Lam Marketing & Distribution)."
   },
   "Hero": {
-    "title": "ĐỐI TÁC THỰC THI BTL",
+    "badge": "BAO LAM MARKETING & DISTRIBUTION",
     "headline_top": "BẢO LÂM MARKETING",
     "headline_highlight": "& DISTRIBUTION",
-    "collaborators": "Cộng tác viên (CTV)",
-    "samples_per_year": "Mẫu Sampling/Năm",
-    "description": "Bảo Lâm cung cấp dịch vụ tổ chức sự kiện và activation toàn diện. Chúng tôi đồng hành cùng khách hàng từ khâu lên kế hoạch cho đến khi trực tiếp triển khai trên toàn quốc."
+    "tagline": "Đối tác thực thi Brand Activation, Event & Direct Marketing tại 63 tỉnh thành",
+    "description": "Hiện thực hóa chiến dịch với mạng lưới hơn 3.000 nhân sự Part-time tại chỗ, 26 nhân sự Full-time điều hành và 80% có trên 5 năm kinh nghiệm thực địa.",
+    "cta_primary": "Nhận Báo Giá & Tư Vấn",
+    "cta_secondary": "Xem Dự Án Đã Triển Khai",
+    "collaborators": "Nhân sự Part-time (CTV)",
+    "collaborators_sub": "Mạng lưới sẵn sàng tại 63 tỉnh thành",
+    "samples_per_year": "Mẫu Sampling / Năm",
+    "samples_sub": "2.5M (2025) & 3.0M (2026) cho Nescafe"
   },
   "Engine": {
-    "subtitle": "NĂNG LỰC CỐT LÕI",
-    "title_engine": "HỆ THỐNG",
-    "title_highlight": "VẬN HÀNH",
-    "description": "Hệ thống vận hành chuyên nghiệp với hơn 3000 nhân sự và quy trình giám sát chặt chẽ, đảm bảo dự án luôn đạt chất lượng.",
+    "subtitle": "COMPANY'S SERVICES & STRUCTURE",
+    "title_engine": "NĂNG LỰC VẬN HÀNH",
+    "title_highlight": "& BỘ MÁY THỰC THI",
+    "description": "Mô hình quản trị chặt chẽ từ CEO đến bộ phận Quality Control độc lập, kết hợp nhịp nhàng giữa Account, Creative Design và Operation thực địa.",
     "services": {
-      "activation_title": "Tổ chức Activation",
-      "activation_desc": "Phủ sóng thương hiệu tại chợ truyền thống, siêu thị, trường học, khu công nghiệp và bệnh viện.",
-      "activation_kpi1": "2.5 Triệu mẫu/năm",
-      "activation_kpi2": "1500+ Điểm phát",
-      "event_title": "Sự kiện & Roadshow",
-      "event_desc": "Tổ chức các sự kiện ra mắt sản phẩm, hội nghị khách hàng và chạy roadshow liên tỉnh.",
-      "event_kpi1": "Concept sáng tạo",
-      "event_kpi2": "Giấy phép trọn gói",
-      "production_title": "Sản xuất POSM",
-      "production_desc": "Sản xuất trực tiếp Booth, Standee, Uniform và các vật phẩm tiếp thị với chi phí tối ưu tại xưởng.",
-      "production_kpi1": "QC 3 lớp",
-      "production_kpi2": "Logistics 63 tỉnh"
+      "activation_title": "Brand Activation",
+      "activation_desc": "Kích hoạt thương hiệu đa kênh: Wet Sampling, Booth trải nghiệm, Roadshow tương tác tại Siêu thị, Chợ, Phố đi bộ, Trường học và KCN.",
+      "activation_kpi1": "Wet/Dry Sampling chuyên nghiệp",
+      "activation_kpi2": "Bao phủ 63 tỉnh thành",
+      "event_title": "Event & Convention",
+      "event_desc": "Tổ chức trọn gói Launching Event, Hội nghị khách hàng / đại lý (Dealer Convention), Hội thảo chuyên ngành và Lễ ra quân.",
+      "event_kpi1": "Địa điểm 5 sao (JW Marriott, Lotte...)",
+      "event_kpi2": "Quản trị kịch bản & khách VIP",
+      "production_title": "Direct Marketing & POSM",
+      "production_desc": "Thi công gian hàng triển lãm, xe đẩy sampling, booth lưu động, khung backdrop và phân phối quà tặng chiến dịch tận nơi.",
+      "production_kpi1": "Quality Control (QC) trực tiếp",
+      "production_kpi2": "Sản xuất & Vận chuyển toàn quốc"
+    },
+    "qc": {
+      "badge": "COMPANY'S STRUCTURE",
+      "title": "BỘ MÁY QUẢN LÝ & KIỂM SOÁT CHẤT LƯỢNG",
+      "desc": "Cơ cấu chuyên trách đảm bảo từng điểm chạm của chiến dịch diễn ra đúng tiến độ và tiêu chuẩn của nhãn hàng.",
+      "step1_title": "1. Account & Creative Design",
+      "step1_desc": "Tiếp nhận brief, khảo sát địa điểm thực tế, lên layout 3D booth/sân khấu và xây dựng kịch bản chương trình chi tiết.",
+      "step2_title": "2. Operation & Field Force",
+      "step2_desc": "Hơn 3.000 nhân sự Part-time tại chỗ được đào tạo kịch bản, giám sát viên (Sup) quản lý vận hành trực tiếp từng địa bàn.",
+      "step3_title": "3. Quality Control (QC)",
+      "step3_desc": "Bộ phận QC độc lập trực thuộc CEO kiểm tra đột xuất, nghiệm thu chất lượng PG/PB, đối soát số lượng và báo cáo minh bạch."
     },
     "living_network": {
-      "subtitle": "Hạ Tầng Triển Khai",
-      "title": "MẠNG LƯỚI NHÂN SỰ",
-      "metric1_title": "QUẢN LÝ DỰ ÁN TRỰC TIẾP",
-      "metric1_desc": "(Kiểm soát tiến độ và rủi ro)",
-      "metric2_title": "NHÂN SỰ TRIỂN KHAI (PG/PB/SUP)",
-      "metric2_desc": "(Sẵn sàng tại 63 tỉnh thành)",
-      "metric3_title": "TRÊN 5 NĂM KINH NGHIỆM",
-      "metric3_desc": "(Cam kết chất lượng 100%)"
+      "subtitle": "COMPANY'S STAFF",
+      "title": "QUY MÔ NHÂN SỰ BẢO LÂM",
+      "metric1_title": "26 FULL-TIME",
+      "metric1_desc": "(Quản lý dự án, Account, Thiết kế & Vận hành)",
+      "metric2_title": "OVER 3000 PART-TIME",
+      "metric2_desc": "(Mạng lưới CTV, PG, PB, Sup tại 63 tỉnh)",
+      "metric3_title": "80% OVER 5-YEAR EXP",
+      "metric3_desc": "(Đội ngũ nòng cốt giàu kinh nghiệm thực chiến)"
     }
   },
   "Portfolio": {
-    "subtitle": "Năng Lực Triển Khai Thực Tế",
+    "subtitle": "COMPANY'S CREDENTIALS",
     "title": "DỰ ÁN",
-    "title_highlight": "TIÊU BIỂU",
+    "title_highlight": "TIÊU BIỂU ĐÃ TRIỂN KHAI",
+    "filter_all": "Tất cả",
+    "filter_fmcg": "FMCG & Đồ Uống",
+    "filter_tech": "Điện Tử & Xây Dựng",
+    "filter_csr": "CSR & Cộng Đồng",
+    "challenge_label": "Thách thức",
+    "solution_label": "Giải pháp Bảo Lâm",
+    "result_label": "Số liệu & Kết quả thực tế",
     "projects": {
+      "nescafe": {
+        "client": "NESTLÉ",
+        "title": "Dùng Thử Sản Phẩm Nescafe (Sampling)",
+        "category": "FMCG & Đồ Uống",
+        "scale": "Office Building, Apartments, Universities, KCN, Phố đi bộ",
+        "challenge": "Duy trì sản lượng sampling khổng lồ quanh năm với chất lượng pha chế chuẩn vị Nestlé tại hàng ngàn điểm chạm.",
+        "solution": "Tổ chức đội ngũ PG/PB cố định, chuẩn hóa quy trình pha chế và thiết kế hệ thống xe đẩy, booth lưu động tiện dụng.",
+        "result": "Đạt 2,5 triệu mẫu dùng thử/năm (2025) và kế hoạch mở rộng 3 triệu mẫu dùng thử (2026)."
+      },
+      "olong": {
+        "client": "SUNTORY PEPSICO",
+        "title": "Sampling Ô Long Tea Plus Tại 4 Đại Lễ Hội / Chùa",
+        "category": "FMCG & Đồ Uống",
+        "scale": "Phủ Tây Hồ, Chùa Hương, Chùa Bái Đính, Đền Hùng",
+        "challenge": "Mật độ khách hành hương đầu năm cực lớn, không gian tâm linh đòi hỏi tuân thủ nghiêm ngặt quy định ban quản lý.",
+        "solution": "Bố trí Fix team chuyên nghiệp thực hiện Wet Sampling trực tiếp tại các điểm đón tiếp chính.",
+        "result": "Đạt 96.600 lượt tiếp cận người tiêu dùng (Reach: 96,600) tại 4 ngôi chùa lớn nhất miền Bắc."
+      },
+      "clear": {
+        "client": "UNILEVER",
+        "title": "Chiến Dịch 'Tự Tin Đội Mũ Bảo Hiểm Đạt Chuẩn – Về Nhà An Toàn'",
+        "category": "CSR & Cộng Đồng",
+        "scale": "Hà Nội & TP. Hồ Chí Minh (4 bến xe lớn)",
+        "challenge": "Tiếp cận đối tượng tài xế xe ôm tại các bến xe trọng điểm và tổ chức lễ ra quân truyền thông quy mô lớn.",
+        "solution": "Phase 1: Thu hồi & đổi mũ bảo hiểm tại 4 bến xe lớn; Phase 2: Tổ chức Lễ ra quân & diễu hành cùng đại sứ Thanh Hằng.",
+        "result": "Đổi 1.000 mũ đạt chuẩn (250 mũ/bến), sự kiện quy tụ 5.000 người (TW Đoàn, UB ATGT, 5.000 đoàn viên)."
+      },
       "lays": {
         "client": "PEPSICO",
-        "title": "Chuyến Tàu Lay's Stax",
-        "scale": "Dọc Bắc-Nam"
+        "title": "Đón Giáng Sinh Bắc - Nam Cùng Tàu Lay's Stax",
+        "category": "FMCG & Đồ Uống",
+        "scale": "Phố đi bộ Đinh Tiên Hoàng (HN) & AEON MALL Tân Phú Celadon (HCM)",
+        "challenge": "Tạo điểm nhấn bùng nổ dịp Noel (23 - 25/12) đồng thời tại 2 địa điểm sầm uất nhất hai miền Nam - Bắc.",
+        "solution": "Dựng mô hình Chuyến tàu 15s Lay's Stax, game thực chiến nhận quà và khu chụp ảnh check-in sống ảo.",
+        "result": "Hàng chục ngàn bạn trẻ tham gia check-in '15s đi hết VN' và trải nghiệm sản phẩm snack ống Lay's Stax."
       },
       "panasonic": {
-        "client": "UNILEVER",
-        "title": "Đội Mũ Chuẩn Clear",
-        "scale": "4 Bến xe lớn"
+        "client": "PANASONIC",
+        "title": "Panasonic DMX Dealer Convention",
+        "category": "Điện Tử & Xây Dựng",
+        "scale": "Lotte Hotel Hà Nội (Ballroom Charlotte & Crystal)",
+        "challenge": "Tổ chức chuỗi hoạt động kép: Product Tour công nghệ ban ngày và Gala tri ân đại lý buổi tối trong cùng 1 ngày.",
+        "solution": "Vận hành Product Tour (14:00 - 17:30) tại Ballroom Charlotte/Foyer Crystal và Gala Event (18:15 - 21:30) tại Ballroom Crystal.",
+        "result": "Hội nghị diễn ra sang trọng, chuẩn xác tiến độ và thắt chặt gắn kết với toàn bộ mạng lưới đại lý DMX."
+      },
+      "a2": {
+        "client": "a2 MILK",
+        "title": "a2 Platinum Launching & Vietbaby Fair Activation",
+        "category": "FMCG & Đồ Uống",
+        "scale": "JW Marriott Hà Nội & I.C.E Hoàn Kiếm",
+        "challenge": "Ra mắt sản phẩm sữa cao cấp tới 200 nhà bán lẻ VIP và kích hoạt tương tác với người tiêu dùng đại chúng.",
+        "solution": "Tổ chức Launching Event tại JW Marriott (24/09/2024) và gian hàng tương tác tại Triển lãm Vietbaby Fair.",
+        "result": "Quy tụ 200 nhà bán lẻ hàng đầu và tiếp cận hàng ngàn phụ huynh, trẻ nhỏ dùng thử sản phẩm."
       },
       "vinhtuong": {
         "client": "SAINT-GOBAIN",
-        "title": "Hội Nghị Vĩnh Tường",
-        "scale": "Toàn quốc"
+        "title": "Sự Kiện Giới Thiệu Giải Pháp Đại Lý & Nhà Thầu Vĩnh Tường 2023",
+        "category": "Điện Tử & Xây Dựng",
+        "scale": "Miền Bắc & Miền Trung",
+        "challenge": "Trưng bày trực quan các giải pháp kỹ thuật: trần thạch cao Gyproc, tấm xi măng sợi DURAflex, DURAwood, tấm Ánh Kim.",
+        "solution": "Thi công sân khấu, khu trưng bày thử tải chịu lực và tổ chức chương trình giới thiệu chuyên nghiệp cho đại lý & nhà thầu.",
+        "result": "Góp phần thúc đẩy sản lượng tiêu thụ và kết nối vững chắc mạng lưới nhà thầu thi công toàn quốc."
       },
-      "vim": {
-        "client": "NESTLÉ",
-        "title": "Thống Trị Điểm Chạm Nescafe",
-        "scale": "2,500,000+ Mẫu/năm"
-      }
-    }
-  },
-  "LeadConversion": {
-    "subtitle": "TƯ VẤN TRỰC TIẾP",
-    "title": "LIÊN HỆ",
-    "title_highlight": "CHUYÊN GIA",
-    "title_suffix": "",
-    "editorial": "Quy trình chuẩn hóa 2024",
-    "description": "Để lại thông tin để được tư vấn trực tiếp và nhận báo giá chi tiết cho chiến dịch của bạn.",
-    "rate": "98.4%",
-    "rate_label": "Tỉ lệ hoàn thành KPI",
-    "form": {
-      "success_title": "TIẾP NHẬN THÀNH CÔNG",
-      "success_desc": "Chuyên gia của chúng tôi sẽ liên hệ trong 30 phút nữa.",
-      "industry_label": "Ngành hàng của thương hiệu?",
-      "industry_fmcg": "FMCG",
-      "industry_electronics": "Điện tử",
-      "industry_building": "Công nghiệp",
-      "industry_other": "Khác",
-      "fullname_label": "Họ và Tên",
-      "fullname_placeholder": "VÍ DỤ: NGUYỄN VĂN A",
-      "phone_label": "Số điện thoại / Zalo",
-      "phone_placeholder": "VÍ DỤ: 0911 63 6666",
-      "email_label": "Email",
-      "email_placeholder": "HELLOBRAND@GMAIL.COM",
-      "button_submitting": "ĐANG GỬI...",
-      "button_submit": "GỬI YÊU CẦU",
-      "errors": {
-        "fullname": "Tên phải có ít nhất 2 ký tự",
-        "phone": "Cần 10 số",
-        "email": "Email không hợp lệ",
-        "industry": "Chọn ngành hàng"
+      "pepsi_tet": {
+        "client": "PEPSI",
+        "title": "Brand Activation 'Pepsi Tết – Nourish The Spirit of Tet'",
+        "category": "CSR & Cộng Đồng",
+        "scale": "Vùng sâu nông thôn (Deep Rural) trên toàn quốc & Hà Nội",
+        "challenge": "Vận chuyển quà Tết và tổ chức hoạt động tại các địa bàn vùng sâu vùng xa giao thông khó khăn.",
+        "solution": "Phối hợp cùng chính quyền địa phương trao quà tận nơi (Phase 1) và tổ chức sự kiện tại Hà Nội (Phase 2).",
+        "result": "Trao tận tay các phần quà Tết ấm áp tới 12.000 hộ gia đình nghèo trên khắp Việt Nam."
       }
     }
   },
   "NicheMastery": {
-    "title": "CÁC KÊNH TRIỂN KHAI",
-    "description": "Bảo Lâm có kinh nghiệm tổ chức chương trình tại nhiều địa điểm và kênh phân phối khác nhau trên toàn quốc.",
+    "subtitle": "KÊNH THỰC THI CHUYÊN BIỆT",
+    "title": "THẾ MẠNH TẠI CÁC ĐỊA BÀN ĐẶC THÙ",
+    "description": "Kinh nghiệm thực chiến của Bảo Lâm được chứng minh qua các chiến dịch quy mô lớn tại các địa điểm đòi hỏi am hiểu sâu sắc về địa bàn và thủ tục:",
     "cards": {
       "temple": {
-        "title": "Kênh Lễ Hội & Tâm Linh",
-        "highlight": "Tiếp cận 100.000+ lượt khách.",
-        "desc": "Tổ chức Sampling tại Chùa Hương, Bái Đính, Phủ Tây Hồ, Đền Hùng."
-      },
-      "rural": {
-        "title": "Vùng Sâu & Nông Thôn",
-        "highlight": "Tiếp cận tận nơi.",
-        "desc": "Tổ chức hoạt động tại các vùng xa trung tâm."
+        "badge": "4 Đại Chùa & Lễ Hội",
+        "title": "Kênh Tâm Linh & Đại Lễ Hội Miền Bắc",
+        "highlight": "96.600 lượt tiếp cận Wet Sampling thực tế",
+        "desc": "Chiến dịch Ô Long Tea Plus tại Phủ Tây Hồ, Chùa Hương, Chùa Bái Đính, Đền Hùng... Am hiểu quy tắc tâm linh, an ninh trật tự và quy định ban quản lý."
       },
       "industrial": {
-        "title": "KCN & Trường Học",
-        "highlight": "Phát mẫu thử số lượng lớn.",
-        "desc": "Thực hiện các chương trình sampling tại trường học và khu công nghiệp."
+        "badge": "Văn phòng & KCN",
+        "title": "Kênh Tòa Nhà, Đại Học & KCN",
+        "highlight": "2.5M - 3M mẫu sampling Nescafe/năm",
+        "desc": "Tiếp cận tập trung người tiêu dùng tại các tòa nhà văn phòng (Office Building), khu chung cư (Apartments), trường đại học và khu công nghiệp trên toàn quốc."
+      },
+      "rural": {
+        "badge": "Deep Rural",
+        "title": "Kênh Nông Thôn & Vùng Sâu Vùng Xa",
+        "highlight": "12.000 hộ gia đình tiếp cận trực tiếp",
+        "desc": "Chiến dịch Pepsi Tết trao quà tại các bản làng vùng sâu vùng xa trên cả nước, vượt qua rào cản địa lý nhờ mạng lưới CTV địa phương tại chỗ."
+      }
+    }
+  },
+  "LeadConversion": {
+    "subtitle": "LIÊN HỆ HỢP TÁC",
+    "title": "YÊU CẦU TƯ VẤN",
+    "title_highlight": "& DỰ TOÁN CHIẾN DỊCH",
+    "title_suffix": "",
+    "editorial": "Bảo Lâm Marketing & Distribution",
+    "description": "Để lại thông tin chiến dịch của bạn. Đội ngũ quản lý dự án (PM) và bộ phận Vận hành của Bảo Lâm sẽ liên hệ tư vấn phương án và gửi bảng dự toán chi tiết.",
+    "sla_title": "THÔNG TIN LIÊN HỆ TRỰC TIẾP",
+    "sla_1": "Hotline điều hành: 0911 63 6666 (Mr. Tạ Viết Thọ)",
+    "sla_2": "Email: tho.tv@baolammarketing.com",
+    "sla_3": "Văn phòng: Phòng 2-9, tầng 2, toà CT1 KĐT Gelexia 885 Tam Trinh, Phường Hoàng Mai, TP Hà Nội, Việt Nam",
+    "rate": "98.4%",
+    "rate_label": "Tỉ lệ hoàn thành và vượt KPI cam kết",
+    "form": {
+      "success_title": "TIẾP NHẬN YÊU CẦU THÀNH CÔNG",
+      "success_desc": "Mr. Thọ Tạ hoặc đội ngũ PM của Bảo Lâm sẽ liên hệ trực tiếp với bạn qua Số điện thoại / Zalo trong ít phút.",
+      "industry_label": "Ngành hàng của thương hiệu",
+      "industry_fmcg": "FMCG & Đồ uống",
+      "industry_electronics": "Điện tử & Gia dụng",
+      "industry_building": "Vật liệu XD & Công nghiệp",
+      "industry_other": "Ngành hàng khác",
+      "fullname_label": "Họ và Tên người liên hệ",
+      "fullname_placeholder": "VÍ DỤ: NGUYỄN VĂN A",
+      "phone_label": "Số điện thoại / Zalo",
+      "phone_placeholder": "VÍ DỤ: 0911 63 6666",
+      "email_label": "Email công việc",
+      "email_placeholder": "BRAND@COMPANY.COM",
+      "button_submitting": "ĐANG TIẾP NHẬN...",
+      "button_submit": "GỬI YÊU CẦU TƯ VẤN & BÁO GIÁ",
+      "errors": {
+        "fullname": "Tên phải có ít nhất 2 ký tự",
+        "phone": "Vui lòng nhập số điện thoại hợp lệ (10 số)",
+        "email": "Email không đúng định dạng",
+        "industry": "Vui lòng chọn ngành hàng"
       }
     }
   },
   "Cta": {
-    "subtitle": "Bạn Đã Sẵn Sàng?",
-    "title": "ĐỒNG HÀNH CÙNG BẠN",
-    "btn_start": "BẮT ĐẦU HỢP TÁC",
-    "btn_methodology": "TÌM HIỂU THÊM"
+    "subtitle": "BẢO LÂM MARKETING & DISTRIBUTION",
+    "title": "KẾT NỐI VỚI ĐỘI NGŨ THỰC THI BẢO LÂM",
+    "description": "Liên hệ ngay để nhận phương án phân bổ nhân sự 63 tỉnh thành và dự toán chi phí tối ưu cho chiến dịch của thương hiệu.",
+    "btn_start": "GỬI YÊU CẦU DỰ ÁN",
+    "btn_methodology": "HOTLINE: 0911 63 6666"
   }
 }

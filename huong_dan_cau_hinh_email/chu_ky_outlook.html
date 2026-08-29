@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chữ ký Outlook - Nguyễn Bá Tuấn Anh</title>
+    <style>
+        :root {
+            --brand-primary: #df2a30;
+            --brand-primary-dim: #df2a30cc;
+            --brand-secondary: #1b7340;
+            --brand-accent: #f5a623;
+        }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f9fafb;
+            color: #1f2937;
+            padding: 40px 20px;
+            max-width: 850px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+        .container {
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            padding: 40px;
+            margin-bottom: 30px;
+            border-top: 5px solid var(--brand-primary);
+        }
+        h1 {
+            color: #111827;
+            font-size: 26px;
+            margin-top: 0;
+            border-bottom: 2px solid #f3f4f6;
+            padding-bottom: 15px;
+            font-weight: 700;
+        }
+        p.desc {
+            color: #6b7280;
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+        .desc a {
+            color: var(--brand-primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .desc a:hover {
+            text-decoration: underline;
+        }
+        .signature-card {
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 35px;
+            background-color: #ffffff;
+            transition: box-shadow 0.2s, border-color 0.2s;
+        }
+        .signature-card:hover {
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-color: var(--brand-primary-dim);
+        }
+        .signature-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px dotted #e5e7eb;
+            padding-bottom: 10px;
+        }
+        .signature-name {
+            font-weight: 600;
+            color: #374151;
+            font-size: 16px;
+        }
+        .btn-copy {
+            background-color: var(--brand-primary);
+            color: white;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            transition: background-color 0.2s, transform 0.1s;
+            outline: none;
+        }
+        .btn-copy:hover {
+            background-color: var(--brand-primary-dim);
+        }
+        .btn-copy:active {
+            transform: scale(0.98);
+        }
+        .preview-box {
+            padding: 25px;
+            border: 1px dashed #d1d5db;
+            border-radius: 8px;
+            background-color: #fafafa;
+            margin-bottom: 10px;
+            overflow-x: auto;
+        }
+        .guide-box {
+            background-color: #f0fdf4;
+            border-left: 4px solid var(--brand-secondary);
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .guide-box h3 {
+            margin-top: 0;
+            color: #14532d;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .guide-box ol {
+            margin: 0;
+            padding-left: 20px;
+            color: #166534;
+            font-size: 14px;
+        }
+        .guide-box li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Mẫu Chữ Ký Outlook - Nguyễn Bá Tuấn Anh</h1>
+        <p class="desc">
+            Dưới đây là 3 mẫu chữ ký được thiết kế lại theo <strong>màu sắc thương hiệu chính thức</strong> của công ty Bảo Lâm Marketing. 
+            Bạn chỉ cần bấm nút <strong>"Sao chép chữ ký"</strong> ở mẫu bạn thích rồi dán trực tiếp vào phần cài đặt chữ ký của Outlook. 
+            (Nếu chưa cấu hình tài khoản email, vui lòng xem <a href="huong_dan_cau_hinh_email.html" target="_blank">Hướng dẫn cấu hình Email doanh nghiệp</a>).
+        </p>
+
+        <!-- MẪU 1: ĐỎ THƯƠNG HIỆU NỔI BẬT -->
+        <div class="signature-card">
+            <div class="signature-header">
+                <span class="signature-name">Mẫu 1: Đỏ Thương Hiệu (Hiện Đại, Nổi Bật)</span>
+                <button class="btn-copy" onclick="copySignature('sig1')">Sao chép chữ ký</button>
+            </div>
+            <div class="preview-box">
+                <div id="sig1">
+                    <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, Helvetica, sans-serif; font-size: 13px; line-height: 1.5; color: #333333;">
+                        <tr>
+                            <!-- Cột trái: Logo -->
+                            <td valign="middle" style="padding-right: 15px; border-right: 3px solid #df2a30;">
+                                <img src="logo.png" width="100" alt="Bảo Lâm Marketing" style="border: 0; display: block; max-width: 100%; height: auto;">
+                            </td>
+                            
+                            <!-- Cột phải: Thông tin -->
+                            <td valign="top" style="padding-left: 15px;">
+                                <div style="font-size: 16px; font-weight: bold; color: #df2a30; letter-spacing: 0.5px; margin-bottom: 2px; text-transform: uppercase;">
+                                    Nguyễn Bá Tuấn Anh
+                                </div>
+                                <div style="font-size: 12px; font-weight: bold; color: #1b7340; margin-bottom: 12px; font-style: italic;">
+                                    Bảo Lâm Marketing Co., Ltd.
+                                </div>
+                                <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; font-size: 12px; color: #666666; line-height: 1.6;">
+                                    <tr>
+                                        <td valign="top" style="padding-bottom: 4px;">
+                                            <span style="color: #df2a30; font-weight: bold; width: 65px; display: inline-block;">Địa chỉ:</span> 
+                                            <span style="color: #444444;">Phòng 2-9, Tầng 2, Toà CT1 KĐT Gelexia 885 Tam Trinh, Phường Hoàng Mai, Thành phố Hà Nội, Việt Nam</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding-bottom: 4px;">
+                                            <span style="color: #df2a30; font-weight: bold; width: 65px; display: inline-block;">Điện thoại:</span> 
+                                            <a href="tel:+84349876595" style="color: #df2a30; text-decoration: none; font-weight: bold;">+84 34 987 6595</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top" style="padding-bottom: 4px;">
+                                            <span style="color: #df2a30; font-weight: bold; width: 65px; display: inline-block;">E-mail:</span> 
+                                            <a href="mailto:anhnbt@baolammarketing.com" style="color: #444444; text-decoration: none;">anhnbt@baolammarketing.com</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td valign="top;">
+                                            <span style="color: #df2a30; font-weight: bold; width: 65px; display: inline-block;">Website:</span> 
+                                            <a href="https://baolammarketing.com" target="_blank" style="color: #df2a30; text-decoration: underline; font-weight: bold;">baolammarketing.com</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- MẪU 2: TỐI GIẢN PHỐI MÀU (XANH LÁ & CAM ACCENT) -->
+        <div class="signature-card">
+            <div class="signature-header">
+                <span class="signature-name">Mẫu 2: Tối Giản Phối Màu (Xanh Lá & Cam Accent)</span>
+                <button class="btn-copy" onclick="copySignature('sig2')">Sao chép chữ ký</button>
+            </div>
+            <div class="preview-box">
+                <div id="sig2">
+                    <table cellpadding="0" cellspacing="0" border="0" style="font-family: 'Segoe UI', Tahoma, Geneva, sans-serif; font-size: 13px; line-height: 1.5; color: #2d3748;">
+                        <tr>
+                            <td>
+                                <!-- Logo -->
+                                <div style="margin-bottom: 12px;">
+                                    <img src="logo.png" width="90" alt="Bảo Lâm Marketing" style="border: 0; display: block;">
+                                </div>
+                                <!-- Tên -->
+                                <div style="font-size: 17px; font-weight: 700; color: #2d3748; letter-spacing: 0.5px; text-transform: uppercase;">
+                                    Nguyễn Bá Tuấn Anh
+                                </div>
+                                <!-- Công ty -->
+                                <div style="font-size: 12px; color: #1b7340; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; margin-top: 1px; margin-bottom: 8px;">
+                                    Bảo Lâm Marketing Co., Ltd.
+                                </div>
+                                <!-- Đường gạch ngang phân cách màu cam accent -->
+                                <div style="border-top: 2px solid #f5a623; width: 280px; margin-bottom: 10px;"></div>
+                                <!-- Thông tin liên hệ -->
+                                <table cellpadding="0" cellspacing="0" border="0" style="font-size: 12px; color: #718096; line-height: 1.7;">
+                                    <tr>
+                                        <td>
+                                            <span style="color: #1b7340; font-weight: bold;">A:</span> Phòng 2-9, Tầng 2, Toà CT1 KĐT Gelexia 885 Tam Trinh, Hoàng Mai, Hà Nội
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 2px;">
+                                            <span style="color: #1b7340; font-weight: bold;">M:</span> <a href="tel:+84349876595" style="color: #2d3748; text-decoration: none; font-weight: 600;">+84 34 987 6595</a> &nbsp;|&nbsp; 
+                                            <span style="color: #1b7340; font-weight: bold;">E:</span> <a href="mailto:anhnbt@baolammarketing.com" style="color: #718096; text-decoration: none;">anhnbt@baolammarketing.com</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 2px;">
+                                            <span style="color: #1b7340; font-weight: bold;">W:</span> <a href="https://baolammarketing.com" target="_blank" style="color: #1b7340; text-decoration: none; font-weight: 600;">www.baolammarketing.com</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- MẪU 3: ĐỎ & XANH LÁ PHỐI HỢP (SÁNG TẠO) -->
+        <div class="signature-card">
+            <div class="signature-header">
+                <span class="signature-name">Mẫu 3: Đỏ & Xanh Lá Phối Hợp (Sáng Tạo)</span>
+                <button class="btn-copy" onclick="copySignature('sig3')">Sao chép chữ ký</button>
+            </div>
+            <div class="preview-box">
+                <div id="sig3">
+                    <table cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif; font-size: 13px; line-height: 1.5; color: #2d3748;">
+                        <tr>
+                            <!-- Phần Tên bên trái -->
+                            <td valign="top" style="padding-right: 20px; border-right: 2px solid #1b7340; width: 180px;">
+                                <!-- Logo -->
+                                <div style="margin-bottom: 12px;">
+                                    <img src="logo.png" width="80" alt="Bảo Lâm Marketing" style="border: 0; display: block;">
+                                </div>
+                                <div style="font-size: 15px; font-weight: bold; color: #df2a30; margin-bottom: 2px; text-transform: uppercase;">
+                                    Bá Tuấn Anh
+                                </div>
+                                <div style="font-size: 11px; color: #718096; font-weight: bold; margin-bottom: 15px;">
+                                    Bảo Lâm Marketing
+                                </div>
+                                <a href="https://baolammarketing.com" target="_blank" style="font-size: 11px; background-color: #df2a30; color: #ffffff; text-decoration: none; padding: 4px 8px; border-radius: 3px; font-weight: bold; display: inline-block;">Ghé Thăm Website</a>
+                            </td>
+                            <!-- Phần Liên hệ bên phải -->
+                            <td valign="top" style="padding-left: 20px;">
+                                <table cellpadding="0" cellspacing="0" border="0" style="font-size: 12px; color: #4a5568; line-height: 1.7;">
+                                    <tr>
+                                        <td style="padding-bottom: 3px;">
+                                            <strong style="color: #1b7340;">Địa chỉ:</strong> Phòng 2-9, Tầng 2, Toà CT1 KĐT Gelexia 885 Tam Trinh, Q. Hoàng Mai, Hà Nội
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 3px;">
+                                            <strong style="color: #1b7340;">Hotline:</strong> <a href="tel:+84349876595" style="color: #4a5568; text-decoration: none;">+84 34 987 6595</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 3px;">
+                                            <strong style="color: #1b7340;">Hòm thư:</strong> <a href="mailto:anhnbt@baolammarketing.com" style="color: #df2a30; text-decoration: none; font-weight: 500;">anhnbt@baolammarketing.com</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- HƯỚNG DẪN DÁN VÀO OUTLOOK -->
+        <div class="guide-box">
+            <h3>Cách chèn chữ ký vào Outlook:</h3>
+            <ol>
+                <li>Bấm nút <strong>"Sao chép chữ ký"</strong> ở mẫu bạn thích ở trên (hệ thống sẽ tự động sao chép toàn bộ màu sắc, hình ảnh và liên kết liên quan).</li>
+                <li>Mở ứng dụng <strong>Microsoft Outlook</strong> trên máy tính của bạn.</li>
+                <li>Chọn <strong>File</strong> (Tệp) &rarr; <strong>Options</strong> (Tùy chọn) &rarr; <strong>Mail</strong> (Thư) &rarr; Click vào nút <strong>Signatures...</strong> (Chữ ký...).</li>
+                <li>Bấm chọn nút <strong>New</strong> (Mới), nhập tên cho chữ ký mới của bạn (ví dụ: <em>Công ty</em>) rồi bấm <strong>OK</strong>.</li>
+                <li>Đặt con trỏ chuột vào khung soạn thảo chữ ký lớn bên dưới, nhấn tổ hợp phím <strong>Ctrl + V</strong> (hoặc chuột phải chọn Paste) để dán chữ ký đã copy vào.</li>
+                <li>Tại phần <strong>Choose default signature</strong> (Chọn chữ ký mặc định) ở góc trên bên phải:
+                    <ul style="margin: 5px 0; padding-left: 20px; color: #166534;">
+                        <li><strong>New messages</strong> (Thư mới): Chọn tên chữ ký vừa nhập ở trên (ví dụ: <em>Công ty</em>).</li>
+                        <li><strong>Replies/forwards</strong> (Trả lời/Chuyển tiếp): Chọn tên chữ ký vừa nhập ở trên (ví dụ: <em>Công ty</em>).</li>
+                    </ul>
+                </li>
+                <li>Bấm <strong>Save</strong> (Lưu) và chọn <strong>OK</strong> để hoàn thành thiết lập.</li>
+            </ol>
+        </div>
+    </div>
+
+    <script>
+        function copySignature(id) {
+            const element = document.getElementById(id);
+            
+            // Tạo một vùng chọn tạm thời
+            const range = document.createRange();
+            range.selectNode(element);
+            
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            
+            try {
+                // Thực thi copy rich text
+                const successful = document.execCommand('copy');
+                if (successful) {
+                    alert('Đã sao chép chữ ký thành công! Hãy dán (Ctrl+V) vào Outlook của bạn.');
+                } else {
+                    alert('Sao chép thất bại. Hãy bôi đen chữ ký và bấm Ctrl+C.');
+                }
+            } catch (err) {
+                alert('Không hỗ trợ tự động sao chép. Bạn hãy bôi đen thủ công phần chữ ký và nhấn Ctrl+C.');
+            }
+            
+            // Xóa vùng chọn
+            selection.removeAllRanges();
+        }
+    </script>
+</body>
+</html>

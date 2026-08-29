@@ -61,10 +61,15 @@ export function Footer() {
 
             {/* Brand Information */}
             <div className="col-span-1 md:col-span-2">
-              <h2 className="text-xl font-black text-[var(--color-surface-white)] uppercase tracking-widest mb-6 border-l-4 border-[var(--color-crimson)] pl-4">
-                Bảo Lâm Marketing
+              <h2 className="text-lg md:text-xl font-black text-[var(--color-surface-white)] uppercase tracking-tight mb-2 border-l-4 border-[var(--color-crimson)] pl-4">
+                {t('company_name')}
               </h2>
-              <p className="text-[var(--color-cool-gray)] text-sm mb-6 leading-relaxed max-w-sm">
+              <div className="pl-4 mb-4">
+                <span className="text-[11px] font-bold tracking-wider text-[var(--color-crimson)] uppercase block">
+                  {t('company_name_intl')}
+                </span>
+              </div>
+              <p className="text-[var(--color-cool-gray)] text-sm mb-6 leading-relaxed max-w-sm pl-4">
                 Đơn vị tư vấn và thực thi các chiến dịch Activation, Event và Sampling toàn quốc. Với mạng lưới 3000+ nhân sự và năng lực hậu cần vượt trội.
               </p>
             </div>
@@ -73,10 +78,10 @@ export function Footer() {
             <div className="col-span-1">
               <h3 className="text-sm font-black text-[var(--color-surface-white)] uppercase tracking-widest mb-6">Liên kết</h3>
               <ul className="space-y-3">
-                <li><a href="#" className="text-[var(--color-cool-gray)] hover:text-[var(--color-crimson)] text-sm transition-colors">Về chúng tôi</a></li>
-                <li><a href="#" className="text-[var(--color-cool-gray)] hover:text-[var(--color-crimson)] text-sm transition-colors">Dự án tiêu biểu</a></li>
-                <li><a href="#" className="text-[var(--color-cool-gray)] hover:text-[var(--color-crimson)] text-sm transition-colors">Hệ thống thực thi</a></li>
-                <li><a href="#" className="text-[var(--color-cool-gray)] hover:text-[var(--color-crimson)] text-sm transition-colors">Tuyển dụng</a></li>
+                <li><a href="#services" className="text-[var(--color-cool-gray)] hover:text-[var(--color-crimson)] text-sm transition-colors">Dịch vụ & Vận hành</a></li>
+                <li><a href="#niche" className="text-[var(--color-cool-gray)] hover:text-[var(--color-crimson)] text-sm transition-colors">Kênh chuyên biệt</a></li>
+                <li><a href="#portfolio" className="text-[var(--color-cool-gray)] hover:text-[var(--color-crimson)] text-sm transition-colors">Dự án tiêu biểu</a></li>
+                <li><a href="#contact" className="text-[var(--color-cool-gray)] hover:text-[var(--color-crimson)] text-sm transition-colors">Liên hệ báo giá</a></li>
               </ul>
             </div>
 
@@ -86,36 +91,45 @@ export function Footer() {
               <ul className="space-y-6">
                 <li className="flex gap-3 text-[var(--color-cool-gray)] text-sm items-start">
                   <MapPin className="w-4 h-4 text-[var(--color-crimson)] shrink-0 mt-1" />
-                  <span className="leading-relaxed">Ô 22 Lô 4, Đền Lừ 2, Phường Hoàng Văn Thụ, Quận Hoàng Mai, TP. Hà Nội.</span>
+                  <span className="leading-relaxed">{t('address')}</span>
                 </li>
                 <li className="flex gap-3 text-[var(--color-cool-gray)] text-sm items-start">
                   <Phone className="w-4 h-4 text-[var(--color-crimson)] shrink-0 mt-1" />
                   <div className="flex flex-col gap-1.5">
                     <span className="text-[10px] text-[var(--color-cool-gray)]/60 uppercase font-black tracking-widest">Hotline Văn Phòng</span>
-                    <span>0436 341 636 - 0462 954 954</span>
+                    <div className="flex flex-wrap items-center gap-2">
+                      <a href="tel:02436341636" className="hover:text-[var(--color-crimson)] transition-colors">02436 341 636</a>
+                      <span>-</span>
+                      <a href="tel:02462954954" className="hover:text-[var(--color-crimson)] transition-colors">02462 954 954</a>
+                    </div>
                     <span className="text-[10px] text-[var(--color-cool-gray)]/60 uppercase font-black tracking-widest mt-2">Hợp Tác Chiến Lược</span>
-                    <span className="text-[var(--color-surface-white)] font-bold">0911 63 6666 <span className="font-normal italic text-[var(--color-cool-gray)]">(Mr. Thọ Tạ)</span></span>
+                    <a href="tel:0911636666" className="text-[var(--color-surface-white)] hover:text-[var(--color-crimson)] font-bold transition-colors">
+                      0911 63 6666 <span className="font-normal italic text-[var(--color-cool-gray)]">(Mr. Thọ Tạ)</span>
+                    </a>
                   </div>
                 </li>
                 <li className="flex gap-3 text-[var(--color-cool-gray)] text-sm items-center">
                   <Mail className="w-4 h-4 text-[var(--color-crimson)] shrink-0" />
-                  <span>tho.tv@baolammarketing.com</span>
+                  <a href="mailto:tho.tv@baolammarketing.com" className="hover:text-[var(--color-crimson)] transition-colors">
+                    tho.tv@baolammarketing.com
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div className="pt-8 border-t border-[var(--border-subtle)] flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-[var(--color-cool-gray)] text-xs">
-              &copy; {new Date().getFullYear()} BAO LAM MARKETING & DISTRIBUTION. All rights reserved.
-            </p>
-            <div className="flex gap-4">
-              <a href="#" className="text-[var(--color-cool-gray)] hover:text-[var(--color-surface-white)] text-xs transition-colors">Chính sách bảo mật</a>
-              <a href="#" className="text-[var(--color-cool-gray)] hover:text-[var(--color-surface-white)] text-xs transition-colors">Điều khoản thanh toán</a>
+          <div className="pt-8 border-t border-[var(--border-subtle)] flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-[var(--color-cool-gray)]">
+            <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-4 text-center sm:text-left">
+              <p>
+                &copy; {new Date().getFullYear()} <span className="font-bold text-[var(--color-surface-white)]">BAO LAM MARKETING & DISTRIBUTION</span>. All rights reserved.
+              </p>
             </div>
-          </div>
-          <div className="mt-8 text-center bg-black/20 border border-[var(--color-crimson)]/20 rounded-sm py-3 px-4">
-            <p className="text-[var(--color-surface-white)]/60 text-[11px] italic tracking-widest uppercase">{t('testing_status')}</p>
+            <div className="flex items-center gap-6 text-xs">
+              <a href="#services" className="hover:text-[var(--color-crimson)] transition-colors">Dịch vụ</a>
+              <a href="#niche" className="hover:text-[var(--color-crimson)] transition-colors">Kênh thực thi</a>
+              <a href="#portfolio" className="hover:text-[var(--color-crimson)] transition-colors">Dự án</a>
+              <a href="#contact" className="hover:text-[var(--color-crimson)] transition-colors">Liên hệ báo giá</a>
+            </div>
           </div>
         </div>
       </footer>

@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hướng dẫn cấu hình Email doanh nghiệp - Bảo Lâm Marketing</title>
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #df2a30;
+            --primary-hover: #c01e23;
+            --secondary: #1b7340;
+            --secondary-hover: #155e34;
+            --bg-page: #f8fafc;
+            --bg-card: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-page);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #ffffff;
+            border-bottom: 1px solid var(--border);
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-img {
+            height: 40px;
+            width: auto;
+            display: block;
+        }
+
+        .brand-name {
+            font-weight: 800;
+            font-size: 16px;
+            color: var(--primary);
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+
+        /* Main Layout */
+        .main-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .header-section {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header-section h1 {
+            font-size: 30px;
+            font-weight: 800;
+            color: #0f172a;
+            margin: 0 0 10px 0;
+        }
+
+        .header-section p {
+            font-size: 15px;
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Navigation Tabs */
+        .tabs-nav {
+            display: flex;
+            background-color: #e2e8f0;
+            padding: 6px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            gap: 5px;
+            overflow-x: auto;
+        }
+
+        .tab-btn {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border: none;
+            background: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #475569;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .tab-btn:hover {
+            color: #0f172a;
+            background-color: rgba(255,255,255,0.4);
+        }
+
+        .tab-btn.active {
+            background-color: #ffffff;
+            color: var(--primary);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.03);
+        }
+
+        /* Tab Content Card */
+        .tab-content-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.01);
+            display: none;
+        }
+
+        .tab-content-card.active {
+            display: block;
+        }
+
+        /* Webmail Banner Card */
+        .webmail-card {
+            background: linear-gradient(135deg, #fef2f2 0%, #fff5f5 100%);
+            border: 1px solid #fee2e2;
+            border-radius: 12px;
+            padding: 24px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .webmail-info {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .webmail-info h3 {
+            margin: 0 0 6px 0;
+            color: #991b1b;
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .webmail-info p {
+            margin: 0;
+            color: #7f1d1d;
+            font-size: 14px;
+        }
+
+        .webmail-btn {
+            background-color: var(--primary);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.2s ease;
+            box-shadow: 0 4px 6px -1px rgba(223, 42, 48, 0.15);
+            text-align: center;
+        }
+
+        .webmail-btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 6px 12px -1px rgba(223, 42, 48, 0.25);
+        }
+
+        /* Alert boxes */
+        .alert-box {
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            display: flex;
+            gap: 15px;
+            align-items: flex-start;
+        }
+
+        .alert-warning {
+            background-color: #fffbeb;
+            border-left: 5px solid #d97706;
+            color: #92400e;
+        }
+
+        .alert-tip {
+            background-color: #f0fdf4;
+            border-left: 5px solid #16a34a;
+            color: #166534;
+        }
+
+        .alert-icon {
+            font-size: 20px;
+            flex-shrink: 0;
+            line-height: 1;
+        }
+
+        .alert-content {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .alert-content strong {
+            font-weight: 700;
+        }
+
+        /* Tables */
+        .config-table-container {
+            overflow-x: auto;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            margin: 25px 0;
+        }
+
+        .config-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+            min-width: 600px;
+        }
+
+        .config-table th {
+            background-color: #f8fafc;
+            color: #475569;
+            font-weight: 600;
+            text-align: left;
+            padding: 14px 16px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .config-table td {
+            padding: 14px 16px;
+            border-bottom: 1px solid var(--border);
+            color: #334155;
+        }
+
+        .config-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .config-table tr:hover {
+            background-color: #f8fafc;
+        }
+
+        .highlight-code {
+            background-color: #f1f5f9;
+            padding: 3px 8px;
+            border-radius: 6px;
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+            font-size: 13px;
+            color: #df2a30;
+            font-weight: 600;
+        }
+
+        .btn-mini-copy {
+            background-color: #ffffff;
+            color: #475569;
+            border: 1px solid #cbd5e1;
+            border-radius: 4px;
+            padding: 2px 8px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-left: 6px;
+            transition: all 0.15s ease;
+            outline: none;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn-mini-copy:hover {
+            background-color: #f1f5f9;
+            color: #0f172a;
+            border-color: #94a3b8;
+        }
+
+        /* Step Lists */
+        .steps-container {
+            display: flex;
+            flex-direction: column;
+            gap: 35px;
+            margin-top: 15px;
+        }
+
+        .step-item {
+            position: relative;
+            padding-left: 35px;
+        }
+
+        .step-item::before {
+            content: "";
+            position: absolute;
+            left: -1px;
+            top: 30px;
+            bottom: -35px;
+            width: 2px;
+            background-color: #e2e8f0;
+        }
+
+        .step-item:last-child::before {
+            display: none;
+        }
+
+        .step-badge {
+            position: absolute;
+            left: -16px;
+            top: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: var(--primary);
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 13px;
+            box-shadow: 0 0 0 4px #ffffff;
+        }
+
+        .step-title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #0f172a;
+            margin: 0 0 10px 0;
+        }
+
+        .step-desc {
+            font-size: 14.5px;
+            color: #475569;
+            margin: 0 0 15px 0;
+        }
+
+        .step-img-wrapper {
+            margin: 15px 0 5px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .step-img {
+            max-width: 100%;
+            max-height: 380px;
+            border-radius: 10px;
+            border: 1px solid var(--border);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .step-img:hover {
+            transform: scale(1.015);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        /* iOS platform section structure */
+        .platform-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 850px) {
+            .platform-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .sub-card {
+            background-color: #f8fafc;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .sub-card h3 {
+            margin: 0 0 20px 0;
+            color: #0f172a;
+            font-size: 17px;
+            font-weight: 700;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .badge-recommended {
+            background-color: #dcfce7;
+            color: #15803d;
+            font-size: 12px;
+            font-weight: 600;
+            padding: 3px 10px;
+            border-radius: 20px;
+        }
+
+        .ios-list {
+            margin: 0;
+            padding-left: 20px;
+            font-size: 14px;
+            color: #334155;
+        }
+
+        .ios-list li {
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .ios-list ul {
+            margin: 8px 0;
+            padding-left: 20px;
+            color: #475569;
+        }
+
+        .ios-list ul li {
+            margin-bottom: 6px;
+        }
+
+        /* Lightbox Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(15, 23, 42, 0.95);
+            backdrop-filter: blur(4px);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            max-width: 90%;
+            max-height: 80vh;
+            border-radius: 12px;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+            animation: zoom 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        @keyframes zoom {
+            from {transform:scale(0.95); opacity: 0;}
+            to {transform:scale(1); opacity: 1;}
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #cbd5e1;
+            font-size: 35px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.2s;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 50%;
+        }
+
+        .modal-close:hover {
+            color: #ffffff;
+            background-color: rgba(255,255,255,0.2);
+        }
+
+        .modal-caption {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+            text-align: center;
+            color: #94a3b8;
+            padding: 20px 0;
+            font-size: 15px;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 13px;
+            color: var(--text-muted);
+            border-top: 1px solid var(--border);
+            background-color: #ffffff;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <img class="logo-img" src="logo.png" alt="Bảo Lâm Marketing Co., Ltd.">
+            <span class="brand-name">Bảo Lâm Marketing</span>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="main-container">
+        <div class="header-section">
+            <h1>Cấu Hình Email Doanh Nghiệp</h1>
+            <p>Tài liệu hướng dẫn chi tiết cách thiết lập tài khoản email doanh nghiệp của bạn trên máy tính Windows (Outlook), các thiết bị iOS (iPhone/iPad), và Android.</p>
+        </div>
+
+        <!-- Navigation Tabs -->
+        <div class="tabs-nav">
+            <button class="tab-btn active" onclick="showTab('tab-general', this)">
+                📁 Thông số & Webmail
+            </button>
+            <button class="tab-btn" onclick="showTab('tab-outlook', this)">
+                💻 Windows (Outlook)
+            </button>
+            <button class="tab-btn" onclick="showTab('tab-ios', this)">
+                🍎 iOS (iPhone/iPad)
+            </button>
+            <button class="tab-btn" onclick="showTab('tab-android', this)">
+                🤖 Android (Gmail)
+            </button>
+        </div>
+
+        <!-- TAB 1: THÔNG SỐ CHUNG & WEBMAIL -->
+        <div id="tab-general" class="tab-content-card active">
+            <!-- Webmail Quick Access -->
+            <div class="webmail-card">
+                <div class="webmail-info">
+                    <h3>Truy Cập Nhanh Qua Webmail</h3>
+                    <p>Nếu bạn muốn kiểm tra thư gấp hoặc không tiện cấu hình ứng dụng, bạn hoàn toàn có thể gửi/nhận email trực tiếp trên trình duyệt web.</p>
+                </div>
+                <a href="https://webmail.baolammarketing.com/" target="_blank" class="webmail-btn">Truy cập Webmail &rarr;</a>
+            </div>
+
+            <!-- WARNING Box -->
+            <div class="alert-box alert-warning">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-content">
+                    <strong>Thông báo quan trọng:</strong> Vui lòng thay thế phần địa chỉ email mẫu bên dưới bằng <strong>địa chỉ email cá nhân</strong> và <strong>mật khẩu riêng</strong> do công ty cấp cho bạn để tiến hành thiết lập.
+                </div>
+            </div>
+
+            <!-- Configuration Table -->
+            <h2>Thông Số Cấu Hình Máy Chủ (Bắt Buộc)</h2>
+            <p style="color: var(--text-muted); font-size: 14px;">Sử dụng các thông số dưới đây để thiết lập thủ công tài khoản email của bạn trên ứng dụng khách:</p>
+
+            <div class="config-table-container">
+                <table class="config-table">
+                    <thead>
+                        <tr>
+                            <th>Thông số</th>
+                            <th>Giá trị</th>
+                            <th>Ghi chú</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Địa chỉ Email (Username)</strong></td>
+                            <td><span class="highlight-code">email_cua_ban@baolammarketing.com</span></td>
+                            <td>Thay bằng địa chỉ email cá nhân của bạn</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mật khẩu (Password)</strong></td>
+                            <td><span class="highlight-code">&lt;Mật khẩu email của bạn&gt;</span></td>
+                            <td>Sử dụng mật khẩu cá nhân do công ty cấp</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Giao thức nhận thư</strong></td>
+                            <td><strong>IMAP</strong></td>
+                            <td>Khuyên dùng để đồng bộ thư giữa nhiều thiết bị</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Máy chủ thư đến (Incoming Server)</strong></td>
+                            <td>
+                                <span class="highlight-code">mail.baolammarketing.com</span>
+                                <button class="btn-mini-copy" onclick="copyText('mail.baolammarketing.com', this)">Copy</button>
+                            </td>
+                            <td>Giữ nguyên cho toàn bộ nhân viên</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cổng thư đến (IMAP Port)</strong></td>
+                            <td><strong>993</strong> (Giao thức bảo mật: <strong>SSL/TLS</strong>)</td>
+                            <td>Cổng nhận thư an toàn mã hóa</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Máy chủ thư đi (Outgoing Server)</strong></td>
+                            <td>
+                                <span class="highlight-code">mail.baolammarketing.com</span>
+                                <button class="btn-mini-copy" onclick="copyText('mail.baolammarketing.com', this)">Copy</button>
+                            </td>
+                            <td>Giữ nguyên cho toàn bộ nhân viên</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cổng thư đi (SMTP Port)</strong></td>
+                            <td><strong>465</strong> (Giao thức bảo mật: <strong>SSL/TLS</strong>)</td>
+                            <td>Cổng gửi thư an toàn mã hóa</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Yêu cầu xác thực thư đi (SMTP Auth)</strong></td>
+                            <td><strong>Có (Checked)</strong></td>
+                            <td>Sử dụng chung thông tin đăng nhập với máy chủ thư đến</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- TIP Box -->
+            <div class="alert-box alert-tip">
+                <div class="alert-icon">💡</div>
+                <div class="alert-content">
+                    <strong>Mẹo nhỏ:</strong> Nếu cổng thư đi <code style="color: #15803d; background-color: #dcfce7; padding: 2px 5px; border-radius: 4px;">465</code> (SSL/TLS) bị chặn bởi nhà mạng hoặc tường lửa thiết bị, bạn có thể thay thế bằng cổng <strong>587</strong> với phương thức bảo mật <strong>STARTTLS</strong> (hoặc TLS).
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 2: WINDOWS (OUTLOOK) -->
+        <div id="tab-outlook" class="tab-content-card">
+            <div class="alert-box alert-warning">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-content">
+                    Do tên miền chưa cài đặt cấu hình tự động (Autodiscover), bạn <strong>bắt buộc phải cấu hình thủ công</strong> theo các bước dưới đây.
+                </div>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-item">
+                    <span class="step-badge">1</span>
+                    <h3 class="step-title">Mở Outlook và Thêm tài khoản mới</h3>
+                    <p class="step-desc">Mở ứng dụng <strong>Microsoft Outlook</strong> &rarr; Chọn thẻ <strong>File</strong> (Tệp) ở góc trên bên trái &rarr; Bấm chọn <strong>Add Account</strong> (Thêm tài khoản).</p>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-badge">2</span>
+                    <h3 class="step-title">Nhập Email cá nhân</h3>
+                    <p class="step-desc">Nhập địa chỉ email doanh nghiệp của bạn (ví dụ: <code class="highlight-code">email_cua_ban@baolammarketing.com</code>).</p>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-badge">3</span>
+                    <h3 class="step-title">Bật Thiết lập thủ công</h3>
+                    <p class="step-desc">Bấm chọn <strong>Advanced options</strong> (Tùy chọn nâng cao) &rarr; Tích chọn vào ô <strong>Let me set up my account manually</strong> (Để tôi tự thiết lập tài khoản thủ công).</p>
+                    <div class="step-img-wrapper">
+                        <img class="step-img" src="image/outlook/outlook_01_manual_setup.png" alt="Outlook - Thiết lập tài khoản thủ công" onclick="openLightbox(this)">
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-badge">4</span>
+                    <h3 class="step-title">Chọn loại tài khoản IMAP</h3>
+                    <p class="step-desc">Bấm chọn nút <strong>Connect</strong> (Kết nối) &rarr; Trong bảng chọn loại tài khoản, bấm chọn <strong>IMAP</strong>.</p>
+                    <div class="step-img-wrapper">
+                        <img class="step-img" src="image/outlook/outlook_02_choose_imap.png" alt="Outlook - Chọn loại tài khoản IMAP" onclick="openLightbox(this)">
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-badge">5</span>
+                    <h3 class="step-title">Bỏ qua đăng nhập tự động của Google (Nếu có)</h3>
+                    <p class="step-desc">Nếu Outlook chuyển hướng yêu cầu sang giao diện đăng nhập dạng trình duyệt của Google thì bấm nút <strong>Cancel</strong>. Tiếp đó bấm chọn nút <strong>Change Account Settings</strong> để tiếp tục.</p>
+                    <div class="step-img-wrapper">
+                        <img class="step-img" src="image/outlook/outlook_03_cancel_google.png" alt="Outlook - Cancel chuyển hướng Google" style="margin-right: 15px;" onclick="openLightbox(this)">
+                        <img class="step-img" src="image/outlook/outlook_04_change_settings.png" alt="Outlook - Thay đổi cài đặt tài khoản" onclick="openLightbox(this)">
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-badge">6</span>
+                    <h3 class="step-title">Điền thông số máy chủ</h3>
+                    <p class="step-desc">Nhập các thông số máy chủ nhận/gửi thư chính xác như sau:
+                        <ul style="padding-left: 20px; margin: 8px 0; font-size: 14.5px;">
+                            <li><strong>Incoming mail (Máy chủ thư đến):</strong> Server <code class="highlight-code">mail.baolammarketing.com</code> | Port <code class="highlight-code">993</code> | Encryption: <code class="highlight-code">SSL/TLS</code></li>
+                            <li><strong>Outgoing mail (Máy chủ thư đi):</strong> Server <code class="highlight-code">mail.baolammarketing.com</code> | Port <code class="highlight-code">465</code> | Encryption: <code class="highlight-code">SSL/TLS</code></li>
+                        </ul>
+                    </p>
+                    <div class="step-img-wrapper">
+                        <img class="step-img" src="image/outlook/outlook_05_server_settings.png" alt="Outlook - Nhập thông số máy chủ" onclick="openLightbox(this)">
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-badge">7</span>
+                    <h3 class="step-title">Nhập mật khẩu và Hoàn tất</h3>
+                    <p class="step-desc">Bấm <strong>Next</strong>, nhập mật khẩu email cá nhân của bạn, bấm <strong>OK</strong> để hoàn thành kết nối.</p>
+                    <div class="step-img-wrapper">
+                        <img class="step-img" src="image/outlook/outlook_06_enter_password.png" alt="Outlook - Nhập mật khẩu kết nối" onclick="openLightbox(this)">
+                    </div>
+                </div>
+            </div>
+
+            <!-- TIP Box pointing to signatures -->
+            <div class="alert-box alert-tip" style="margin-top: 40px;">
+                <div class="alert-icon">💡</div>
+                <div class="alert-content">
+                    <strong>Thiết lập chữ ký công ty:</strong> Sau khi cấu hình thành công email trên Outlook, bạn có thể thiết lập chữ ký chuyên nghiệp theo mẫu thương hiệu Bảo Lâm Marketing tại đây: 
+                    <a href="chu_ky_outlook.html" target="_blank" style="color: #166534; font-weight: 700; text-decoration: underline;">Cài đặt Mẫu Chữ Ký Outlook</a>.
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 3: IOS (IPHONE/IPAD) -->
+        <div id="tab-ios" class="tab-content-card">
+            <div class="platform-grid">
+                <!-- Sub Section: Gmail App (Recommended) -->
+                <div class="sub-card">
+                    <h3>Cấu hình trên App Gmail <span class="badge-recommended">Khuyến nghị</span></h3>
+                    <ol class="ios-list">
+                        <li>Mở ứng dụng <strong>Gmail</strong> trên iOS &rarr; Nhấn vào ảnh đại diện góc trên cùng bên phải &rarr; Chọn <strong>Thêm một tài khoản khác</strong> (Add another account).</li>
+                        <li>Chọn loại tài khoản là <strong>Khác</strong> (Other).</li>
+                        <li>Nhập địa chỉ email doanh nghiệp của bạn &rarr; Bấm <strong>Tiếp theo</strong>.</li>
+                        <li>Chọn loại tài khoản là <strong>IMAP</strong>.</li>
+                        <li>Nhập mật khẩu cá nhân của bạn.</li>
+                        <li>Ở bước <strong>Cài đặt máy chủ thư đến</strong>, nhập:
+                            <ul>
+                                <li>Máy chủ (Server): <code class="highlight-code">mail.baolammarketing.com</code></li>
+                                <li>Cổng (Port): <code class="highlight-code">993</code></li>
+                                <li>Loại bảo mật: <code class="highlight-code">SSL/TLS</code></li>
+                            </ul>
+                        </li>
+                        <li>Ở bước <strong>Cài đặt máy chủ thư đi</strong>, nhập:
+                            <ul>
+                                <li>Máy chủ SMTP: <code class="highlight-code">mail.baolammarketing.com</code></li>
+                                <li>Cổng (Port): <code class="highlight-code">465</code></li>
+                                <li>Loại bảo mật: <code class="highlight-code">SSL/TLS</code></li>
+                                <li>Đảm bảo bật nút <strong>Yêu cầu đăng nhập</strong> và điền đầy đủ Email & Mật khẩu của bạn.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <!-- Sub Section: Default Mail App -->
+                <div class="sub-card">
+                    <h3>Cấu hình trên ứng dụng Mail mặc định</h3>
+                    <ol class="ios-list">
+                        <li>Vào <strong>Cài đặt</strong> (Settings) &rarr; <strong>Mail</strong> &rarr; <strong>Tài khoản</strong> (Accounts) &rarr; Chọn <strong>Thêm tài khoản</strong> (Add Account).</li>
+                        <li>Chọn <strong>Khác</strong> (Other) &rarr; Chọn <strong>Thêm tài khoản Mail</strong> (Add Mail Account).</li>
+                        <li>Nhập Tên của bạn, Email doanh nghiệp, Mật khẩu và mô tả &rarr; Bấm <strong>Tiếp tục</strong> (Next).</li>
+                        <li>Nhấp chọn tab <strong>IMAP</strong> ở góc trên cùng của màn hình thiết lập.</li>
+                        <li>Nhập đầy đủ thông tin máy chủ:
+                            <ul>
+                                <li><strong>Máy chủ thư đến:</strong> Host <code class="highlight-code">mail.baolammarketing.com</code> | Tên đăng nhập & Mật khẩu cá nhân.</li>
+                                <li><strong>Máy chủ thư đi:</strong> Host <code class="highlight-code">mail.baolammarketing.com</code> | Tên đăng nhập & Mật khẩu cá nhân (bắt buộc nhập).</li>
+                            </ul>
+                        </li>
+                        <li>Bấm <strong>Lưu</strong> (Save) ở góc trên.</li>
+                        <li><strong>Kiểm tra nâng cao (Nếu thiết bị không tự kết nối):</strong>
+                            <ul>
+                                <li>Vào lại tài khoản vừa tạo &rarr; Chọn phần <strong>Nâng cao</strong> (Advanced) &rarr; Đảm bảo bật <strong>Sử dụng SSL</strong> và điền cổng máy chủ là <strong>993</strong>.</li>
+                                <li>Quay lại mục <strong>SMTP</strong> &rarr; Máy chủ chính &rarr; Đảm bảo bật <strong>Sử dụng SSL</strong> và cổng là <strong>465</strong>.</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB 4: ANDROID (GMAIL) -->
+        <div id="tab-android" class="tab-content-card">
+            <div class="steps-container">
+                <div class="step-item">
+                    <span class="step-badge">1</span>
+                    <h3 class="step-title">Mở cài đặt Gmail</h3>
+                    <p class="step-desc">Mở ứng dụng <strong>Gmail</strong> trên điện thoại &rarr; Bấm vào ảnh đại diện ở góc trên bên phải &rarr; Chọn <strong>Thêm tài khoản khác</strong> (Add account).</p>
+                    <div class="step-img-wrapper">
+                        <img class="step-img" src="image/android/android_01_gmail_settings.png" alt="Android - Menu cài đặt Gmail" style="margin-right: 15px;" onclick="openLightbox(this)">
+                        <img class="step-img" src="image/android/android_02_add_account.png" alt="Android - Chọn thêm tài khoản" onclick="openLightbox(this)">
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-badge">2</span>
+                    <h3 class="step-title">Chọn loại tài khoản</h3>
+                    <p class="step-desc">Tại bảng Thiết lập email, chọn mục <strong>Khác</strong> (Other).</p>
+                    <div class="step-img-wrapper">
+                        <img class="step-img" src="image/android/android_03_choose_other.png" alt="Android - Chọn loại tài khoản Khác" onclick="openLightbox(this)">
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-badge">3</span>
+                    <h3 class="step-title">Nhập Email doanh nghiệp</h3>
+                    <p class="step-desc">Nhập chính xác địa chỉ email cá nhân của bạn do công ty cấp.</p>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-badge">4</span>
+                    <h3 class="step-title">Thiết lập thủ công</h3>
+                    <p class="step-desc">Lưu ý: <strong>Không</strong> bấm Tiếp theo. Hãy nhấp vào dòng chữ <strong>Thiết lập thủ công</strong> (Manual Setup) ở góc dưới cùng bên trái màn hình.</p>
+                    <div class="step-img-wrapper">
+                        <img class="step-img" src="image/android/android_04_manual_setup.png" alt="Android - Click Thiết lập thủ công" onclick="openLightbox(this)">
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-badge">5</span>
+                    <h3 class="step-title">Chọn loại tài khoản Cá nhân (IMAP)</h3>
+                    <p class="step-desc">Chọn loại tài khoản là <strong>Cá nhân (IMAP)</strong> (Personal IMAP) và tiếp tục nhập mật khẩu tài khoản của bạn.</p>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-badge">6</span>
+                    <h3 class="step-title">Cấu hình Máy chủ nhận thư (Incoming)</h3>
+                    <p class="step-desc">Nhập thông tin máy chủ thư đến chính xác:
+                        <ul style="padding-left: 20px; margin: 8px 0; font-size: 14.5px;">
+                            <li>Tên người dùng: Địa chỉ email doanh nghiệp của bạn</li>
+                            <li>Máy chủ (Server): <code class="highlight-code">mail.baolammarketing.com</code></li>
+                            <li>Cổng (Port): <strong>993</strong></li>
+                            <li>Loại bảo mật: <strong>SSL/TLS</strong></li>
+                        </ul>
+                    </p>
+                    <div class="step-img-wrapper">
+                        <img class="step-img" src="image/android/android_05_incoming_server.png" alt="Android - Điền máy chủ thư đến" onclick="openLightbox(this)">
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-badge">7</span>
+                    <h3 class="step-title">Cấu hình Máy chủ gửi thư (Outgoing)</h3>
+                    <p class="step-desc">Nhập thông tin máy chủ thư đi chính xác:
+                        <ul style="padding-left: 20px; margin: 8px 0; font-size: 14.5px;">
+                            <li>Tích chọn <strong>Yêu cầu đăng nhập</strong> (Require sign-in)</li>
+                            <li>Máy chủ SMTP: <code class="highlight-code">mail.baolammarketing.com</code></li>
+                            <li>Cổng (Port): <strong>465</strong></li>
+                            <li>Loại bảo mật: <strong>SSL/TLS</strong></li>
+                        </ul>
+                    </p>
+                    <div class="step-img-wrapper">
+                        <img class="step-img" src="image/android/android_06_outgoing_server.png" alt="Android - Điền máy chủ thư đi" onclick="openLightbox(this)">
+                    </div>
+                </div>
+
+                <div class="step-item">
+                    <span class="step-badge">8</span>
+                    <h3 class="step-title">Hoàn tất cài đặt</h3>
+                    <p class="step-desc">Chọn tần suất đồng bộ theo mong muốn (mặc định là mỗi 15 phút) và bấm <strong>Hoàn tất</strong> để bắt đầu sử dụng.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeLightbox()">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        &copy; 2026 Bảo Lâm Marketing Co., Ltd. Tất cả quyền được bảo lưu.
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Tab switching logic
+        function showTab(tabId, btn) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content-card');
+            contents.forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // Remove active status from all buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            // Show current tab content and set button as active
+            document.getElementById(tabId).classList.add('active');
+            btn.classList.add('active');
+        }
+
+        // Copy utility
+        function copyText(text, btn) {
+            navigator.clipboard.writeText(text).then(() => {
+                showToast('Đã sao chép: ' + text);
+                const originalText = btn.innerHTML;
+                btn.innerHTML = 'Copied!';
+                btn.style.backgroundColor = '#16a34a';
+                btn.style.color = '#ffffff';
+                setTimeout(() => {
+                    btn.innerHTML = originalText;
+                    btn.style.backgroundColor = '';
+                    btn.style.color = '';
+                }, 1200);
+            });
+        }
+
+        // Toast notification utility
+        function showToast(message) {
+            let toast = document.getElementById("toast");
+            if (!toast) {
+                toast = document.createElement("div");
+                toast.id = "toast";
+                toast.style.position = "fixed";
+                toast.style.bottom = "30px";
+                toast.style.left = "50%";
+                toast.style.transform = "translateX(-50%)";
+                toast.style.backgroundColor = "#0f172a";
+                toast.style.color = "#ffffff";
+                toast.style.padding = "12px 24px";
+                toast.style.borderRadius = "8px";
+                toast.style.boxShadow = "0 10px 25px -5px rgba(0,0,0,0.3)";
+                toast.style.zIndex = "1001";
+                toast.style.fontSize = "13.5px";
+                toast.style.fontWeight = "600";
+                toast.style.transition = "opacity 0.2s ease";
+                document.body.appendChild(toast);
+            }
+            toast.innerHTML = message;
+            toast.style.opacity = "1";
+            toast.style.display = "block";
+            setTimeout(() => {
+                toast.style.opacity = "0";
+                setTimeout(() => { toast.style.display = "none"; }, 200);
+            }, 2000);
+        }
+
+        // Lightbox functions
+        function openLightbox(img) {
+            const modal = document.getElementById("imageModal");
+            const modalImg = document.getElementById("modalImg");
+            const captionText = document.getElementById("modalCaption");
+            modal.style.display = "block";
+            modalImg.src = img.src;
+            captionText.innerHTML = img.alt;
+        }
+
+        function closeLightbox() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        // Close modal when clicking anywhere outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById("imageModal");
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

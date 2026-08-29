@@ -16,6 +16,8 @@
   --color-brand-accent: var(--brand-accent);
   --color-crimson: var(--brand-primary);
   --color-crimson-dim: var(--brand-primary-dim);
+  --color-brand-green: var(--brand-secondary);
+  --color-brand-gold: var(--brand-accent);
 
   /* Semantic Surface Colors (theme-aware) */
   --color-surface: var(--surface);
@@ -30,7 +32,11 @@
   --color-surface-container-highest: var(--surface-container-highest);
   --color-surface-bright: var(--surface-bright);
 
-  --font-inter: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-merriweather: var(--font-merriweather), 'Merriweather', Georgia, serif;
+  --font-opensans: var(--font-opensans), 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-merriweather), 'Merriweather', Georgia, serif;
+  --font-sans: var(--font-opensans), 'Open Sans', ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-merriweather), 'Merriweather', Georgia, serif;
 
   --radius-sm: 0.125rem;
   --radius-md: 0.25rem;
@@ -45,34 +51,34 @@
    Clean, professional, trust-building
    ============================================ */
 :root {
-  /* Brand */
-  --brand-primary: #DF2A30;
-  --brand-primary-dim: rgba(223, 42, 48, 0.8);
-  --brand-secondary: #1B7340;
-  --brand-accent: #F5A623;
+  /* Brand - Exact from Logo */
+  --brand-primary: #E3232B;
+  --brand-primary-dim: rgba(227, 35, 43, 0.85);
+  --brand-secondary: #18934C;
+  --brand-accent: #F8CF0B;
 
-  /* Surfaces: Soft off-white base (Zbox-inspired clean tech) */
+  /* Surfaces: Ultra-clean slate / off-white base */
   --surface: #F8FAFC;
-  --surface-on: #080C14;
-  --surface-muted: #334155; /* Slate 700 for high visibility and WCAG compliance */
+  --surface-on: #0A0F1D;
+  --surface-muted: #475569; /* Slate 600 */
   --surface-navy: #0F172A;
 
   --surface-container-lowest: #FFFFFF;
-  --surface-container-low: #FFFFFF;
+  --surface-container-low: #F8FAFC;
   --surface-container: #F1F5F9;
-  --surface-container-high: #F8FAFC;
+  --surface-container-high: #E2E8F0;
   --surface-container-highest: #FFFFFF;
-  --surface-bright: #E2E8F0;
+  --surface-bright: #CBD5E1;
 
   /* Borders */
-  --border-subtle: rgba(15, 23, 42, 0.1); /* Slightly stronger */
+  --border-subtle: rgba(15, 23, 42, 0.08);
 
-  /* Shadows - softer, more diffused for modern elevated card feel */
-  --shadow-glow-val: 0px 4px 20px rgba(223, 42, 48, 0.1);
-  --shadow-executive-val: 0px 8px 32px rgba(15, 23, 42, 0.08), 0px 2px 8px rgba(15, 23, 42, 0.04);
+  /* Shadows - diffused, tinted, high-end */
+  --shadow-glow-val: 0px 4px 20px rgba(227, 35, 43, 0.15);
+  --shadow-executive-val: 0 20px 40px -15px rgba(15, 23, 42, 0.07), 0 0 1px 1px rgba(15, 23, 42, 0.05);
 
   /* ShadCN defaults */
-  --background: oklch(1 0 0);
+  --background: oklch(0.985 0.002 247.8);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
@@ -108,41 +114,41 @@
 
 /* ============================================
    DARK MODE (.dark)
-   Original "Execution Powerhouse" aesthetic
+   Cinematic B2B Execution Powerhouse
    ============================================ */
 .dark {
-  /* Brand (slightly softened for dark backgrounds) */
+  /* Brand - Calibrated for Dark Mode */
   --brand-primary: #E8454A;
-  --brand-primary-dim: rgba(232, 69, 74, 0.8);
+  --brand-primary-dim: rgba(232, 69, 74, 0.85);
   --brand-secondary: #22A352;
-  --brand-accent: #FFD666;
+  --brand-accent: #F8CF0B;
 
-  /* Surfaces: Deep navy base */
-  --surface: #0b1326;
-  --surface-on: #FFFFFF;
+  /* Surfaces: Deep Slate & Charcoal */
+  --surface: #070B14;
+  --surface-on: #F8FAFC;
   --surface-muted: #94A3B8;
   --surface-navy: #0F172A;
 
-  --surface-container-lowest: #060e20;
-  --surface-container-low: #131b2e;
-  --surface-container: #171f33;
-  --surface-container-high: #222a3d;
-  --surface-container-highest: #2d3449;
-  --surface-bright: #31394d;
+  --surface-container-lowest: #05080F;
+  --surface-container-low: #0C1220;
+  --surface-container: #111A2E;
+  --surface-container-high: #19243C;
+  --surface-container-highest: #22304F;
+  --surface-bright: #2B3D63;
 
   /* Borders */
-  --border-subtle: rgba(255, 255, 255, 0.05);
+  --border-subtle: rgba(255, 255, 255, 0.07);
 
   /* Shadows */
-  --shadow-glow-val: 0px 4px 24px rgba(223, 42, 48, 0.2);
-  --shadow-executive-val: 0px 24px 48px rgba(0, 0, 0, 0.4);
+  --shadow-glow-val: 0px 4px 28px rgba(232, 69, 74, 0.25);
+  --shadow-executive-val: 0 25px 50px -12px rgba(0, 0, 0, 0.6), 0 0 1px 1px rgba(255, 255, 255, 0.05);
 
   /* ShadCN dark defaults */
-  --background: oklch(0.145 0 0);
+  --background: oklch(0.12 0.015 250);
   --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
+  --card: oklch(0.16 0.02 250);
   --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
+  --popover: oklch(0.16 0.02 250);
   --popover-foreground: oklch(0.985 0 0);
   --primary: oklch(0.922 0 0);
   --primary-foreground: oklch(0.205 0 0);
@@ -153,27 +159,27 @@
   --accent: oklch(0.269 0 0);
   --accent-foreground: oklch(0.985 0 0);
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
+  --border: oklch(1 0 0 / 8%);
+  --input: oklch(1 0 0 / 12%);
   --ring: oklch(0.556 0 0);
   --chart-1: oklch(0.87 0 0);
   --chart-2: oklch(0.556 0 0);
   --chart-3: oklch(0.439 0 0);
   --chart-4: oklch(0.371 0 0);
   --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
+  --sidebar: oklch(0.16 0.02 250);
   --sidebar-foreground: oklch(0.985 0 0);
   --sidebar-primary: oklch(0.488 0.243 264.376);
   --sidebar-primary-foreground: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.269 0 0);
   --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-border: oklch(1 0 0 / 8%);
   --sidebar-ring: oklch(0.556 0 0);
 }
 
 /* Base Styles */
 body {
-  font-family: var(--font-inter);
+  font-family: var(--font-opensans), 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -184,29 +190,12 @@ body {
     background-color: var(--color-crimson-dim);
     backdrop-filter: blur(24px);
   }
-
-  /* Force dark mode on specific sections (Engine / CTA "Dark Block" strategy) */
-  .force-dark {
-    --brand-primary: #E8454A;
-    --brand-primary-dim: rgba(232, 69, 74, 0.8);
-    --surface: #0b1326;
-    --surface-on: #FFFFFF;
-    --surface-muted: #94A3B8;
-    --surface-container-lowest: #060e20;
-    --surface-container-low: #131b2e;
-    --surface-container: #171f33;
-    --surface-container-high: #222a3d;
-    --surface-container-highest: #2d3449;
-    --surface-bright: #31394d;
-    --border-subtle: rgba(255, 255, 255, 0.05);
-    --shadow-glow-val: 0px 4px 24px rgba(223, 42, 48, 0.2);
-    --shadow-executive-val: 0px 24px 48px rgba(0, 0, 0, 0.4);
-  }
 }
 
 @theme inline {
-  --font-heading: var(--font-sans);
-  --font-sans: var(--font-sans);
+  --font-heading: var(--font-merriweather), 'Merriweather', Georgia, serif;
+  --font-serif: var(--font-merriweather), 'Merriweather', Georgia, serif;
+  --font-sans: var(--font-opensans), 'Open Sans', ui-sans-serif, system-ui, sans-serif;
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
@@ -252,11 +241,14 @@ body {
     @apply border-border outline-ring/50;
     scroll-margin-top: 5rem;
   }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-merriweather), 'Merriweather', Georgia, serif;
+  }
   body {
+    font-family: var(--font-opensans), 'Open Sans', sans-serif;
     @apply bg-background text-foreground;
   }
   html {
-    @apply font-sans;
     scroll-behavior: smooth;
   }
 }

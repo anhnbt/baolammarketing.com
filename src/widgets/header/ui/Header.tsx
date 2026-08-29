@@ -31,7 +31,7 @@ export function Header() {
     };
 
     const observer = new IntersectionObserver(handleIntersect, observerOptions);
-    ['portfolio', 'services', 'contact'].forEach((id) => {
+    ['niche', 'services', 'portfolio', 'contact'].forEach((id) => {
       const el = document.getElementById(id);
       if (el) observer.observe(el);
     });
@@ -43,22 +43,25 @@ export function Header() {
   const logoSrc = mounted && resolvedTheme === 'light' ? '/logo.png' : '/logo-dark.png';
 
   const navLinks = [
-    { href: '#contact', label: t('lead_gen'), id: 'contact' },
+    { href: '#niche', label: t('network'), id: 'niche' },
+    { href: '#services', label: t('services'), id: 'services' },
     { href: '#portfolio', label: t('campaigns'), id: 'portfolio' },
-    { href: '#services', label: t('network'), id: 'services' },
+    { href: '#contact', label: t('lead_gen'), id: 'contact' },
   ];
 
   return (
     <header className="fixed top-0 w-full z-50 bg-[var(--color-surface-container-lowest)]/90 backdrop-blur-xl flex justify-between items-center px-6 py-2 shadow-sm border-b border-[var(--border-subtle)]">
       <div className="flex items-center gap-3">
-        <Image
-          src={logoSrc}
-          alt="Bao Lam Marketing"
-          width={240}
-          height={64}
-          className="h-10 md:h-14 w-auto object-contain drop-shadow-md"
-          priority
-        />
+        <a href="#">
+          <Image
+            src={logoSrc}
+            alt="Bao Lam Marketing"
+            width={240}
+            height={64}
+            className="h-10 md:h-14 w-auto object-contain drop-shadow-md"
+            priority
+          />
+        </a>
       </div>
 
       <div className="flex items-center gap-4 md:gap-6">
@@ -84,3 +87,4 @@ export function Header() {
     </header>
   );
 }
+

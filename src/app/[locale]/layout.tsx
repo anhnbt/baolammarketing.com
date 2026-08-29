@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Merriweather, Open_Sans } from 'next/font/google';
 import '../globals.css';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
@@ -10,9 +10,18 @@ import { ThemeProvider } from '@/shared/providers/ThemeProvider';
 import { Header } from '@/widgets/header/ui/Header';
 import { Footer } from '@/widgets/footer/ui/Footer';
 
-const inter = Inter({
-  variable: '--font-inter',
+const merriweather = Merriweather({
+  weight: ['300', '400', '700', '900'],
+  style: ['normal', 'italic'],
   subsets: ['latin', 'vietnamese'],
+  variable: '--font-merriweather',
+  display: 'swap',
+});
+
+const openSans = Open_Sans({
+  subsets: ['latin', 'vietnamese'],
+  variable: '--font-opensans',
+  display: 'swap',
 });
 
 export const metadata: Metadata = {
@@ -58,8 +67,8 @@ export default async function RootLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} antialiased h-full`} suppressHydrationWarning>
-      <body className="min-h-full flex flex-col bg-[var(--color-surface)] text-[var(--color-surface-white)] overflow-x-hidden">
+    <html lang={locale} className={`${merriweather.variable} ${openSans.variable} antialiased h-full`} suppressHydrationWarning>
+      <body className="min-h-full flex flex-col bg-[var(--color-surface)] text-[var(--color-surface-white)] overflow-x-hidden font-sans">
         <ThemeProvider>
           <NextIntlClientProvider messages={messages}>
             <Header />
